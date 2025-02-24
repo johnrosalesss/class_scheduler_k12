@@ -1,0 +1,52 @@
+Subject Code,Program,Year Level,Teacher Name,Room Name,Day,Start Time,End Time
+MATH301,All,3,Prof. Euler,Room 120,Monday,13:00:00,14:00:00
+MATH301,All,3,Prof. Euler,Room 107,Monday,14:00:00,15:00:00
+SEC301,All,3,Prof. Schneier,Room 113,Wednesday,14:00:00,15:00:00
+CS103,BS Computer Science,3,Prof. Brown,Room 111,Friday,7:00:00,8:00:00
+CS102,BS Computer Science,2,Prof. Jones,Room 108,Friday,9:00:00,10:00:00
+CS101,BS Computer Science,1,Prof. Smith,Room 107,Monday,9:00:00,10:00:00
+CS103,BS Computer Science,3,Prof. Brown,Room 106,Monday,10:00:00,11:00:00
+CS104,BS Computer Science,4,Prof. Tanenbaum,Room 116,Thursday,9:00:00,10:00:00
+CS102,BS Computer Science,2,Prof. Jones,Room 114,Thursday,10:00:00,11:00:00
+CS101,BS Computer Science,1,Prof. Smith,Room 103,Thursday,11:00:00,12:00:00
+CS101,BS Computer Science,1,Prof. Smith,Room 112,Tuesday,9:00:00,10:00:00
+CS103,BS Computer Science,3,Prof. Brown,Room 116,Wednesday,7:00:00,8:00:00
+CS102,BS Computer Science,2,Prof. Jones,Room 101,Wednesday,8:00:00,9:00:00
+CY101,BS Cyber Security,1,Prof. Cyan,Room 101,Friday,8:00:00,9:00:00
+CY101,BS Cyber Security,1,Prof. Cyan,Room 113,Friday,16:00:00,17:00:00
+CY102,BS Cyber Security,2,Prof. Magenta,Room 109,Monday,16:00:00,17:00:00
+CY103,BS Cyber Security,3,Prof. Lime,Room 109,Saturday,9:00:00,10:00:00
+CY102,BS Cyber Security,2,Prof. Magenta,Room 104,Saturday,15:00:00,16:00:00
+CY101,BS Cyber Security,1,Prof. Cyan,Room 115,Saturday,16:00:00,17:00:00
+CY103,BS Cyber Security,3,Prof. Lime,Room 108,Thursday,7:00:00,8:00:00
+CY104,BS Cyber Security,4,Prof. Mitnick,Room 117,Thursday,15:00:00,16:00:00
+CY102,BS Cyber Security,2,Prof. Magenta,Room 106,Tuesday,15:00:00,16:00:00
+CY103,BS Cyber Security,3,Prof. Lime,Room 112,Wednesday,13:00:00,14:00:00
+DS101,BS Data Science,1,Prof. Grey,Room 113,Friday,13:00:00,14:00:00
+DS102,BS Data Science,2,Prof. Blue,Room 118,Friday,15:00:00,16:00:00
+DS101,BS Data Science,1,Prof. Grey,Room 108,Monday,7:00:00,8:00:00
+DS101,BS Data Science,1,Prof. Grey,Room 101,Monday,8:00:00,9:00:00
+DS103,BS Data Science,3,Prof. Orange,Room 120,Saturday,7:00:00,8:00:00
+DS102,BS Data Science,2,Prof. Blue,Room 111,Saturday,13:00:00,14:00:00
+DS102,BS Data Science,2,Prof. Blue,Room 115,Thursday,14:00:00,15:00:00
+DS103,BS Data Science,3,Prof. Orange,Room 118,Tuesday,16:00:00,17:00:00
+DS103,BS Data Science,3,Prof. Orange,Room 111,Wednesday,10:00:00,11:00:00
+DS104,BS Data Science,4,Prof. McKinney,Room 114,Wednesday,11:00:00,12:00:00
+IT103,BS Information Technology,3,Prof. Black,Room 115,Friday,11:00:00,12:00:00
+IT103,BS Information Technology,3,Prof. Black,Room 105,Monday,15:00:00,16:00:00
+IT101,BS Information Technology,1,Prof. White,Room 118,Saturday,8:00:00,9:00:00
+IT101,BS Information Technology,1,Prof. White,Room 110,Thursday,8:00:00,9:00:00
+IT102,BS Information Technology,2,Prof. Green,Room 113,Thursday,13:00:00,14:00:00
+IT102,BS Information Technology,2,Prof. Green,Room 116,Thursday,16:00:00,17:00:00
+IT101,BS Information Technology,1,Prof. White,Room 107,Tuesday,8:00:00,9:00:00
+IT103,BS Information Technology,3,Prof. Black,Room 110,Tuesday,10:00:00,11:00:00
+IT102,BS Information Technology,2,Prof. Green,Room 110,Tuesday,13:00:00,14:00:00
+SE103,BS Software Engineering,3,Prof. Purple,Room 118,Friday,10:00:00,11:00:00
+SE102,BS Software Engineering,2,Prof. Yellow,Room 102,Monday,11:00:00,12:00:00
+SE102,BS Software Engineering,2,Prof. Yellow,Room 102,Saturday,11:00:00,12:00:00
+SE103,BS Software Engineering,3,Prof. Purple,Room 114,Saturday,14:00:00,15:00:00
+SE102,BS Software Engineering,2,Prof. Yellow,Room 105,Tuesday,7:00:00,8:00:00
+SE101,BS Software Engineering,1,Prof. Red,Room 117,Tuesday,11:00:00,12:00:00
+SE101,BS Software Engineering,1,Prof. Red,Room 107,Tuesday,14:00:00,15:00:00
+SE101,BS Software Engineering,1,Prof. Red,Room 119,Wednesday,9:00:00,10:00:00
+SE103,BS Software Engineering,3,Prof. Purple,Room 106,Wednesday,15:00:00,16:00:00
