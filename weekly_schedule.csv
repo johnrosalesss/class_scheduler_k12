@@ -1,551 +1,551 @@
-Subject Code,Program,Year Level,Teacher Name,Room Name,Day,Start Time,End Time
-214,11,"Science, Technology, Engineering, and Mathematics",T009,Room 220,Saturday,12:00:00,13:00:00
-215,12,"Science, Technology, Engineering, and Mathematics",T010,Room 242,Wednesday,16:00:00,17:00:00
-120,"Accountancy, Business and Management",Grade 12,T038,Room 157,Friday,8:30:00,9:30:00
-77,"Accountancy, Business and Management",Grade 11,T031,Room 180,Friday,9:30:00,10:30:00
-101,"Accountancy, Business and Management",Grade 11,T004,Room 108,Friday,10:30:00,11:00:00
-240,"Accountancy, Business and Management",Grade 12,T075,Room 149,Friday,11:00:00,12:00:00
-89,"Accountancy, Business and Management",Grade 11,T068,Room 128,Friday,12:00:00,13:00:00
-103,"Accountancy, Business and Management",Grade 11,T006,Room 149,Friday,12:00:00,13:00:00
-48,"Accountancy, Business and Management",Grade 12,T039,Room 221,Friday,12:00:00,13:00:00
-111,"Accountancy, Business and Management",Grade 11,T028,Room 180,Friday,13:00:00,14:00:00
-75,"Accountancy, Business and Management",Grade 11,T029,Room 234,Friday,14:00:00,15:00:00
-92,"Accountancy, Business and Management",Grade 11,T072,Room 114,Friday,15:00:00,16:00:00
-39,"Accountancy, Business and Management",Grade 11,T029,Room 159,Friday,15:00:00,16:00:00
-46,"Accountancy, Business and Management",Grade 12,T037,Room 128,Friday,16:00:00,17:00:00
-95,"Accountancy, Business and Management",Grade 11,T075,Room 199,Friday,16:00:00,17:00:00
-51,"Accountancy, Business and Management",Grade 12,T067,Room 146,Monday,8:30:00,9:30:00
-39,"Accountancy, Business and Management",Grade 11,T029,Room 245,Monday,8:30:00,9:30:00
-38,"Accountancy, Business and Management",Grade 11,T028,Room 209,Monday,8:30:00,9:30:00
-114,"Accountancy, Business and Management",Grade 11,T031,Room 151,Monday,10:00:00,11:00:00
-33,"Accountancy, Business and Management",Grade 11,T010,Room 199,Monday,10:30:00,11:00:00
-103,"Accountancy, Business and Management",Grade 11,T006,Room 242,Monday,11:00:00,12:00:00
-80,"Accountancy, Business and Management",Grade 11,T035,Room 236,Monday,12:00:00,13:00:00
-92,"Accountancy, Business and Management",Grade 11,T072,Room 166,Monday,12:00:00,13:00:00
-47,"Accountancy, Business and Management",Grade 12,T038,Room 174,Monday,12:00:00,13:00:00
-42,"Accountancy, Business and Management",Grade 12,T033,Room 247,Monday,14:00:00,15:00:00
-66,"Accountancy, Business and Management",Grade 11,T006,Room 140,Monday,14:00:00,15:00:00
-69,"Accountancy, Business and Management",Grade 12,T009,Room 144,Monday,15:00:00,16:00:00
-46,"Accountancy, Business and Management",Grade 12,T037,Room 209,Monday,15:00:00,16:00:00
-80,"Accountancy, Business and Management",Grade 11,T035,Room 184,Monday,15:00:00,16:00:00
-39,"Accountancy, Business and Management",Grade 11,T029,Room 127,Monday,16:00:00,17:00:00
-77,"Accountancy, Business and Management",Grade 11,T031,Room 159,Saturday,7:30:00,8:30:00
-123,"Accountancy, Business and Management",Grade 12,T065,Room 179,Saturday,7:30:00,8:30:00
-44,"Accountancy, Business and Management",Grade 11,T035,Room 225,Saturday,9:30:00,10:30:00
-51,"Accountancy, Business and Management",Grade 12,T067,Room 221,Saturday,10:30:00,11:00:00
-47,"Accountancy, Business and Management",Grade 12,T038,Room 230,Saturday,11:00:00,12:00:00
-37,"Accountancy, Business and Management",Grade 11,T027,Room 152,Saturday,12:00:00,13:00:00
-117,"Accountancy, Business and Management",Grade 12,T034,Room 216,Saturday,12:00:00,13:00:00
-98,"Accountancy, Business and Management",Grade 11,T001,Room 209,Saturday,12:00:00,13:00:00
-54,"Accountancy, Business and Management",Grade 12,T070,Room 172,Saturday,13:00:00,14:00:00
-45,"Accountancy, Business and Management",Grade 12,T036,Room 131,Saturday,13:00:00,14:00:00
-33,"Accountancy, Business and Management",Grade 11,T010,Room 202,Saturday,14:00:00,15:00:00
-117,"Accountancy, Business and Management",Grade 12,T034,Room 218,Saturday,14:00:00,15:00:00
-38,"Accountancy, Business and Management",Grade 11,T028,Room 242,Saturday,15:00:00,16:00:00
-76,"Accountancy, Business and Management",Grade 11,T030,Room 139,Saturday,16:00:00,17:00:00
-86,"Accountancy, Business and Management",Grade 11,T065,Room 227,Thursday,8:30:00,9:30:00
-98,"Accountancy, Business and Management",Grade 11,T001,Room 172,Thursday,8:30:00,9:30:00
-44,"Accountancy, Business and Management",Grade 11,T035,Room 168,Thursday,10:00:00,11:00:00
-120,"Accountancy, Business and Management",Grade 12,T038,Room 161,Thursday,11:00:00,12:00:00
-60,"Accountancy, Business and Management",Grade 12,T077,Room 189,Thursday,12:00:00,13:00:00
-63,"Accountancy, Business and Management",Grade 12,T003,Room 173,Thursday,12:00:00,13:00:00
-89,"Accountancy, Business and Management",Grade 11,T068,Room 183,Thursday,12:00:00,13:00:00
-42,"Accountancy, Business and Management",Grade 12,T033,Room 186,Thursday,12:00:00,13:00:00
-73,"Accountancy, Business and Management",Grade 12,T027,Room 169,Thursday,13:00:00,14:00:00
-57,"Accountancy, Business and Management",Grade 12,T073,Room 201,Thursday,14:00:00,15:00:00
-123,"Accountancy, Business and Management",Grade 12,T065,Room 132,Thursday,14:00:00,15:00:00
-101,"Accountancy, Business and Management",Grade 11,T004,Room 129,Thursday,14:00:00,15:00:00
-76,"Accountancy, Business and Management",Grade 11,T030,Room 212,Thursday,14:00:00,15:00:00
-73,"Accountancy, Business and Management",Grade 12,T027,Room 133,Thursday,15:00:00,16:00:00
-37,"Accountancy, Business and Management",Grade 11,T027,Room 136,Thursday,15:00:00,16:00:00
-60,"Accountancy, Business and Management",Grade 12,T077,Room 121,Thursday,15:00:00,16:00:00
-86,"Accountancy, Business and Management",Grade 11,T065,Room 137,Thursday,15:00:00,16:00:00
-63,"Accountancy, Business and Management",Grade 12,T003,Room 232,Thursday,16:00:00,17:00:00
-37,"Accountancy, Business and Management",Grade 11,T027,Room 107,Tuesday,7:30:00,8:30:00
-38,"Accountancy, Business and Management",Grade 11,T028,Room 218,Tuesday,8:30:00,9:30:00
-44,"Accountancy, Business and Management",Grade 11,T035,Room 191,Tuesday,8:30:00,9:30:00
-240,"Accountancy, Business and Management",Grade 12,T075,Room 155,Tuesday,9:30:00,10:00:00
-42,"Accountancy, Business and Management",Grade 12,T033,Room 243,Tuesday,9:30:00,10:00:00
-83,"Accountancy, Business and Management",Grade 11,T038,Room 216,Tuesday,10:30:00,11:00:00
-48,"Accountancy, Business and Management",Grade 12,T039,Room 224,Tuesday,12:00:00,13:00:00
-108,"Accountancy, Business and Management",Grade 11,T011,Room 125,Tuesday,13:00:00,14:00:00
-45,"Accountancy, Business and Management",Grade 12,T036,Room 241,Tuesday,13:00:00,14:00:00
-46,"Accountancy, Business and Management",Grade 12,T037,Room 157,Tuesday,14:00:00,15:00:00
-75,"Accountancy, Business and Management",Grade 11,T029,Room 210,Tuesday,15:00:00,16:00:00
-43,"Accountancy, Business and Management",Grade 12,T034,Room 151,Tuesday,15:00:00,16:00:00
-83,"Accountancy, Business and Management",Grade 11,T038,Room 160,Tuesday,15:00:00,16:00:00
-114,"Accountancy, Business and Management",Grade 11,T031,Room 174,Tuesday,15:00:00,16:00:00
-66,"Accountancy, Business and Management",Grade 11,T006,Room 177,Tuesday,16:00:00,17:00:00
-43,"Accountancy, Business and Management",Grade 12,T034,Room 197,Wednesday,8:30:00,9:30:00
-45,"Accountancy, Business and Management",Grade 12,T036,Room 218,Wednesday,9:30:00,10:00:00
-95,"Accountancy, Business and Management",Grade 11,T075,Room 145,Wednesday,9:30:00,10:30:00
-54,"Accountancy, Business and Management",Grade 12,T070,Room 219,Wednesday,9:30:00,10:00:00
-43,"Accountancy, Business and Management",Grade 12,T034,Room 199,Wednesday,10:00:00,11:00:00
-57,"Accountancy, Business and Management",Grade 12,T073,Room 106,Wednesday,10:00:00,11:00:00
-111,"Accountancy, Business and Management",Grade 11,T028,Room 214,Wednesday,11:00:00,12:00:00
-69,"Accountancy, Business and Management",Grade 12,T009,Room 208,Wednesday,13:00:00,14:00:00
-108,"Accountancy, Business and Management",Grade 11,T011,Room 155,Wednesday,14:00:00,15:00:00
-47,"Accountancy, Business and Management",Grade 12,T038,Room 163,Wednesday,15:00:00,16:00:00
-156,Grade 1,Grade 1,T037,Room 151,Friday,7:30:00,8:30:00
-157,Grade 1,Grade 1,T038,Room 130,Friday,7:30:00,8:30:00
-156,Grade 1,Grade 1,T037,Room 193,Friday,8:30:00,9:30:00
-154,Grade 1,Grade 1,T035,Room 104,Friday,14:00:00,15:00:00
-154,Grade 1,Grade 1,T035,Room 171,Friday,16:00:00,17:00:00
-155,Grade 1,Grade 1,T036,Room 239,Monday,7:30:00,8:30:00
-158,Grade 1,Grade 1,T039,Room 106,Monday,7:30:00,8:30:00
-154,Grade 1,Grade 1,T035,Room 117,Monday,9:30:00,10:30:00
-159,Grade 1,Grade 1,T040,Room 112,Saturday,8:30:00,9:30:00
-155,Grade 1,Grade 1,T036,Room 151,Saturday,11:00:00,12:00:00
-155,Grade 1,Grade 1,T036,Room 105,Saturday,13:00:00,14:00:00
-144,Grade 1,Grade 1,T011,Room 226,Thursday,7:30:00,8:30:00
-157,Grade 1,Grade 1,T038,Room 103,Thursday,11:00:00,12:00:00
-155,Grade 1,Grade 1,T036,Room 237,Tuesday,13:00:00,14:00:00
-156,Grade 1,Grade 1,T037,Room 169,Wednesday,7:30:00,8:30:00
-157,Grade 1,Grade 1,T038,Room 116,Wednesday,9:30:00,10:00:00
-27,Grade 10,Grade 10,T003,Room 123,Friday,8:30:00,9:30:00
-226,Grade 10,Grade 10,T035,Room 244,Friday,9:30:00,10:30:00
-25,Grade 10,Grade 10,T001,Room 149,Friday,10:30:00,11:00:00
-28,Grade 10,Grade 10,T004,Room 160,Friday,10:30:00,11:00:00
-32,Grade 10,Grade 10,T009,Room 221,Monday,9:30:00,10:30:00
-25,Grade 10,Grade 10,T001,Room 159,Monday,15:00:00,16:00:00
-153,Grade 10,Grade 10,T034,Room 103,Saturday,8:30:00,9:30:00
-27,Grade 10,Grade 10,T003,Room 134,Saturday,8:30:00,9:30:00
-30,Grade 10,Grade 10,T007,Room 118,Saturday,13:00:00,14:00:00
-30,Grade 10,Grade 10,T007,Room 148,Saturday,14:00:00,15:00:00
-26,Grade 10,Grade 10,T002,Room 238,Saturday,14:00:00,15:00:00
-31,Grade 10,Grade 10,T008,Room 120,Thursday,10:00:00,11:00:00
-26,Grade 10,Grade 10,T002,Room 218,Thursday,10:00:00,11:00:00
-226,Grade 10,Grade 10,T035,Room 232,Thursday,11:00:00,12:00:00
-26,Grade 10,Grade 10,T002,Room 205,Thursday,11:00:00,12:00:00
-31,Grade 10,Grade 10,T008,Room 197,Thursday,13:00:00,14:00:00
-29,Grade 10,Grade 10,T005,Room 212,Tuesday,7:30:00,8:30:00
-28,Grade 10,Grade 10,T004,Room 227,Tuesday,8:30:00,9:30:00
-31,Grade 10,Grade 10,T008,Room 232,Tuesday,9:30:00,10:30:00
-25,Grade 10,Grade 10,T001,Room 134,Tuesday,13:00:00,14:00:00
-222,Grade 10,Grade 10,T031,Room 210,Tuesday,14:00:00,15:00:00
-27,Grade 10,Grade 10,T003,Room 103,Tuesday,16:00:00,17:00:00
-30,Grade 10,Grade 10,T007,Room 143,Wednesday,9:30:00,10:00:00
-29,Grade 10,Grade 10,T005,Room 170,Wednesday,10:00:00,11:00:00
-28,Grade 10,Grade 10,T004,Room 184,Wednesday,12:00:00,13:00:00
-29,Grade 10,Grade 10,T005,Room 125,Wednesday,13:00:00,14:00:00
-32,Grade 10,Grade 10,T009,Room 171,Wednesday,15:00:00,16:00:00
-218,Grade 11,Humanities and Social Sciences,T026,Room 231,Friday,9:30:00,10:30:00
-218,Grade 11,Humanities and Social Sciences,T026,Room 151,Monday,14:00:00,15:00:00
-232,Grade 11,"Accountancy, Business and Management",T066,Room 168,Thursday,7:30:00,8:30:00
-225,Grade 11,"Accountancy, Business and Management",T034,Room 129,Thursday,9:30:00,10:30:00
-225,Grade 11,"Accountancy, Business and Management",T034,Room 233,Tuesday,14:00:00,15:00:00
-233,Grade 11,Humanities and Social Sciences,T067,Room 226,Wednesday,10:00:00,11:00:00
-234,Grade 12,"Accountancy, Business and Management",T068,Room 232,Thursday,8:30:00,9:30:00
-235,Grade 12,Humanities and Social Sciences,T069,Room 220,Wednesday,13:00:00,14:00:00
-163,Grade 2,Grade 2,T069,Room 193,Friday,12:00:00,13:00:00
-145,Grade 2,Grade 2,T012,Room 196,Monday,10:00:00,11:00:00
-162,Grade 2,Grade 2,T068,Room 226,Monday,13:00:00,14:00:00
-163,Grade 2,Grade 2,T069,Room 123,Monday,16:00:00,17:00:00
-160,Grade 2,Grade 2,T066,Room 148,Monday,16:00:00,17:00:00
-165,Grade 2,Grade 2,T071,Room 109,Saturday,8:30:00,9:30:00
-160,Grade 2,Grade 2,T066,Room 188,Saturday,8:30:00,9:30:00
-164,Grade 2,Grade 2,T070,Room 173,Saturday,9:30:00,10:00:00
-231,Grade 2,Grade 2,T065,Room 202,Saturday,11:00:00,12:00:00
-164,Grade 2,Grade 2,T070,Room 145,Saturday,11:00:00,12:00:00
-162,Grade 2,Grade 2,T068,Room 164,Thursday,8:30:00,9:30:00
-162,Grade 2,Grade 2,T068,Room 210,Thursday,9:30:00,10:00:00
-160,Grade 2,Grade 2,T066,Room 217,Thursday,12:00:00,13:00:00
-165,Grade 2,Grade 2,T071,Room 193,Thursday,13:00:00,14:00:00
-163,Grade 2,Grade 2,T069,Room 145,Tuesday,9:30:00,10:00:00
-161,Grade 2,Grade 2,T067,Room 207,Tuesday,9:30:00,10:30:00
-167,Grade 2,Grade 2,T073,Room 105,Tuesday,13:00:00,14:00:00
-166,Grade 2,Grade 2,T072,Room 168,Wednesday,7:30:00,8:30:00
-164,Grade 2,Grade 2,T070,Room 250,Wednesday,8:30:00,9:30:00
-165,Grade 2,Grade 2,T071,Room 114,Wednesday,11:00:00,12:00:00
-162,Grade 2,Grade 2,T068,Room 205,Wednesday,11:00:00,12:00:00
-161,Grade 2,Grade 2,T067,Room 146,Wednesday,12:00:00,13:00:00
-161,Grade 2,Grade 2,T067,Room 145,Wednesday,15:00:00,16:00:00
-173,Grade 3,Grade 3,T003,Room 148,Friday,7:30:00,8:30:00
-169,Grade 3,Grade 3,T075,Room 189,Friday,8:30:00,9:30:00
-169,Grade 3,Grade 3,T075,Room 217,Friday,9:30:00,10:30:00
-172,Grade 3,Grade 3,T002,Room 165,Friday,12:00:00,13:00:00
-168,Grade 3,Grade 3,T074,Room 248,Monday,9:30:00,10:00:00
-146,Grade 3,Grade 3,T026,Room 249,Monday,10:30:00,11:00:00
-168,Grade 3,Grade 3,T074,Room 203,Monday,16:00:00,17:00:00
-169,Grade 3,Grade 3,T075,Room 213,Monday,16:00:00,17:00:00
-170,Grade 3,Grade 3,T077,Room 102,Saturday,12:00:00,13:00:00
-172,Grade 3,Grade 3,T002,Room 201,Saturday,13:00:00,14:00:00
-171,Grade 3,Grade 3,T001,Room 221,Saturday,13:00:00,14:00:00
-176,Grade 3,Grade 3,T006,Room 196,Saturday,14:00:00,15:00:00
-171,Grade 3,Grade 3,T001,Room 157,Saturday,14:00:00,15:00:00
-174,Grade 3,Grade 3,T004,Room 101,Saturday,16:00:00,17:00:00
-168,Grade 3,Grade 3,T074,Room 194,Thursday,7:30:00,8:30:00
-173,Grade 3,Grade 3,T003,Room 109,Thursday,9:30:00,10:00:00
-173,Grade 3,Grade 3,T003,Room 110,Thursday,10:30:00,11:00:00
-170,Grade 3,Grade 3,T077,Room 237,Tuesday,9:30:00,10:00:00
-172,Grade 3,Grade 3,T002,Room 166,Tuesday,10:00:00,11:00:00
-174,Grade 3,Grade 3,T004,Room 214,Tuesday,10:00:00,11:00:00
-170,Grade 3,Grade 3,T077,Room 215,Tuesday,13:00:00,14:00:00
-174,Grade 3,Grade 3,T004,Room 105,Wednesday,7:30:00,8:30:00
-230,Grade 3,Grade 3,T040,Room 149,Wednesday,8:30:00,9:30:00
-171,Grade 3,Grade 3,T001,Room 116,Wednesday,9:30:00,10:00:00
-175,Grade 3,Grade 3,T005,Room 111,Wednesday,13:00:00,14:00:00
-170,Grade 3,Grade 3,T077,Room 173,Wednesday,14:00:00,15:00:00
-147,Grade 4,Grade 4,T027,Room 129,Friday,9:30:00,10:00:00
-178,Grade 4,Grade 4,T008,Room 194,Friday,9:30:00,10:00:00
-184,Grade 4,Grade 4,T028,Room 189,Friday,9:30:00,10:30:00
-179,Grade 4,Grade 4,T009,Room 203,Friday,10:30:00,11:00:00
-185,Grade 4,Grade 4,T029,Room 164,Monday,7:30:00,8:30:00
-181,Grade 4,Grade 4,T012,Room 116,Monday,9:30:00,10:00:00
-180,Grade 4,Grade 4,T011,Room 238,Monday,10:30:00,11:00:00
-181,Grade 4,Grade 4,T012,Room 244,Monday,13:00:00,14:00:00
-182,Grade 4,Grade 4,T026,Room 229,Monday,15:00:00,16:00:00
-181,Grade 4,Grade 4,T012,Room 219,Monday,15:00:00,16:00:00
-179,Grade 4,Grade 4,T009,Room 192,Monday,16:00:00,17:00:00
-180,Grade 4,Grade 4,T011,Room 192,Saturday,8:30:00,9:30:00
-179,Grade 4,Grade 4,T009,Room 142,Saturday,11:00:00,12:00:00
-185,Grade 4,Grade 4,T029,Room 235,Saturday,13:00:00,14:00:00
-179,Grade 4,Grade 4,T009,Room 181,Thursday,12:00:00,13:00:00
-236,Grade 4,Grade 4,T070,Room 164,Thursday,14:00:00,15:00:00
-178,Grade 4,Grade 4,T008,Room 222,Tuesday,8:30:00,9:30:00
-183,Grade 4,Grade 4,T027,Room 106,Tuesday,8:30:00,9:30:00
-177,Grade 4,Grade 4,T007,Room 209,Tuesday,9:30:00,10:00:00
-182,Grade 4,Grade 4,T026,Room 229,Tuesday,12:00:00,13:00:00
-185,Grade 4,Grade 4,T029,Room 211,Tuesday,14:00:00,15:00:00
-178,Grade 4,Grade 4,T008,Room 244,Tuesday,14:00:00,15:00:00
-182,Grade 4,Grade 4,T026,Room 127,Tuesday,16:00:00,17:00:00
-180,Grade 4,Grade 4,T011,Room 229,Wednesday,7:30:00,8:30:00
-177,Grade 4,Grade 4,T007,Room 119,Wednesday,11:00:00,12:00:00
-177,Grade 4,Grade 4,T007,Room 173,Wednesday,12:00:00,13:00:00
-178,Grade 4,Grade 4,T008,Room 161,Wednesday,12:00:00,13:00:00
-180,Grade 4,Grade 4,T011,Room 157,Wednesday,13:00:00,14:00:00
-184,Grade 4,Grade 4,T028,Room 194,Wednesday,14:00:00,15:00:00
-183,Grade 4,Grade 4,T027,Room 242,Wednesday,15:00:00,16:00:00
-194,Grade 5,Grade 5,T039,Room 153,Friday,8:30:00,9:30:00
-191,Grade 5,Grade 5,T036,Room 141,Friday,10:30:00,11:00:00
-190,Grade 5,Grade 5,T035,Room 104,Friday,12:00:00,13:00:00
-188,Grade 5,Grade 5,T032,Room 236,Friday,16:00:00,17:00:00
-188,Grade 5,Grade 5,T032,Room 245,Monday,7:30:00,8:30:00
-189,Grade 5,Grade 5,T033,Room 107,Monday,7:30:00,8:30:00
-191,Grade 5,Grade 5,T036,Room 236,Monday,9:30:00,10:30:00
-192,Grade 5,Grade 5,T037,Room 225,Monday,11:00:00,12:00:00
-186,Grade 5,Grade 5,T030,Room 176,Monday,11:00:00,12:00:00
-190,Grade 5,Grade 5,T035,Room 210,Monday,12:00:00,13:00:00
-186,Grade 5,Grade 5,T030,Room 246,Saturday,13:00:00,14:00:00
-192,Grade 5,Grade 5,T037,Room 146,Saturday,13:00:00,14:00:00
-189,Grade 5,Grade 5,T033,Room 157,Saturday,13:00:00,14:00:00
-148,Grade 5,Grade 5,T028,Room 140,Saturday,13:00:00,14:00:00
-192,Grade 5,Grade 5,T037,Room 139,Thursday,7:30:00,8:30:00
-188,Grade 5,Grade 5,T032,Room 146,Thursday,10:00:00,11:00:00
-188,Grade 5,Grade 5,T032,Room 150,Thursday,12:00:00,13:00:00
-187,Grade 5,Grade 5,T031,Room 204,Thursday,12:00:00,13:00:00
-194,Grade 5,Grade 5,T039,Room 227,Thursday,12:00:00,13:00:00
-191,Grade 5,Grade 5,T036,Room 178,Thursday,15:00:00,16:00:00
-190,Grade 5,Grade 5,T035,Room 135,Thursday,16:00:00,17:00:00
-187,Grade 5,Grade 5,T031,Room 227,Tuesday,8:30:00,9:30:00
-187,Grade 5,Grade 5,T031,Room 147,Tuesday,11:00:00,12:00:00
-237,Grade 5,Grade 5,T071,Room 188,Tuesday,14:00:00,15:00:00
-193,Grade 5,Grade 5,T038,Room 128,Tuesday,15:00:00,16:00:00
-189,Grade 5,Grade 5,T033,Room 206,Wednesday,8:30:00,9:30:00
-186,Grade 5,Grade 5,T030,Room 175,Wednesday,10:30:00,11:00:00
-193,Grade 5,Grade 5,T038,Room 137,Wednesday,14:00:00,15:00:00
-216,Grade 6,Grade 6,T011,Room 145,Friday,7:30:00,8:30:00
-197,Grade 6,Grade 6,T066,Room 230,Friday,8:30:00,9:30:00
-202,Grade 6,Grade 6,T073,Room 235,Friday,11:00:00,12:00:00
-199,Grade 6,Grade 6,T068,Room 166,Friday,13:00:00,14:00:00
-201,Grade 6,Grade 6,T072,Room 222,Friday,16:00:00,17:00:00
-200,Grade 6,Grade 6,T071,Room 244,Friday,16:00:00,17:00:00
-195,Grade 6,Grade 6,T040,Room 210,Monday,7:30:00,8:30:00
-202,Grade 6,Grade 6,T073,Room 162,Monday,12:00:00,13:00:00
-198,Grade 6,Grade 6,T067,Room 133,Monday,15:00:00,16:00:00
-197,Grade 6,Grade 6,T066,Room 145,Monday,16:00:00,17:00:00
-200,Grade 6,Grade 6,T071,Room 119,Saturday,10:30:00,11:00:00
-196,Grade 6,Grade 6,T065,Room 231,Saturday,11:00:00,12:00:00
-238,Grade 6,Grade 6,T072,Room 228,Saturday,12:00:00,13:00:00
-198,Grade 6,Grade 6,T067,Room 214,Saturday,12:00:00,13:00:00
-195,Grade 6,Grade 6,T040,Room 148,Saturday,15:00:00,16:00:00
-197,Grade 6,Grade 6,T066,Room 220,Saturday,15:00:00,16:00:00
-149,Grade 6,Grade 6,T029,Room 114,Saturday,16:00:00,17:00:00
-201,Grade 6,Grade 6,T072,Room 171,Saturday,16:00:00,17:00:00
-195,Grade 6,Grade 6,T040,Room 200,Thursday,12:00:00,13:00:00
-199,Grade 6,Grade 6,T068,Room 194,Thursday,12:00:00,13:00:00
-197,Grade 6,Grade 6,T066,Room 165,Tuesday,7:30:00,8:30:00
-200,Grade 6,Grade 6,T071,Room 111,Tuesday,7:30:00,8:30:00
-216,Grade 6,Grade 6,T011,Room 185,Tuesday,13:00:00,14:00:00
-198,Grade 6,Grade 6,T067,Room 195,Tuesday,16:00:00,17:00:00
-196,Grade 6,Grade 6,T065,Room 242,Wednesday,8:30:00,9:30:00
-216,Grade 6,Grade 6,T011,Room 209,Wednesday,8:30:00,9:30:00
-196,Grade 6,Grade 6,T065,Room 192,Wednesday,10:00:00,11:00:00
-199,Grade 6,Grade 6,T068,Room 235,Wednesday,12:00:00,13:00:00
-3,Grade 7,Grade 7,T006,Room 213,Friday,7:30:00,8:30:00
-227,Grade 7,Grade 7,T036,Room 154,Friday,9:30:00,10:00:00
-4,Grade 7,Grade 7,T030,Room 192,Friday,10:00:00,11:00:00
-3,Grade 7,Grade 7,T006,Room 228,Friday,12:00:00,13:00:00
-3,Grade 7,Grade 7,T006,Room 113,Friday,13:00:00,14:00:00
-1,Grade 7,Grade 7,T001,Room 155,Friday,14:00:00,15:00:00
-2,Grade 7,Grade 7,T069,Room 241,Friday,15:00:00,16:00:00
-5,Grade 7,Grade 7,T065,Room 105,Monday,9:30:00,10:30:00
-2,Grade 7,Grade 7,T069,Room 209,Monday,9:30:00,10:30:00
-227,Grade 7,Grade 7,T036,Room 137,Monday,12:00:00,13:00:00
-8,Grade 7,Grade 7,T034,Room 215,Saturday,11:00:00,12:00:00
-7,Grade 7,Grade 7,T010,Room 140,Saturday,11:00:00,12:00:00
-7,Grade 7,Grade 7,T010,Room 195,Saturday,16:00:00,17:00:00
-4,Grade 7,Grade 7,T030,Room 193,Thursday,7:30:00,8:30:00
-3,Grade 7,Grade 7,T006,Room 231,Thursday,9:30:00,10:00:00
-1,Grade 7,Grade 7,T001,Room 227,Thursday,10:30:00,11:00:00
-7,Grade 7,Grade 7,T010,Room 135,Thursday,10:30:00,11:00:00
-5,Grade 7,Grade 7,T065,Room 152,Thursday,13:00:00,14:00:00
-6,Grade 7,Grade 7,T076,Room 239,Tuesday,8:30:00,9:30:00
-2,Grade 7,Grade 7,T069,Room 133,Tuesday,8:30:00,9:30:00
-217,Grade 7,Grade 7,T012,Room 184,Tuesday,10:30:00,11:00:00
-6,Grade 7,Grade 7,T076,Room 188,Tuesday,11:00:00,12:00:00
-6,Grade 7,Grade 7,T076,Room 221,Tuesday,14:00:00,15:00:00
-5,Grade 7,Grade 7,T065,Room 131,Tuesday,15:00:00,16:00:00
-4,Grade 7,Grade 7,T030,Room 177,Tuesday,15:00:00,16:00:00
-150,Grade 7,Grade 7,T031,Room 149,Wednesday,7:30:00,8:30:00
-2,Grade 7,Grade 7,T069,Room 210,Wednesday,8:30:00,9:30:00
-8,Grade 7,Grade 7,T034,Room 218,Wednesday,9:30:00,10:30:00
-1,Grade 7,Grade 7,T001,Room 250,Wednesday,11:00:00,12:00:00
-4,Grade 7,Grade 7,T030,Room 141,Wednesday,13:00:00,14:00:00
-219,Grade 7,Grade 7,T027,Room 128,Wednesday,16:00:00,17:00:00
-12,Grade 8,Grade 8,T037,Room 161,Friday,10:30:00,11:00:00
-15,Grade 8,Grade 8,T030,Room 132,Friday,14:00:00,15:00:00
-13,Grade 8,Grade 8,T072,Room 212,Friday,14:00:00,15:00:00
-13,Grade 8,Grade 8,T072,Room 149,Monday,7:30:00,8:30:00
-12,Grade 8,Grade 8,T037,Room 147,Monday,9:30:00,10:00:00
-10,Grade 8,Grade 8,T002,Room 186,Monday,15:00:00,16:00:00
-16,Grade 8,Grade 8,T065,Room 113,Monday,16:00:00,17:00:00
-229,Grade 8,Grade 8,T038,Room 141,Saturday,10:00:00,11:00:00
-12,Grade 8,Grade 8,T037,Room 147,Saturday,14:00:00,15:00:00
-9,Grade 8,Grade 8,T069,Room 176,Saturday,16:00:00,17:00:00
-14,Grade 8,Grade 8,T006,Room 211,Thursday,9:30:00,10:30:00
-151,Grade 8,Grade 8,T032,Room 121,Thursday,9:30:00,10:30:00
-11,Grade 8,Grade 8,T026,Room 124,Thursday,9:30:00,10:30:00
-220,Grade 8,Grade 8,T029,Room 127,Thursday,9:30:00,10:00:00
-11,Grade 8,Grade 8,T026,Room 222,Thursday,12:00:00,13:00:00
-10,Grade 8,Grade 8,T002,Room 117,Thursday,12:00:00,13:00:00
-9,Grade 8,Grade 8,T069,Room 111,Thursday,13:00:00,14:00:00
-10,Grade 8,Grade 8,T002,Room 227,Thursday,13:00:00,14:00:00
-15,Grade 8,Grade 8,T030,Room 222,Thursday,15:00:00,16:00:00
-11,Grade 8,Grade 8,T026,Room 140,Tuesday,9:30:00,10:30:00
-229,Grade 8,Grade 8,T038,Room 125,Tuesday,13:00:00,14:00:00
-223,Grade 8,Grade 8,T032,Room 156,Tuesday,15:00:00,16:00:00
-13,Grade 8,Grade 8,T072,Room 175,Wednesday,8:30:00,9:30:00
-15,Grade 8,Grade 8,T030,Room 158,Wednesday,9:30:00,10:30:00
-14,Grade 8,Grade 8,T006,Room 145,Wednesday,9:30:00,10:00:00
-9,Grade 8,Grade 8,T069,Room 121,Wednesday,9:30:00,10:00:00
-14,Grade 8,Grade 8,T006,Room 127,Wednesday,11:00:00,12:00:00
-16,Grade 8,Grade 8,T065,Room 235,Wednesday,12:00:00,13:00:00
-22,Grade 9,Grade 9,T028,Room 228,Friday,9:30:00,10:30:00
-228,Grade 9,Grade 9,T037,Room 212,Monday,8:30:00,9:30:00
-18,Grade 9,Grade 9,T010,Room 187,Monday,9:30:00,10:00:00
-22,Grade 9,Grade 9,T028,Room 190,Monday,10:30:00,11:00:00
-20,Grade 9,Grade 9,T070,Room 150,Monday,10:30:00,11:00:00
-18,Grade 9,Grade 9,T010,Room 108,Monday,16:00:00,17:00:00
-23,Grade 9,Grade 9,T039,Room 175,Saturday,7:30:00,8:30:00
-224,Grade 9,Grade 9,T033,Room 211,Saturday,8:30:00,9:30:00
-228,Grade 9,Grade 9,T037,Room 188,Saturday,10:00:00,11:00:00
-21,Grade 9,Grade 9,T004,Room 185,Saturday,12:00:00,13:00:00
-17,Grade 9,Grade 9,T076,Room 250,Saturday,15:00:00,16:00:00
-17,Grade 9,Grade 9,T076,Room 126,Saturday,16:00:00,17:00:00
-152,Grade 9,Grade 9,T033,Room 232,Thursday,7:30:00,8:30:00
-19,Grade 9,Grade 9,T034,Room 178,Thursday,11:00:00,12:00:00
-20,Grade 9,Grade 9,T070,Room 172,Thursday,11:00:00,12:00:00
-17,Grade 9,Grade 9,T076,Room 119,Thursday,13:00:00,14:00:00
-23,Grade 9,Grade 9,T039,Room 196,Thursday,16:00:00,17:00:00
-20,Grade 9,Grade 9,T070,Room 170,Tuesday,7:30:00,8:30:00
-21,Grade 9,Grade 9,T004,Room 244,Tuesday,9:30:00,10:30:00
-19,Grade 9,Grade 9,T034,Room 171,Tuesday,9:30:00,10:30:00
-221,Grade 9,Grade 9,T030,Room 181,Tuesday,10:30:00,11:00:00
-19,Grade 9,Grade 9,T034,Room 204,Tuesday,13:00:00,14:00:00
-23,Grade 9,Grade 9,T039,Room 125,Tuesday,14:00:00,15:00:00
-18,Grade 9,Grade 9,T010,Room 116,Tuesday,14:00:00,15:00:00
-22,Grade 9,Grade 9,T028,Room 196,Wednesday,8:30:00,9:30:00
-21,Grade 9,Grade 9,T004,Room 137,Wednesday,8:30:00,9:30:00
-24,Grade 9,Grade 9,T074,Room 214,Wednesday,9:30:00,10:00:00
-24,Grade 9,Grade 9,T074,Room 225,Wednesday,16:00:00,17:00:00
-49,Humanities and Social Sciences,Grade 12,T040,Room 147,Friday,7:30:00,8:30:00
-106,Humanities and Social Sciences,Grade 11,T009,Room 242,Friday,10:30:00,11:00:00
-128,Humanities and Social Sciences,Grade 11,T070,Room 160,Friday,10:30:00,11:00:00
-126,Humanities and Social Sciences,Grade 11,T068,Room 149,Friday,11:00:00,12:00:00
-133,Humanities and Social Sciences,Grade 12,T076,Room 202,Friday,11:00:00,12:00:00
-131,Humanities and Social Sciences,Grade 12,T074,Room 250,Friday,12:00:00,13:00:00
-127,Humanities and Social Sciences,Grade 11,T069,Room 125,Friday,13:00:00,14:00:00
-102,Humanities and Social Sciences,Grade 11,T005,Room 135,Friday,13:00:00,14:00:00
-67,Humanities and Social Sciences,Grade 11,T007,Room 187,Friday,14:00:00,15:00:00
-121,Humanities and Social Sciences,Grade 12,T039,Room 169,Friday,15:00:00,16:00:00
-70,Humanities and Social Sciences,Grade 12,T011,Room 243,Friday,16:00:00,17:00:00
-118,Humanities and Social Sciences,Grade 12,T035,Room 185,Monday,7:30:00,8:30:00
-64,Humanities and Social Sciences,Grade 12,T004,Room 230,Monday,8:30:00,9:30:00
-131,Humanities and Social Sciences,Grade 12,T074,Room 178,Monday,9:30:00,10:00:00
-52,Humanities and Social Sciences,Grade 12,T068,Room 144,Monday,9:30:00,10:00:00
-72,Humanities and Social Sciences,Grade 12,T026,Room 223,Monday,10:00:00,11:00:00
-130,Humanities and Social Sciences,Grade 12,T073,Room 115,Monday,12:00:00,13:00:00
-67,Humanities and Social Sciences,Grade 11,T007,Room 224,Monday,12:00:00,13:00:00
-128,Humanities and Social Sciences,Grade 11,T070,Room 208,Monday,12:00:00,13:00:00
-61,Humanities and Social Sciences,Grade 12,T001,Room 107,Monday,13:00:00,14:00:00
-129,Humanities and Social Sciences,Grade 11,T071,Room 184,Monday,13:00:00,14:00:00
-130,Humanities and Social Sciences,Grade 12,T073,Room 209,Monday,16:00:00,17:00:00
-127,Humanities and Social Sciences,Grade 11,T069,Room 132,Saturday,7:30:00,8:30:00
-35,Humanities and Social Sciences,Grade 11,T012,Room 134,Saturday,8:30:00,9:30:00
-109,Humanities and Social Sciences,Grade 11,T012,Room 166,Saturday,9:30:00,10:00:00
-112,Humanities and Social Sciences,Grade 11,T029,Room 106,Saturday,10:00:00,11:00:00
-58,Humanities and Social Sciences,Grade 12,T074,Room 174,Saturday,10:30:00,11:00:00
-90,Humanities and Social Sciences,Grade 11,T070,Room 228,Saturday,11:00:00,12:00:00
-87,Humanities and Social Sciences,Grade 11,T066,Room 125,Saturday,11:00:00,12:00:00
-58,Humanities and Social Sciences,Grade 12,T074,Room 240,Saturday,11:00:00,12:00:00
-55,Humanities and Social Sciences,Grade 12,T071,Room 183,Saturday,12:00:00,13:00:00
-121,Humanities and Social Sciences,Grade 12,T039,Room 137,Saturday,13:00:00,14:00:00
-99,Humanities and Social Sciences,Grade 11,T002,Room 149,Saturday,14:00:00,15:00:00
-242,Humanities and Social Sciences,Grade 12,T077,Room 213,Saturday,14:00:00,15:00:00
-104,Humanities and Social Sciences,Grade 11,T007,Room 132,Saturday,14:00:00,15:00:00
-124,Humanities and Social Sciences,Grade 12,T066,Room 141,Saturday,15:00:00,16:00:00
-115,Humanities and Social Sciences,Grade 11,T032,Room 242,Saturday,16:00:00,17:00:00
-242,Humanities and Social Sciences,Grade 12,T077,Room 203,Thursday,7:30:00,8:30:00
-126,Humanities and Social Sciences,Grade 11,T068,Room 161,Thursday,7:30:00,8:30:00
-134,Humanities and Social Sciences,Grade 12,T077,Room 155,Thursday,7:30:00,8:30:00
-78,Humanities and Social Sciences,Grade 11,T032,Room 190,Thursday,10:30:00,11:00:00
-93,Humanities and Social Sciences,Grade 11,T073,Room 151,Thursday,11:00:00,12:00:00
-130,Humanities and Social Sciences,Grade 12,T073,Room 150,Thursday,12:00:00,13:00:00
-70,Humanities and Social Sciences,Grade 12,T011,Room 124,Thursday,12:00:00,13:00:00
-124,Humanities and Social Sciences,Grade 12,T066,Room 240,Thursday,13:00:00,14:00:00
-102,Humanities and Social Sciences,Grade 11,T005,Room 243,Thursday,14:00:00,15:00:00
-109,Humanities and Social Sciences,Grade 11,T012,Room 198,Thursday,14:00:00,15:00:00
-133,Humanities and Social Sciences,Grade 12,T076,Room 149,Thursday,15:00:00,16:00:00
-132,Humanities and Social Sciences,Grade 12,T075,Room 129,Thursday,15:00:00,16:00:00
-64,Humanities and Social Sciences,Grade 12,T004,Room 247,Thursday,16:00:00,17:00:00
-40,Humanities and Social Sciences,Grade 11,T031,Room 223,Thursday,16:00:00,17:00:00
-99,Humanities and Social Sciences,Grade 11,T002,Room 115,Thursday,16:00:00,17:00:00
-115,Humanities and Social Sciences,Grade 11,T032,Room 205,Tuesday,7:30:00,8:30:00
-131,Humanities and Social Sciences,Grade 12,T074,Room 248,Tuesday,7:30:00,8:30:00
-49,Humanities and Social Sciences,Grade 12,T040,Room 180,Tuesday,8:30:00,9:30:00
-81,Humanities and Social Sciences,Grade 11,T036,Room 147,Tuesday,8:30:00,9:30:00
-96,Humanities and Social Sciences,Grade 11,T076,Room 124,Tuesday,8:30:00,9:30:00
-134,Humanities and Social Sciences,Grade 12,T077,Room 113,Tuesday,9:30:00,10:00:00
-81,Humanities and Social Sciences,Grade 11,T036,Room 210,Tuesday,9:30:00,10:00:00
-118,Humanities and Social Sciences,Grade 12,T035,Room 238,Tuesday,9:30:00,10:00:00
-35,Humanities and Social Sciences,Grade 11,T012,Room 149,Tuesday,10:00:00,11:00:00
-90,Humanities and Social Sciences,Grade 11,T070,Room 150,Tuesday,11:00:00,12:00:00
-104,Humanities and Social Sciences,Grade 11,T007,Room 105,Tuesday,12:00:00,13:00:00
-96,Humanities and Social Sciences,Grade 11,T076,Room 208,Tuesday,15:00:00,16:00:00
-134,Humanities and Social Sciences,Grade 12,T077,Room 178,Tuesday,15:00:00,16:00:00
-84,Humanities and Social Sciences,Grade 11,T039,Room 210,Tuesday,16:00:00,17:00:00
-106,Humanities and Social Sciences,Grade 11,T009,Room 246,Wednesday,7:30:00,8:30:00
-84,Humanities and Social Sciences,Grade 11,T039,Room 211,Wednesday,7:30:00,8:30:00
-128,Humanities and Social Sciences,Grade 11,T070,Room 135,Wednesday,8:30:00,9:30:00
-78,Humanities and Social Sciences,Grade 11,T032,Room 115,Wednesday,8:30:00,9:30:00
-112,Humanities and Social Sciences,Grade 11,T029,Room 111,Wednesday,8:30:00,9:30:00
-126,Humanities and Social Sciences,Grade 11,T068,Room 193,Wednesday,10:00:00,11:00:00
-93,Humanities and Social Sciences,Grade 11,T073,Room 122,Wednesday,11:00:00,12:00:00
-61,Humanities and Social Sciences,Grade 12,T001,Room 111,Wednesday,12:00:00,13:00:00
-129,Humanities and Social Sciences,Grade 11,T071,Room 140,Wednesday,12:00:00,13:00:00
-72,Humanities and Social Sciences,Grade 12,T026,Room 123,Wednesday,13:00:00,14:00:00
-40,Humanities and Social Sciences,Grade 11,T031,Room 187,Wednesday,14:00:00,15:00:00
-52,Humanities and Social Sciences,Grade 12,T068,Room 146,Wednesday,15:00:00,16:00:00
-87,Humanities and Social Sciences,Grade 11,T066,Room 127,Wednesday,15:00:00,16:00:00
-132,Humanities and Social Sciences,Grade 12,T075,Room 241,Wednesday,15:00:00,16:00:00
-55,Humanities and Social Sciences,Grade 12,T071,Room 221,Wednesday,16:00:00,17:00:00
-132,Humanities and Social Sciences,Grade 12,T075,Room 149,Wednesday,16:00:00,17:00:00
-133,Humanities and Social Sciences,Grade 12,T076,Room 214,Wednesday,16:00:00,17:00:00
-129,Humanities and Social Sciences,Grade 11,T071,Room 213,Wednesday,16:00:00,17:00:00
-127,Humanities and Social Sciences,Grade 11,T069,Room 230,Wednesday,16:00:00,17:00:00
-212,Kinder,Kinder,T007,Room 191,Friday,14:00:00,15:00:00
-211,Kinder,Kinder,T006,Room 147,Saturday,11:00:00,12:00:00
-213,Kinder,Kinder,T008,Room 233,Saturday,12:00:00,13:00:00
-211,Kinder,Kinder,T006,Room 170,Tuesday,9:30:00,10:00:00
-213,Kinder,Kinder,T008,Room 134,Wednesday,7:30:00,8:30:00
-212,Kinder,Kinder,T007,Room 139,Wednesday,10:30:00,11:00:00
-209,Nursery,Nursery,T003,Room 244,Monday,12:00:00,13:00:00
-208,Nursery,Nursery,T002,Room 233,Saturday,12:00:00,13:00:00
-208,Nursery,Nursery,T002,Room 158,Thursday,7:30:00,8:30:00
-207,Nursery,Nursery,T001,Room 106,Thursday,8:30:00,9:30:00
-209,Nursery,Nursery,T003,Room 230,Thursday,14:00:00,15:00:00
-207,Nursery,Nursery,T001,Room 141,Tuesday,7:30:00,8:30:00
-210,Nursery,Nursery,T005,Room 202,Tuesday,8:30:00,9:30:00
-210,Nursery,Nursery,T005,Room 136,Wednesday,11:00:00,12:00:00
-138,"Science, Technology, Engineering, and Mathematics",Grade 11,T004,Room 192,Friday,7:30:00,8:30:00
-62,"Science, Technology, Engineering, and Mathematics",Grade 12,T002,Room 235,Friday,8:30:00,9:30:00
-53,"Science, Technology, Engineering, and Mathematics",Grade 12,T069,Room 109,Friday,9:30:00,10:30:00
-125,"Science, Technology, Engineering, and Mathematics",Grade 12,T067,Room 234,Friday,10:00:00,11:00:00
-91,"Science, Technology, Engineering, and Mathematics",Grade 11,T071,Room 142,Friday,10:00:00,11:00:00
-140,"Science, Technology, Engineering, and Mathematics",Grade 12,T007,Room 237,Friday,10:30:00,11:00:00
-113,"Science, Technology, Engineering, and Mathematics",Grade 11,T030,Room 103,Friday,11:00:00,12:00:00
-142,"Science, Technology, Engineering, and Mathematics",Grade 12,T009,Room 134,Friday,13:00:00,14:00:00
-71,"Science, Technology, Engineering, and Mathematics",Grade 12,T012,Room 118,Friday,13:00:00,14:00:00
-107,"Science, Technology, Engineering, and Mathematics",Grade 11,T010,Room 240,Friday,14:00:00,15:00:00
-79,"Science, Technology, Engineering, and Mathematics",Grade 11,T033,Room 221,Friday,14:00:00,15:00:00
-97,"Science, Technology, Engineering, and Mathematics",Grade 11,T077,Room 198,Monday,8:30:00,9:30:00
-65,"Science, Technology, Engineering, and Mathematics",Grade 12,T005,Room 210,Monday,8:30:00,9:30:00
-56,"Science, Technology, Engineering, and Mathematics",Grade 12,T072,Room 142,Monday,8:30:00,9:30:00
-141,"Science, Technology, Engineering, and Mathematics",Grade 12,T008,Room 178,Monday,9:30:00,10:30:00
-68,"Science, Technology, Engineering, and Mathematics",Grade 11,T008,Room 242,Monday,9:30:00,10:00:00
-79,"Science, Technology, Engineering, and Mathematics",Grade 11,T033,Room 216,Monday,9:30:00,10:30:00
-140,"Science, Technology, Engineering, and Mathematics",Grade 12,T007,Room 212,Monday,10:30:00,11:00:00
-139,"Science, Technology, Engineering, and Mathematics",Grade 12,T005,Room 217,Monday,10:30:00,11:00:00
-116,"Science, Technology, Engineering, and Mathematics",Grade 11,T033,Room 194,Monday,11:00:00,12:00:00
-82,"Science, Technology, Engineering, and Mathematics",Grade 11,T037,Room 213,Monday,11:00:00,12:00:00
-239,"Science, Technology, Engineering, and Mathematics",Grade 11,T073,Room 164,Monday,12:00:00,13:00:00
-85,"Science, Technology, Engineering, and Mathematics",Grade 11,T040,Room 211,Monday,12:00:00,13:00:00
-143,"Science, Technology, Engineering, and Mathematics",Grade 12,T010,Room 130,Monday,14:00:00,15:00:00
-119,"Science, Technology, Engineering, and Mathematics",Grade 12,T036,Room 117,Monday,14:00:00,15:00:00
-65,"Science, Technology, Engineering, and Mathematics",Grade 12,T005,Room 230,Monday,14:00:00,15:00:00
-138,"Science, Technology, Engineering, and Mathematics",Grade 11,T004,Room 157,Monday,14:00:00,15:00:00
-137,"Science, Technology, Engineering, and Mathematics",Grade 11,T003,Room 208,Monday,14:00:00,15:00:00
-36,"Science, Technology, Engineering, and Mathematics",Grade 11,T026,Room 147,Monday,15:00:00,16:00:00
-139,"Science, Technology, Engineering, and Mathematics",Grade 12,T005,Room 146,Monday,15:00:00,16:00:00
-136,"Science, Technology, Engineering, and Mathematics",Grade 11,T002,Room 228,Monday,15:00:00,16:00:00
-34,"Science, Technology, Engineering, and Mathematics",Grade 11,T011,Room 193,Monday,16:00:00,17:00:00
-116,"Science, Technology, Engineering, and Mathematics",Grade 11,T033,Room 176,Saturday,7:30:00,8:30:00
-34,"Science, Technology, Engineering, and Mathematics",Grade 11,T011,Room 158,Saturday,7:30:00,8:30:00
-68,"Science, Technology, Engineering, and Mathematics",Grade 11,T008,Room 165,Saturday,9:30:00,10:30:00
-137,"Science, Technology, Engineering, and Mathematics",Grade 11,T003,Room 122,Saturday,9:30:00,10:00:00
-110,"Science, Technology, Engineering, and Mathematics",Grade 11,T027,Room 129,Saturday,9:30:00,10:00:00
-50,"Science, Technology, Engineering, and Mathematics",Grade 12,T066,Room 131,Saturday,9:30:00,10:00:00
-135,"Science, Technology, Engineering, and Mathematics",Grade 11,T001,Room 145,Saturday,10:30:00,11:00:00
-100,"Science, Technology, Engineering, and Mathematics",Grade 11,T003,Room 117,Saturday,10:30:00,11:00:00
-143,"Science, Technology, Engineering, and Mathematics",Grade 12,T010,Room 199,Saturday,12:00:00,13:00:00
-36,"Science, Technology, Engineering, and Mathematics",Grade 11,T026,Room 140,Saturday,12:00:00,13:00:00
-140,"Science, Technology, Engineering, and Mathematics",Grade 12,T007,Room 117,Saturday,13:00:00,14:00:00
-142,"Science, Technology, Engineering, and Mathematics",Grade 12,T009,Room 121,Saturday,14:00:00,15:00:00
-105,"Science, Technology, Engineering, and Mathematics",Grade 11,T008,Room 129,Saturday,15:00:00,16:00:00
-41,"Science, Technology, Engineering, and Mathematics",Grade 11,T032,Room 130,Saturday,15:00:00,16:00:00
-110,"Science, Technology, Engineering, and Mathematics",Grade 11,T027,Room 235,Saturday,15:00:00,16:00:00
-136,"Science, Technology, Engineering, and Mathematics",Grade 11,T002,Room 181,Thursday,7:30:00,8:30:00
-74,"Science, Technology, Engineering, and Mathematics",Grade 12,T028,Room 225,Thursday,7:30:00,8:30:00
-139,"Science, Technology, Engineering, and Mathematics",Grade 12,T005,Room 224,Thursday,8:30:00,9:30:00
-105,"Science, Technology, Engineering, and Mathematics",Grade 11,T008,Room 222,Thursday,9:30:00,10:30:00
-137,"Science, Technology, Engineering, and Mathematics",Grade 11,T003,Room 148,Thursday,9:30:00,10:30:00
-241,"Science, Technology, Engineering, and Mathematics",Grade 12,T076,Room 136,Thursday,10:00:00,11:00:00
-138,"Science, Technology, Engineering, and Mathematics",Grade 11,T004,Room 106,Thursday,10:30:00,11:00:00
-122,"Science, Technology, Engineering, and Mathematics",Grade 12,T040,Room 111,Thursday,12:00:00,13:00:00
-88,"Science, Technology, Engineering, and Mathematics",Grade 11,T067,Room 169,Thursday,12:00:00,13:00:00
-239,"Science, Technology, Engineering, and Mathematics",Grade 11,T073,Room 170,Thursday,12:00:00,13:00:00
-119,"Science, Technology, Engineering, and Mathematics",Grade 12,T036,Room 185,Thursday,15:00:00,16:00:00
-59,"Science, Technology, Engineering, and Mathematics",Grade 12,T075,Room 215,Thursday,15:00:00,16:00:00
-100,"Science, Technology, Engineering, and Mathematics",Grade 11,T003,Room 227,Thursday,16:00:00,17:00:00
-74,"Science, Technology, Engineering, and Mathematics",Grade 12,T028,Room 200,Tuesday,7:30:00,8:30:00
-50,"Science, Technology, Engineering, and Mathematics",Grade 12,T066,Room 198,Tuesday,8:30:00,9:30:00
-122,"Science, Technology, Engineering, and Mathematics",Grade 12,T040,Room 105,Tuesday,10:00:00,11:00:00
-135,"Science, Technology, Engineering, and Mathematics",Grade 11,T001,Room 140,Tuesday,10:00:00,11:00:00
-91,"Science, Technology, Engineering, and Mathematics",Grade 11,T071,Room 228,Tuesday,11:00:00,12:00:00
-85,"Science, Technology, Engineering, and Mathematics",Grade 11,T040,Room 159,Tuesday,11:00:00,12:00:00
-88,"Science, Technology, Engineering, and Mathematics",Grade 11,T067,Room 145,Tuesday,12:00:00,13:00:00
-136,"Science, Technology, Engineering, and Mathematics",Grade 11,T002,Room 130,Tuesday,13:00:00,14:00:00
-125,"Science, Technology, Engineering, and Mathematics",Grade 12,T067,Room 176,Tuesday,13:00:00,14:00:00
-82,"Science, Technology, Engineering, and Mathematics",Grade 11,T037,Room 127,Tuesday,13:00:00,14:00:00
-113,"Science, Technology, Engineering, and Mathematics",Grade 11,T030,Room 143,Tuesday,13:00:00,14:00:00
-41,"Science, Technology, Engineering, and Mathematics",Grade 11,T032,Room 194,Tuesday,13:00:00,14:00:00
-142,"Science, Technology, Engineering, and Mathematics",Grade 12,T009,Room 184,Tuesday,13:00:00,14:00:00
-62,"Science, Technology, Engineering, and Mathematics",Grade 12,T002,Room 119,Tuesday,14:00:00,15:00:00
-71,"Science, Technology, Engineering, and Mathematics",Grade 12,T012,Room 106,Tuesday,15:00:00,16:00:00
-53,"Science, Technology, Engineering, and Mathematics",Grade 12,T069,Room 160,Tuesday,15:00:00,16:00:00
-56,"Science, Technology, Engineering, and Mathematics",Grade 12,T072,Room 227,Wednesday,7:30:00,8:30:00
-141,"Science, Technology, Engineering, and Mathematics",Grade 12,T008,Room 121,Wednesday,8:30:00,9:30:00
-135,"Science, Technology, Engineering, and Mathematics",Grade 11,T001,Room 170,Wednesday,9:30:00,10:00:00
-94,"Science, Technology, Engineering, and Mathematics",Grade 11,T074,Room 200,Wednesday,10:00:00,11:00:00
-107,"Science, Technology, Engineering, and Mathematics",Grade 11,T010,Room 234,Wednesday,10:30:00,11:00:00
-59,"Science, Technology, Engineering, and Mathematics",Grade 12,T075,Room 214,Wednesday,12:00:00,13:00:00
-97,"Science, Technology, Engineering, and Mathematics",Grade 11,T077,Room 165,Wednesday,13:00:00,14:00:00
-94,"Science, Technology, Engineering, and Mathematics",Grade 11,T074,Room 172,Wednesday,14:00:00,15:00:00
-143,"Science, Technology, Engineering, and Mathematics",Grade 12,T010,Room 242,Wednesday,14:00:00,15:00:00
-241,"Science, Technology, Engineering, and Mathematics",Grade 12,T076,Room 177,Wednesday,15:00:00,16:00:00
-141,"Science, Technology, Engineering, and Mathematics",Grade 12,T008,Room 112,Wednesday,16:00:00,17:00:00
-203,Toddler,Toddler,T074,Room 131,Monday,10:30:00,11:00:00
-204,Toddler,Toddler,T075,Room 166,Monday,10:30:00,11:00:00
-206,Toddler,Toddler,T077,Room 106,Saturday,14:00:00,15:00:00
-205,Toddler,Toddler,T076,Room 112,Wednesday,7:30:00,8:30:00
+Subject Code,Subject Name,Program,Year Level,Teacher Name,Room Name,Day,Start Time,End Time
+214,Robotics,11,"Science, Technology, Engineering, and Mathematics",Bognalos,Room 173,Friday,16:00:00,17:00:00
+215,Robotics,12,"Science, Technology, Engineering, and Mathematics",Millano,Room 236,Friday,8:30:00,9:30:00
+117,Pagsulat sa Filipino sa Piling Larangan (Akademik),"Accountancy, Business and Management",Grade 12,Alde,Room 101,Friday,9:30:00,10:00:00
+46,Business Ethics and Social Responsibility,"Accountancy, Business and Management",Grade 12,Orolaza,Room 233,Friday,9:30:00,10:30:00
+37,Organization and Management,"Accountancy, Business and Management",Grade 11,Esquilona,Room 115,Friday,10:00:00,11:00:00
+98,Statistics and Probability,"Accountancy, Business and Management",Grade 11,Esquilona,Room 189,Friday,11:00:00,12:00:00
+51,"Understanding Culture, Society, and Politics","Accountancy, Business and Management",Grade 12,Dela Peña,Room 250,Friday,11:00:00,12:00:00
+73,"Inquiries, Investigations and Immersion","Accountancy, Business and Management",Grade 12,Esquilona,Room 178,Friday,12:00:00,13:00:00
+98,Statistics and Probability,"Accountancy, Business and Management",Grade 11,Esquilona,Room 111,Friday,12:00:00,13:00:00
+54,Physical Education and Health 3,"Accountancy, Business and Management",Grade 12,Acebes,Room 126,Friday,13:00:00,14:00:00
+48,Contemporary Philippine Arts from the Regions,"Accountancy, Business and Management",Grade 12,Dela Cruz,Room 151,Friday,14:00:00,15:00:00
+60,Media and Information Literacy,"Accountancy, Business and Management",Grade 12,Abanto,Room 182,Friday,15:00:00,16:00:00
+42,Applied Economics,"Accountancy, Business and Management",Grade 12,Napili,Room 186,Friday,15:00:00,16:00:00
+38,Business Math,"Accountancy, Business and Management",Grade 11,Ballesteros,Room 168,Monday,8:30:00,9:30:00
+111,Practical Research 1,"Accountancy, Business and Management",Grade 11,Ballesteros,Room 135,Monday,8:30:00,9:30:00
+57,Catholic Social Teaching,"Accountancy, Business and Management",Grade 12,Bacongallo,Room 123,Monday,8:30:00,9:30:00
+117,Pagsulat sa Filipino sa Piling Larangan (Akademik),"Accountancy, Business and Management",Grade 12,Alde,Room 136,Monday,9:30:00,10:00:00
+75,Physical Education and Health 2,"Accountancy, Business and Management",Grade 11,Layag,Room 205,Monday,10:00:00,11:00:00
+86,Physical Education and Health 1,"Accountancy, Business and Management",Grade 11,Royeca,Room 186,Monday,10:00:00,11:00:00
+80,Earth and Life Science,"Accountancy, Business and Management",Grade 11,Alejo,Room 186,Monday,11:00:00,12:00:00
+48,Contemporary Philippine Arts from the Regions,"Accountancy, Business and Management",Grade 12,Dela Cruz,Room 235,Monday,11:00:00,12:00:00
+63,Physical Education and Health 4,"Accountancy, Business and Management",Grade 12,Cabique,Room 248,Monday,11:00:00,12:00:00
+60,Media and Information Literacy,"Accountancy, Business and Management",Grade 12,Abanto,Room 150,Monday,12:00:00,13:00:00
+44,Principles of Marketing,"Accountancy, Business and Management",Grade 11,Alejo,Room 180,Monday,12:00:00,13:00:00
+101,Physical Science,"Accountancy, Business and Management",Grade 11,Paulo,Room 249,Monday,13:00:00,14:00:00
+37,Organization and Management,"Accountancy, Business and Management",Grade 11,Esquilona,Room 135,Monday,13:00:00,14:00:00
+92,Reading and Writing Skills,"Accountancy, Business and Management",Grade 11,Maniba,Room 241,Monday,14:00:00,15:00:00
+38,Business Math,"Accountancy, Business and Management",Grade 11,Ballesteros,Room 239,Monday,14:00:00,15:00:00
+86,Physical Education and Health 1,"Accountancy, Business and Management",Grade 11,Royeca,Room 139,Monday,15:00:00,16:00:00
+45,Business Finance,"Accountancy, Business and Management",Grade 12,Lati,Room 228,Monday,16:00:00,17:00:00
+101,Physical Science,"Accountancy, Business and Management",Grade 11,Paulo,Room 215,Monday,16:00:00,17:00:00
+54,Physical Education and Health 3,"Accountancy, Business and Management",Grade 12,Acebes,Room 224,Saturday,7:30:00,8:30:00
+83,21st Century Literature from the Philippines and the World,"Accountancy, Business and Management",Grade 11,Tabones,Room 125,Saturday,7:30:00,8:30:00
+45,Business Finance,"Accountancy, Business and Management",Grade 12,Lati,Room 156,Saturday,8:30:00,9:30:00
+42,Applied Economics,"Accountancy, Business and Management",Grade 12,Napili,Room 123,Saturday,10:30:00,11:00:00
+43,"Fundamentals of Accountancy, Business and Mgnt 2","Accountancy, Business and Management",Grade 12,Alde,Room 122,Saturday,10:30:00,11:00:00
+89,Faith in the Light of the Epistles of Paul 2,"Accountancy, Business and Management",Grade 11,Obedoza,Room 165,Saturday,11:00:00,12:00:00
+89,Faith in the Light of the Epistles of Paul 2,"Accountancy, Business and Management",Grade 11,Obedoza,Room 233,Saturday,12:00:00,13:00:00
+111,Practical Research 1,"Accountancy, Business and Management",Grade 11,Ballesteros,Room 226,Saturday,12:00:00,13:00:00
+75,Physical Education and Health 2,"Accountancy, Business and Management",Grade 11,Layag,Room 137,Saturday,13:00:00,14:00:00
+108,Empowerment Technologies,"Accountancy, Business and Management",Grade 11,Evarola,Room 132,Saturday,14:00:00,15:00:00
+47,Work Immersion/Business Enterprise Simulation,"Accountancy, Business and Management",Grade 12,Tabones,Room 155,Saturday,14:00:00,15:00:00
+103,Personal Development,"Accountancy, Business and Management",Grade 11,Bartolome,Room 120,Saturday,16:00:00,17:00:00
+57,Catholic Social Teaching,"Accountancy, Business and Management",Grade 12,Bacongallo,Room 116,Thursday,7:30:00,8:30:00
+95,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,"Accountancy, Business and Management",Grade 11,Valdez,Room 206,Thursday,7:30:00,8:30:00
+33,Faith in the Light of the Epistles of Paul 1,"Accountancy, Business and Management",Grade 11,Millano,Room 247,Thursday,8:30:00,9:30:00
+92,Reading and Writing Skills,"Accountancy, Business and Management",Grade 11,Maniba,Room 186,Thursday,8:30:00,9:30:00
+42,Applied Economics,"Accountancy, Business and Management",Grade 12,Napili,Room 176,Thursday,8:30:00,9:30:00
+240,"Inquiries, Investigations and Immersion (2nd Semester)","Accountancy, Business and Management",Grade 12,Valdez,Room 114,Thursday,8:30:00,9:30:00
+77,General Mathematics,"Accountancy, Business and Management",Grade 11,Alonzo,Room 201,Thursday,10:00:00,11:00:00
+66,Practical Research 2,"Accountancy, Business and Management",Grade 11,Bartolome,Room 112,Thursday,10:30:00,11:00:00
+45,Business Finance,"Accountancy, Business and Management",Grade 12,Lati,Room 219,Thursday,12:00:00,13:00:00
+120,Theology of the Body,"Accountancy, Business and Management",Grade 12,Tabones,Room 154,Thursday,12:00:00,13:00:00
+69,Entrepreneurship,"Accountancy, Business and Management",Grade 12,Bognalos,Room 140,Thursday,12:00:00,13:00:00
+76,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,"Accountancy, Business and Management",Grade 11,Gumabon,Room 154,Thursday,13:00:00,14:00:00
+76,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,"Accountancy, Business and Management",Grade 11,Gumabon,Room 237,Thursday,14:00:00,15:00:00
+33,Faith in the Light of the Epistles of Paul 1,"Accountancy, Business and Management",Grade 11,Millano,Room 125,Thursday,14:00:00,15:00:00
+95,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,"Accountancy, Business and Management",Grade 11,Valdez,Room 246,Thursday,14:00:00,15:00:00
+73,"Inquiries, Investigations and Immersion","Accountancy, Business and Management",Grade 12,Esquilona,Room 244,Thursday,15:00:00,16:00:00
+39,"Fundamentals of Accountancy, Business and Mgnt 1","Accountancy, Business and Management",Grade 11,Layag,Room 250,Thursday,15:00:00,16:00:00
+103,Personal Development,"Accountancy, Business and Management",Grade 11,Bartolome,Room 223,Thursday,16:00:00,17:00:00
+114,English for Academic and Professional Purposes,"Accountancy, Business and Management",Grade 11,Alonzo,Room 178,Thursday,16:00:00,17:00:00
+43,"Fundamentals of Accountancy, Business and Mgnt 2","Accountancy, Business and Management",Grade 12,Alde,Room 211,Tuesday,8:30:00,9:30:00
+47,Work Immersion/Business Enterprise Simulation,"Accountancy, Business and Management",Grade 12,Tabones,Room 134,Tuesday,8:30:00,9:30:00
+120,Theology of the Body,"Accountancy, Business and Management",Grade 12,Tabones,Room 204,Tuesday,9:30:00,10:00:00
+123,Introduction to Philosophy of the Human Person,"Accountancy, Business and Management",Grade 12,Royeca,Room 200,Tuesday,10:30:00,11:00:00
+43,"Fundamentals of Accountancy, Business and Mgnt 2","Accountancy, Business and Management",Grade 12,Alde,Room 204,Tuesday,12:00:00,13:00:00
+51,"Understanding Culture, Society, and Politics","Accountancy, Business and Management",Grade 12,Dela Peña,Room 212,Tuesday,13:00:00,14:00:00
+114,English for Academic and Professional Purposes,"Accountancy, Business and Management",Grade 11,Alonzo,Room 202,Tuesday,13:00:00,14:00:00
+46,Business Ethics and Social Responsibility,"Accountancy, Business and Management",Grade 12,Orolaza,Room 229,Tuesday,13:00:00,14:00:00
+69,Entrepreneurship,"Accountancy, Business and Management",Grade 12,Bognalos,Room 201,Tuesday,14:00:00,15:00:00
+46,Business Ethics and Social Responsibility,"Accountancy, Business and Management",Grade 12,Orolaza,Room 213,Tuesday,15:00:00,16:00:00
+39,"Fundamentals of Accountancy, Business and Mgnt 1","Accountancy, Business and Management",Grade 11,Layag,Room 229,Tuesday,15:00:00,16:00:00
+83,21st Century Literature from the Philippines and the World,"Accountancy, Business and Management",Grade 11,Tabones,Room 129,Wednesday,7:30:00,8:30:00
+39,"Fundamentals of Accountancy, Business and Mgnt 1","Accountancy, Business and Management",Grade 11,Layag,Room 137,Wednesday,7:30:00,8:30:00
+66,Practical Research 2,"Accountancy, Business and Management",Grade 11,Bartolome,Room 102,Wednesday,9:30:00,10:00:00
+240,"Inquiries, Investigations and Immersion (2nd Semester)","Accountancy, Business and Management",Grade 12,Valdez,Room 236,Wednesday,10:00:00,11:00:00
+123,Introduction to Philosophy of the Human Person,"Accountancy, Business and Management",Grade 12,Royeca,Room 162,Wednesday,10:00:00,11:00:00
+47,Work Immersion/Business Enterprise Simulation,"Accountancy, Business and Management",Grade 12,Tabones,Room 119,Wednesday,10:30:00,11:00:00
+63,Physical Education and Health 4,"Accountancy, Business and Management",Grade 12,Cabique,Room 181,Wednesday,10:30:00,11:00:00
+44,Principles of Marketing,"Accountancy, Business and Management",Grade 11,Alejo,Room 205,Wednesday,11:00:00,12:00:00
+38,Business Math,"Accountancy, Business and Management",Grade 11,Ballesteros,Room 154,Wednesday,11:00:00,12:00:00
+80,Earth and Life Science,"Accountancy, Business and Management",Grade 11,Alejo,Room 188,Wednesday,13:00:00,14:00:00
+77,General Mathematics,"Accountancy, Business and Management",Grade 11,Alonzo,Room 126,Wednesday,14:00:00,15:00:00
+37,Organization and Management,"Accountancy, Business and Management",Grade 11,Esquilona,Room 144,Wednesday,15:00:00,16:00:00
+108,Empowerment Technologies,"Accountancy, Business and Management",Grade 11,Evarola,Room 172,Wednesday,15:00:00,16:00:00
+44,Principles of Marketing,"Accountancy, Business and Management",Grade 11,Alejo,Room 226,Wednesday,16:00:00,17:00:00
+156,Christian Living Education,Grade 1,Grade 1,Orolaza,Room 130,Friday,15:00:00,16:00:00
+155,Mathematics,Grade 1,Grade 1,Lati,Room 136,Monday,10:00:00,11:00:00
+154,Language,Grade 1,Grade 1,Alejo,Room 146,Monday,10:00:00,11:00:00
+154,Language,Grade 1,Grade 1,Alejo,Room 142,Saturday,11:00:00,12:00:00
+155,Mathematics,Grade 1,Grade 1,Lati,Room 149,Saturday,16:00:00,17:00:00
+155,Mathematics,Grade 1,Grade 1,Lati,Room 231,Thursday,12:00:00,13:00:00
+157,Makabansa,Grade 1,Grade 1,Tabones,Room 192,Thursday,14:00:00,15:00:00
+158,Computer,Grade 1,Grade 1,Dela Cruz,Room 130,Tuesday,10:30:00,11:00:00
+144,Reading and Literacy,Grade 1,Grade 1,Evarola,Room 161,Tuesday,11:00:00,12:00:00
+155,Mathematics,Grade 1,Grade 1,Lati,Room 170,Tuesday,13:00:00,14:00:00
+157,Makabansa,Grade 1,Grade 1,Tabones,Room 186,Tuesday,13:00:00,14:00:00
+157,Makabansa,Grade 1,Grade 1,Tabones,Room 150,Wednesday,7:30:00,8:30:00
+156,Christian Living Education,Grade 1,Grade 1,Orolaza,Room 207,Wednesday,9:30:00,10:00:00
+159,Paulinian Writing,Grade 1,Grade 1,Dinapo,Room 140,Wednesday,12:00:00,13:00:00
+156,Christian Living Education,Grade 1,Grade 1,Orolaza,Room 240,Wednesday,14:00:00,15:00:00
+154,Language,Grade 1,Grade 1,Alejo,Room 205,Wednesday,15:00:00,16:00:00
+29,Araling Panlipunan,Grade 10,Grade 10,Fernandez,Room 143,Friday,9:30:00,10:30:00
+31,MAPEH,Grade 10,Grade 10,Laguidao,Room 192,Friday,9:30:00,10:30:00
+25,Filipino,Grade 10,Grade 10,Esquilona,Room 107,Friday,13:00:00,14:00:00
+26,English,Grade 10,Grade 10,Ignacio,Room 101,Friday,14:00:00,15:00:00
+153,Reading and Literacy,Grade 10,Grade 10,Alde,Room 248,Friday,14:00:00,15:00:00
+27,Mathematics,Grade 10,Grade 10,Cabique,Room 107,Monday,13:00:00,14:00:00
+28,Science & Health,Grade 10,Grade 10,Paulo,Room 112,Monday,13:00:00,14:00:00
+26,English,Grade 10,Grade 10,Ignacio,Room 113,Monday,13:00:00,14:00:00
+30,Christian Living Education,Grade 10,Grade 10,Bacani,Room 174,Monday,15:00:00,16:00:00
+222,Robotics,Grade 10,Grade 10,Alonzo,Room 170,Monday,16:00:00,17:00:00
+25,Filipino,Grade 10,Grade 10,Esquilona,Room 137,Monday,16:00:00,17:00:00
+32,TLE,Grade 10,Grade 10,Bognalos,Room 170,Saturday,7:30:00,8:30:00
+27,Mathematics,Grade 10,Grade 10,Cabique,Room 148,Saturday,7:30:00,8:30:00
+29,Araling Panlipunan,Grade 10,Grade 10,Fernandez,Room 140,Saturday,12:00:00,13:00:00
+226,ICT,Grade 10,Grade 10,Alejo,Room 221,Saturday,13:00:00,14:00:00
+26,English,Grade 10,Grade 10,Ignacio,Room 173,Saturday,14:00:00,15:00:00
+31,MAPEH,Grade 10,Grade 10,Laguidao,Room 190,Saturday,15:00:00,16:00:00
+30,Christian Living Education,Grade 10,Grade 10,Bacani,Room 127,Saturday,15:00:00,16:00:00
+32,TLE,Grade 10,Grade 10,Bognalos,Room 148,Saturday,16:00:00,17:00:00
+31,MAPEH,Grade 10,Grade 10,Laguidao,Room 168,Thursday,7:30:00,8:30:00
+30,Christian Living Education,Grade 10,Grade 10,Bacani,Room 149,Thursday,10:00:00,11:00:00
+226,ICT,Grade 10,Grade 10,Alejo,Room 142,Thursday,13:00:00,14:00:00
+25,Filipino,Grade 10,Grade 10,Esquilona,Room 244,Tuesday,9:30:00,10:00:00
+28,Science & Health,Grade 10,Grade 10,Paulo,Room 206,Tuesday,14:00:00,15:00:00
+28,Science & Health,Grade 10,Grade 10,Paulo,Room 177,Wednesday,10:30:00,11:00:00
+27,Mathematics,Grade 10,Grade 10,Cabique,Room 152,Wednesday,11:00:00,12:00:00
+29,Araling Panlipunan,Grade 10,Grade 10,Fernandez,Room 150,Wednesday,15:00:00,16:00:00
+218,Faith in the Light of the Epistles of Paul 1,Grade 11,Humanities and Social Sciences,Ramirez,Room 249,Saturday,9:30:00,10:30:00
+225,Oral Communication,Grade 11,"Accountancy, Business and Management",Alde,Room 117,Thursday,9:30:00,10:00:00
+218,Faith in the Light of the Epistles of Paul 1,Grade 11,Humanities and Social Sciences,Ramirez,Room 198,Tuesday,10:30:00,11:00:00
+233,Robotics,Grade 11,Humanities and Social Sciences,Dela Peña,Room 208,Tuesday,12:00:00,13:00:00
+232,Robotics,Grade 11,"Accountancy, Business and Management",Vallesteros,Room 250,Tuesday,13:00:00,14:00:00
+225,Oral Communication,Grade 11,"Accountancy, Business and Management",Alde,Room 182,Wednesday,12:00:00,13:00:00
+235,Robotics,Grade 12,Humanities and Social Sciences,Fernando,Room 193,Friday,8:30:00,9:30:00
+234,Robotics,Grade 12,"Accountancy, Business and Management",Obedoza,Room 176,Monday,12:00:00,13:00:00
+162,Mathematics,Grade 2,Grade 2,Obedoza,Room 206,Friday,7:30:00,8:30:00
+161,English,Grade 2,Grade 2,Dela Peña,Room 225,Friday,8:30:00,9:30:00
+164,Christian Living Education,Grade 2,Grade 2,Acebes,Room 145,Friday,10:00:00,11:00:00
+160,Filipino,Grade 2,Grade 2,Vallesteros,Room 247,Friday,11:00:00,12:00:00
+162,Mathematics,Grade 2,Grade 2,Obedoza,Room 189,Friday,16:00:00,17:00:00
+167,Paulinian Writing,Grade 2,Grade 2,Bacongallo,Room 137,Friday,16:00:00,17:00:00
+162,Mathematics,Grade 2,Grade 2,Obedoza,Room 153,Monday,12:00:00,13:00:00
+161,English,Grade 2,Grade 2,Dela Peña,Room 180,Saturday,8:30:00,9:30:00
+165,MAPEH,Grade 2,Grade 2,Berza,Room 166,Saturday,8:30:00,9:30:00
+231,Reading and Literacy,Grade 2,Grade 2,Royeca,Room 178,Saturday,9:30:00,10:00:00
+160,Filipino,Grade 2,Grade 2,Vallesteros,Room 163,Saturday,9:30:00,10:30:00
+162,Mathematics,Grade 2,Grade 2,Obedoza,Room 133,Saturday,10:00:00,11:00:00
+165,MAPEH,Grade 2,Grade 2,Berza,Room 132,Saturday,10:30:00,11:00:00
+160,Filipino,Grade 2,Grade 2,Vallesteros,Room 123,Saturday,12:00:00,13:00:00
+164,Christian Living Education,Grade 2,Grade 2,Acebes,Room 114,Saturday,14:00:00,15:00:00
+164,Christian Living Education,Grade 2,Grade 2,Acebes,Room 144,Saturday,16:00:00,17:00:00
+163,Araling Panlipunan,Grade 2,Grade 2,Fernando,Room 196,Thursday,12:00:00,13:00:00
+166,Computer,Grade 2,Grade 2,Maniba,Room 117,Thursday,15:00:00,16:00:00
+163,Araling Panlipunan,Grade 2,Grade 2,Fernando,Room 133,Thursday,16:00:00,17:00:00
+161,English,Grade 2,Grade 2,Dela Peña,Room 176,Thursday,16:00:00,17:00:00
+145,Reading and Literacy,Grade 2,Grade 2,Noriega,Room 118,Tuesday,12:00:00,13:00:00
+165,MAPEH,Grade 2,Grade 2,Berza,Room 240,Tuesday,13:00:00,14:00:00
+163,Araling Panlipunan,Grade 2,Grade 2,Fernando,Room 232,Wednesday,8:30:00,9:30:00
+172,Araling Panlipunan,Grade 3,Grade 3,Ignacio,Room 202,Friday,7:30:00,8:30:00
+168,Filipino,Grade 3,Grade 3,Cabrera,Room 179,Friday,15:00:00,16:00:00
+168,Filipino,Grade 3,Grade 3,Cabrera,Room 141,Friday,16:00:00,17:00:00
+172,Araling Panlipunan,Grade 3,Grade 3,Ignacio,Room 244,Monday,13:00:00,14:00:00
+175,Computer,Grade 3,Grade 3,Fernandez,Room 111,Monday,14:00:00,15:00:00
+174,MAPEH,Grade 3,Grade 3,Paulo,Room 177,Monday,16:00:00,17:00:00
+171,Science & Health,Grade 3,Grade 3,Esquilona,Room 124,Saturday,8:30:00,9:30:00
+146,Reading and Literacy,Grade 3,Grade 3,Ramirez,Room 229,Saturday,10:30:00,11:00:00
+170,Mathematics,Grade 3,Grade 3,Abanto,Room 230,Saturday,15:00:00,16:00:00
+169,English,Grade 3,Grade 3,Valdez,Room 157,Saturday,16:00:00,17:00:00
+171,Science & Health,Grade 3,Grade 3,Esquilona,Room 145,Thursday,8:30:00,9:30:00
+170,Mathematics,Grade 3,Grade 3,Abanto,Room 107,Thursday,10:00:00,11:00:00
+171,Science & Health,Grade 3,Grade 3,Esquilona,Room 154,Thursday,13:00:00,14:00:00
+176,Paulinian Writing,Grade 3,Grade 3,Bartolome,Room 173,Tuesday,10:00:00,11:00:00
+173,Christian Living Education,Grade 3,Grade 3,Cabique,Room 188,Tuesday,10:30:00,11:00:00
+173,Christian Living Education,Grade 3,Grade 3,Cabique,Room 220,Tuesday,12:00:00,13:00:00
+173,Christian Living Education,Grade 3,Grade 3,Cabique,Room 151,Tuesday,13:00:00,14:00:00
+172,Araling Panlipunan,Grade 3,Grade 3,Ignacio,Room 223,Tuesday,14:00:00,15:00:00
+230,Reading and Literacy,Grade 3,Grade 3,Dinapo,Room 163,Tuesday,15:00:00,16:00:00
+170,Mathematics,Grade 3,Grade 3,Abanto,Room 144,Tuesday,16:00:00,17:00:00
+169,English,Grade 3,Grade 3,Valdez,Room 241,Wednesday,7:30:00,8:30:00
+168,Filipino,Grade 3,Grade 3,Cabrera,Room 170,Wednesday,7:30:00,8:30:00
+170,Mathematics,Grade 3,Grade 3,Abanto,Room 125,Wednesday,8:30:00,9:30:00
+169,English,Grade 3,Grade 3,Valdez,Room 188,Wednesday,8:30:00,9:30:00
+174,MAPEH,Grade 3,Grade 3,Paulo,Room 118,Wednesday,14:00:00,15:00:00
+174,MAPEH,Grade 3,Grade 3,Paulo,Room 122,Wednesday,16:00:00,17:00:00
+180,Science & Health,Grade 4,Grade 4,Evarola,Room 220,Friday,7:30:00,8:30:00
+179,Mathematics,Grade 4,Grade 4,Bognalos,Room 110,Friday,7:30:00,8:30:00
+177,Filipino,Grade 4,Grade 4,Bacani,Room 156,Friday,7:30:00,8:30:00
+182,MAPEH,Grade 4,Grade 4,Ramirez,Room 242,Friday,9:30:00,10:30:00
+178,English,Grade 4,Grade 4,Laguidao,Room 184,Friday,10:30:00,11:00:00
+185,Araling Panlipunan,Grade 4,Grade 4,Layag,Room 120,Friday,11:00:00,12:00:00
+236,Robotics,Grade 4,Grade 4,Acebes,Room 196,Friday,14:00:00,15:00:00
+182,MAPEH,Grade 4,Grade 4,Ramirez,Room 126,Monday,8:30:00,9:30:00
+181,Christian Living Education,Grade 4,Grade 4,Noriega,Room 203,Monday,10:00:00,11:00:00
+180,Science & Health,Grade 4,Grade 4,Evarola,Room 118,Monday,12:00:00,13:00:00
+184,HELE,Grade 4,Grade 4,Ballesteros,Room 237,Monday,13:00:00,14:00:00
+182,MAPEH,Grade 4,Grade 4,Ramirez,Room 240,Saturday,12:00:00,13:00:00
+180,Science & Health,Grade 4,Grade 4,Evarola,Room 149,Saturday,13:00:00,14:00:00
+183,Computer,Grade 4,Grade 4,Esquilona,Room 188,Saturday,15:00:00,16:00:00
+184,HELE,Grade 4,Grade 4,Ballesteros,Room 147,Thursday,8:30:00,9:30:00
+178,English,Grade 4,Grade 4,Laguidao,Room 151,Thursday,8:30:00,9:30:00
+177,Filipino,Grade 4,Grade 4,Bacani,Room 223,Thursday,8:30:00,9:30:00
+183,Computer,Grade 4,Grade 4,Esquilona,Room 193,Thursday,12:00:00,13:00:00
+179,Mathematics,Grade 4,Grade 4,Bognalos,Room 123,Thursday,13:00:00,14:00:00
+147,Reading and Literacy,Grade 4,Grade 4,Esquilona,Room 246,Thursday,13:00:00,14:00:00
+179,Mathematics,Grade 4,Grade 4,Bognalos,Room 182,Thursday,14:00:00,15:00:00
+181,Christian Living Education,Grade 4,Grade 4,Noriega,Room 163,Tuesday,12:00:00,13:00:00
+179,Mathematics,Grade 4,Grade 4,Bognalos,Room 167,Tuesday,14:00:00,15:00:00
+180,Science & Health,Grade 4,Grade 4,Evarola,Room 164,Tuesday,15:00:00,16:00:00
+178,English,Grade 4,Grade 4,Laguidao,Room 180,Wednesday,7:30:00,8:30:00
+185,Araling Panlipunan,Grade 4,Grade 4,Layag,Room 164,Wednesday,8:30:00,9:30:00
+178,English,Grade 4,Grade 4,Laguidao,Room 149,Wednesday,10:30:00,11:00:00
+177,Filipino,Grade 4,Grade 4,Bacani,Room 231,Wednesday,12:00:00,13:00:00
+185,Araling Panlipunan,Grade 4,Grade 4,Layag,Room 231,Wednesday,14:00:00,15:00:00
+181,Christian Living Education,Grade 4,Grade 4,Noriega,Room 193,Wednesday,15:00:00,16:00:00
+189,Science & Health,Grade 5,Grade 5,Napili,Room 188,Friday,10:00:00,11:00:00
+192,MAPEH,Grade 5,Grade 5,Orolaza,Room 120,Friday,10:00:00,11:00:00
+192,MAPEH,Grade 5,Grade 5,Orolaza,Room 142,Friday,10:30:00,11:00:00
+189,Science & Health,Grade 5,Grade 5,Napili,Room 203,Friday,13:00:00,14:00:00
+188,Mathematics,Grade 5,Grade 5,Binaluyo,Room 196,Friday,15:00:00,16:00:00
+188,Mathematics,Grade 5,Grade 5,Binaluyo,Room 126,Friday,16:00:00,17:00:00
+191,Christian Living Education,Grade 5,Grade 5,Lati,Room 228,Monday,7:30:00,8:30:00
+187,English,Grade 5,Grade 5,Alonzo,Room 148,Monday,12:00:00,13:00:00
+148,Reading and Literacy,Grade 5,Grade 5,Ballesteros,Room 242,Monday,16:00:00,17:00:00
+192,MAPEH,Grade 5,Grade 5,Orolaza,Room 236,Saturday,7:30:00,8:30:00
+188,Mathematics,Grade 5,Grade 5,Binaluyo,Room 217,Saturday,10:00:00,11:00:00
+193,Computer,Grade 5,Grade 5,Tabones,Room 217,Saturday,10:30:00,11:00:00
+193,Computer,Grade 5,Grade 5,Tabones,Room 171,Saturday,13:00:00,14:00:00
+190,Araling Panlipunan,Grade 5,Grade 5,Alejo,Room 112,Saturday,13:00:00,14:00:00
+194,HELE,Grade 5,Grade 5,Dela Cruz,Room 112,Saturday,16:00:00,17:00:00
+189,Science & Health,Grade 5,Grade 5,Napili,Room 157,Thursday,7:30:00,8:30:00
+186,Filipino,Grade 5,Grade 5,Gumabon,Room 218,Thursday,9:30:00,10:00:00
+237,Robotics,Grade 5,Grade 5,Berza,Room 158,Thursday,9:30:00,10:00:00
+188,Mathematics,Grade 5,Grade 5,Binaluyo,Room 233,Thursday,11:00:00,12:00:00
+190,Araling Panlipunan,Grade 5,Grade 5,Alejo,Room 196,Thursday,13:00:00,14:00:00
+186,Filipino,Grade 5,Grade 5,Gumabon,Room 246,Thursday,13:00:00,14:00:00
+187,English,Grade 5,Grade 5,Alonzo,Room 153,Tuesday,7:30:00,8:30:00
+190,Araling Panlipunan,Grade 5,Grade 5,Alejo,Room 160,Wednesday,8:30:00,9:30:00
+186,Filipino,Grade 5,Grade 5,Gumabon,Room 158,Wednesday,8:30:00,9:30:00
+191,Christian Living Education,Grade 5,Grade 5,Lati,Room 203,Wednesday,11:00:00,12:00:00
+194,HELE,Grade 5,Grade 5,Dela Cruz,Room 204,Wednesday,12:00:00,13:00:00
+191,Christian Living Education,Grade 5,Grade 5,Lati,Room 140,Wednesday,14:00:00,15:00:00
+187,English,Grade 5,Grade 5,Alonzo,Room 111,Wednesday,16:00:00,17:00:00
+200,MAPEH,Grade 6,Grade 6,Berza,Room 130,Friday,7:30:00,8:30:00
+202,HELE,Grade 6,Grade 6,Bacongallo,Room 113,Friday,8:30:00,9:30:00
+199,Christian Living Education,Grade 6,Grade 6,Obedoza,Room 160,Friday,9:30:00,10:00:00
+195,Filipino,Grade 6,Grade 6,Dinapo,Room 177,Friday,10:00:00,11:00:00
+196,English,Grade 6,Grade 6,Royeca,Room 178,Friday,12:00:00,13:00:00
+197,Mathematics,Grade 6,Grade 6,Vallesteros,Room 182,Friday,13:00:00,14:00:00
+216,Araling Panlipunan,Grade 6,Grade 6,Evarola,Room 195,Friday,15:00:00,16:00:00
+201,Computer,Grade 6,Grade 6,Maniba,Room 200,Friday,15:00:00,16:00:00
+200,MAPEH,Grade 6,Grade 6,Berza,Room 187,Monday,10:00:00,11:00:00
+198,Science & Health,Grade 6,Grade 6,Dela Peña,Room 220,Monday,10:30:00,11:00:00
+149,Reading and Literacy,Grade 6,Grade 6,Layag,Room 229,Monday,13:00:00,14:00:00
+200,MAPEH,Grade 6,Grade 6,Berza,Room 224,Saturday,8:30:00,9:30:00
+216,Araling Panlipunan,Grade 6,Grade 6,Evarola,Room 235,Saturday,11:00:00,12:00:00
+201,Computer,Grade 6,Grade 6,Maniba,Room 164,Saturday,12:00:00,13:00:00
+196,English,Grade 6,Grade 6,Royeca,Room 115,Saturday,14:00:00,15:00:00
+198,Science & Health,Grade 6,Grade 6,Dela Peña,Room 124,Thursday,9:30:00,10:00:00
+199,Christian Living Education,Grade 6,Grade 6,Obedoza,Room 112,Thursday,9:30:00,10:30:00
+196,English,Grade 6,Grade 6,Royeca,Room 229,Thursday,12:00:00,13:00:00
+216,Araling Panlipunan,Grade 6,Grade 6,Evarola,Room 102,Thursday,15:00:00,16:00:00
+197,Mathematics,Grade 6,Grade 6,Vallesteros,Room 139,Thursday,16:00:00,17:00:00
+195,Filipino,Grade 6,Grade 6,Dinapo,Room 236,Tuesday,7:30:00,8:30:00
+197,Mathematics,Grade 6,Grade 6,Vallesteros,Room 202,Tuesday,7:30:00,8:30:00
+202,HELE,Grade 6,Grade 6,Bacongallo,Room 132,Tuesday,10:00:00,11:00:00
+197,Mathematics,Grade 6,Grade 6,Vallesteros,Room 113,Tuesday,10:30:00,11:00:00
+198,Science & Health,Grade 6,Grade 6,Dela Peña,Room 212,Tuesday,11:00:00,12:00:00
+195,Filipino,Grade 6,Grade 6,Dinapo,Room 225,Tuesday,11:00:00,12:00:00
+238,Robotics,Grade 6,Grade 6,Maniba,Room 135,Wednesday,7:30:00,8:30:00
+199,Christian Living Education,Grade 6,Grade 6,Obedoza,Room 233,Wednesday,10:00:00,11:00:00
+227,ICT,Grade 7,Grade 7,Lati,Room 128,Friday,8:30:00,9:30:00
+7,MAPEH,Grade 7,Grade 7,Millano,Room 204,Friday,12:00:00,13:00:00
+4,Science & Health,Grade 7,Grade 7,Gumabon,Room 125,Friday,14:00:00,15:00:00
+2,English,Grade 7,Grade 7,Fernando,Room 222,Friday,16:00:00,17:00:00
+7,MAPEH,Grade 7,Grade 7,Millano,Room 162,Monday,8:30:00,9:30:00
+5,Araling Panlipunan,Grade 7,Grade 7,Royeca,Room 164,Monday,11:00:00,12:00:00
+6,Christian Living Education,Grade 7,Grade 7,Morales,Room 136,Monday,13:00:00,14:00:00
+2,English,Grade 7,Grade 7,Fernando,Room 182,Monday,14:00:00,15:00:00
+4,Science & Health,Grade 7,Grade 7,Gumabon,Room 180,Monday,15:00:00,16:00:00
+2,English,Grade 7,Grade 7,Fernando,Room 121,Monday,15:00:00,16:00:00
+3,Mathematics,Grade 7,Grade 7,Bartolome,Room 168,Saturday,8:30:00,9:30:00
+1,Filipino,Grade 7,Grade 7,Esquilona,Room 103,Saturday,11:00:00,12:00:00
+2,English,Grade 7,Grade 7,Fernando,Room 218,Saturday,15:00:00,16:00:00
+1,Filipino,Grade 7,Grade 7,Esquilona,Room 124,Thursday,9:30:00,10:30:00
+1,Filipino,Grade 7,Grade 7,Esquilona,Room 147,Thursday,14:00:00,15:00:00
+7,MAPEH,Grade 7,Grade 7,Millano,Room 228,Tuesday,7:30:00,8:30:00
+3,Mathematics,Grade 7,Grade 7,Bartolome,Room 226,Tuesday,10:30:00,11:00:00
+150,Reading and Literacy,Grade 7,Grade 7,Alonzo,Room 118,Tuesday,11:00:00,12:00:00
+3,Mathematics,Grade 7,Grade 7,Bartolome,Room 105,Tuesday,13:00:00,14:00:00
+8,TLE,Grade 7,Grade 7,Alde,Room 172,Tuesday,16:00:00,17:00:00
+4,Science & Health,Grade 7,Grade 7,Gumabon,Room 231,Tuesday,16:00:00,17:00:00
+6,Christian Living Education,Grade 7,Grade 7,Morales,Room 189,Wednesday,7:30:00,8:30:00
+217,Robotics,Grade 7,Grade 7,Noriega,Room 121,Wednesday,7:30:00,8:30:00
+5,Araling Panlipunan,Grade 7,Grade 7,Royeca,Room 121,Wednesday,8:30:00,9:30:00
+3,Mathematics,Grade 7,Grade 7,Bartolome,Room 223,Wednesday,9:30:00,10:30:00
+6,Christian Living Education,Grade 7,Grade 7,Morales,Room 163,Wednesday,10:00:00,11:00:00
+227,ICT,Grade 7,Grade 7,Lati,Room 238,Wednesday,11:00:00,12:00:00
+8,TLE,Grade 7,Grade 7,Alde,Room 143,Wednesday,13:00:00,14:00:00
+219,Reading and Literacy,Grade 7,Grade 7,Esquilona,Room 186,Wednesday,13:00:00,14:00:00
+5,Araling Panlipunan,Grade 7,Grade 7,Royeca,Room 240,Wednesday,13:00:00,14:00:00
+4,Science & Health,Grade 7,Grade 7,Gumabon,Room 167,Wednesday,15:00:00,16:00:00
+229,ICT,Grade 8,Grade 8,Tabones,Room 198,Friday,10:30:00,11:00:00
+12,Science & Health,Grade 8,Grade 8,Orolaza,Room 150,Friday,15:00:00,16:00:00
+11,Mathematics,Grade 8,Grade 8,Ramirez,Room 140,Monday,9:30:00,10:00:00
+13,Araling Panlipunan,Grade 8,Grade 8,Maniba,Room 103,Monday,11:00:00,12:00:00
+13,Araling Panlipunan,Grade 8,Grade 8,Maniba,Room 174,Monday,12:00:00,13:00:00
+13,Araling Panlipunan,Grade 8,Grade 8,Maniba,Room 121,Monday,13:00:00,14:00:00
+15,MAPEH,Grade 8,Grade 8,Gumabon,Room 192,Monday,14:00:00,15:00:00
+11,Mathematics,Grade 8,Grade 8,Ramirez,Room 193,Monday,15:00:00,16:00:00
+15,MAPEH,Grade 8,Grade 8,Gumabon,Room 221,Monday,15:00:00,16:00:00
+12,Science & Health,Grade 8,Grade 8,Orolaza,Room 111,Monday,15:00:00,16:00:00
+9,Filipino,Grade 8,Grade 8,Fernando,Room 208,Saturday,12:00:00,13:00:00
+9,Filipino,Grade 8,Grade 8,Fernando,Room 183,Saturday,13:00:00,14:00:00
+10,English,Grade 8,Grade 8,Ignacio,Room 146,Saturday,13:00:00,14:00:00
+15,MAPEH,Grade 8,Grade 8,Gumabon,Room 116,Saturday,13:00:00,14:00:00
+16,TLE,Grade 8,Grade 8,Royeca,Room 240,Saturday,14:00:00,15:00:00
+10,English,Grade 8,Grade 8,Ignacio,Room 223,Saturday,15:00:00,16:00:00
+229,ICT,Grade 8,Grade 8,Tabones,Room 114,Thursday,10:30:00,11:00:00
+14,Christian Living Education,Grade 8,Grade 8,Bartolome,Room 201,Thursday,11:00:00,12:00:00
+220,Robotics,Grade 8,Grade 8,Layag,Room 226,Thursday,16:00:00,17:00:00
+12,Science & Health,Grade 8,Grade 8,Orolaza,Room 188,Thursday,16:00:00,17:00:00
+9,Filipino,Grade 8,Grade 8,Fernando,Room 118,Tuesday,8:30:00,9:30:00
+223,Reading and Literacy,Grade 8,Grade 8,Binaluyo,Room 170,Tuesday,9:30:00,10:30:00
+10,English,Grade 8,Grade 8,Ignacio,Room 119,Tuesday,15:00:00,16:00:00
+14,Christian Living Education,Grade 8,Grade 8,Bartolome,Room 120,Wednesday,13:00:00,14:00:00
+151,Reading and Literacy,Grade 8,Grade 8,Binaluyo,Room 116,Wednesday,13:00:00,14:00:00
+11,Mathematics,Grade 8,Grade 8,Ramirez,Room 154,Wednesday,14:00:00,15:00:00
+16,TLE,Grade 8,Grade 8,Royeca,Room 198,Wednesday,15:00:00,16:00:00
+14,Christian Living Education,Grade 8,Grade 8,Bartolome,Room 239,Wednesday,16:00:00,17:00:00
+23,MAPEH,Grade 9,Grade 9,Dela Cruz,Room 176,Friday,8:30:00,9:30:00
+20,Science & Health,Grade 9,Grade 9,Acebes,Room 238,Friday,8:30:00,9:30:00
+21,Araling Panlipunan,Grade 9,Grade 9,Paulo,Room 103,Friday,10:30:00,11:00:00
+19,Mathematics,Grade 9,Grade 9,Alde,Room 202,Friday,10:30:00,11:00:00
+224,Reading And Literacy,Grade 9,Grade 9,Napili,Room 206,Friday,15:00:00,16:00:00
+17,Filipino,Grade 9,Grade 9,Morales,Room 177,Monday,8:30:00,9:30:00
+21,Araling Panlipunan,Grade 9,Grade 9,Paulo,Room 233,Monday,9:30:00,10:30:00
+20,Science & Health,Grade 9,Grade 9,Acebes,Room 125,Monday,11:00:00,12:00:00
+17,Filipino,Grade 9,Grade 9,Morales,Room 180,Monday,11:00:00,12:00:00
+18,English,Grade 9,Grade 9,Millano,Room 111,Monday,12:00:00,13:00:00
+19,Mathematics,Grade 9,Grade 9,Alde,Room 186,Monday,13:00:00,14:00:00
+23,MAPEH,Grade 9,Grade 9,Dela Cruz,Room 174,Monday,16:00:00,17:00:00
+18,English,Grade 9,Grade 9,Millano,Room 216,Saturday,9:30:00,10:00:00
+24,TLE,Grade 9,Grade 9,Cabrera,Room 240,Saturday,11:00:00,12:00:00
+228,ICT,Grade 9,Grade 9,Orolaza,Room 152,Saturday,13:00:00,14:00:00
+22,Christian Living Education,Grade 9,Grade 9,Ballesteros,Room 135,Saturday,14:00:00,15:00:00
+23,MAPEH,Grade 9,Grade 9,Dela Cruz,Room 171,Saturday,14:00:00,15:00:00
+21,Araling Panlipunan,Grade 9,Grade 9,Paulo,Room 217,Thursday,7:30:00,8:30:00
+228,ICT,Grade 9,Grade 9,Orolaza,Room 104,Tuesday,11:00:00,12:00:00
+18,English,Grade 9,Grade 9,Millano,Room 248,Tuesday,15:00:00,16:00:00
+221,Robotics,Grade 9,Grade 9,Gumabon,Room 106,Tuesday,15:00:00,16:00:00
+20,Science & Health,Grade 9,Grade 9,Acebes,Room 191,Tuesday,16:00:00,17:00:00
+24,TLE,Grade 9,Grade 9,Cabrera,Room 120,Tuesday,16:00:00,17:00:00
+22,Christian Living Education,Grade 9,Grade 9,Ballesteros,Room 217,Wednesday,9:30:00,10:30:00
+19,Mathematics,Grade 9,Grade 9,Alde,Room 203,Wednesday,10:00:00,11:00:00
+17,Filipino,Grade 9,Grade 9,Morales,Room 177,Wednesday,14:00:00,15:00:00
+152,Reading and Literacy,Grade 9,Grade 9,Napili,Room 119,Wednesday,15:00:00,16:00:00
+22,Christian Living Education,Grade 9,Grade 9,Ballesteros,Room 237,Wednesday,15:00:00,16:00:00
+128,Intro to World Religions and Belief System,Humanities and Social Sciences,Grade 11,Acebes,Room 220,Friday,7:30:00,8:30:00
+126,Philippine Politics and Governance,Humanities and Social Sciences,Grade 11,Obedoza,Room 117,Friday,8:30:00,9:30:00
+61,Media and Information Literacy,Humanities and Social Sciences,Grade 12,Esquilona,Room 232,Friday,10:30:00,11:00:00
+242,"Inquiries, Investigations and Immersion (2nd Semester)",Humanities and Social Sciences,Grade 12,Abanto,Room 202,Friday,11:00:00,12:00:00
+115,English for Academic and Professional Purposes,Humanities and Social Sciences,Grade 11,Binaluyo,Room 183,Friday,11:00:00,12:00:00
+90,Faith in the Light of the Epistles of Paul 2,Humanities and Social Sciences,Grade 11,Acebes,Room 250,Friday,12:00:00,13:00:00
+133,Creative Non-Fiction,Humanities and Social Sciences,Grade 12,Morales,Room 208,Friday,12:00:00,13:00:00
+118,Pagsulat sa Filipino sa Piling Larangan (Akademik),Humanities and Social Sciences,Grade 12,Alejo,Room 203,Friday,12:00:00,13:00:00
+52,"Understanding Culture, Society, and Politics",Humanities and Social Sciences,Grade 12,Obedoza,Room 153,Friday,13:00:00,14:00:00
+99,Statistics and Probability,Humanities and Social Sciences,Grade 11,Ignacio,Room 196,Friday,14:00:00,15:00:00
+126,Philippine Politics and Governance,Humanities and Social Sciences,Grade 11,Obedoza,Room 235,Friday,15:00:00,16:00:00
+128,Intro to World Religions and Belief System,Humanities and Social Sciences,Grade 11,Acebes,Room 129,Friday,15:00:00,16:00:00
+49,Contemporary Philippine Arts from the Regions,Humanities and Social Sciences,Grade 12,Dinapo,Room 117,Friday,16:00:00,17:00:00
+242,"Inquiries, Investigations and Immersion (2nd Semester)",Humanities and Social Sciences,Grade 12,Abanto,Room 172,Monday,7:30:00,8:30:00
+64,Physical Education and Health 4,Humanities and Social Sciences,Grade 12,Paulo,Room 170,Monday,7:30:00,8:30:00
+35,Oral Communication,Humanities and Social Sciences,Grade 11,Noriega,Room 136,Monday,7:30:00,8:30:00
+81,Earth and Life Science,Humanities and Social Sciences,Grade 11,Lati,Room 162,Monday,8:30:00,9:30:00
+127,Discipline and Ideas in Social Sciences,Humanities and Social Sciences,Grade 11,Fernando,Room 175,Monday,10:00:00,11:00:00
+72,"Inquiries, Investigations and Immersion",Humanities and Social Sciences,Grade 12,Ramirez,Room 208,Monday,10:00:00,11:00:00
+130,"Community Engagement, Solidarity and Citizenship",Humanities and Social Sciences,Grade 12,Bacongallo,Room 163,Monday,10:00:00,11:00:00
+112,Practical Research 1,Humanities and Social Sciences,Grade 11,Layag,Room 206,Monday,10:30:00,11:00:00
+84,21st Century Literature from the Philippines and the World,Humanities and Social Sciences,Grade 11,Dela Cruz,Room 243,Monday,11:00:00,12:00:00
+99,Statistics and Probability,Humanities and Social Sciences,Grade 11,Ignacio,Room 101,Monday,11:00:00,12:00:00
+130,"Community Engagement, Solidarity and Citizenship",Humanities and Social Sciences,Grade 12,Bacongallo,Room 154,Monday,12:00:00,13:00:00
+58,Catholic Social Teaching,Humanities and Social Sciences,Grade 12,Cabrera,Room 186,Monday,13:00:00,14:00:00
+134,Work Immersion/Culminating Activity,Humanities and Social Sciences,Grade 12,Abanto,Room 110,Monday,13:00:00,14:00:00
+132,"Trends, Networks and Critical Thinking in the 21st Century Culture",Humanities and Social Sciences,Grade 12,Valdez,Room 167,Monday,14:00:00,15:00:00
+104,Personal Development,Humanities and Social Sciences,Grade 11,Bacani,Room 111,Monday,15:00:00,16:00:00
+35,Oral Communication,Humanities and Social Sciences,Grade 11,Noriega,Room 192,Monday,16:00:00,17:00:00
+70,Entrepreneurship,Humanities and Social Sciences,Grade 12,Evarola,Room 177,Saturday,7:30:00,8:30:00
+102,Physical Science,Humanities and Social Sciences,Grade 11,Fernandez,Room 149,Saturday,7:30:00,8:30:00
+132,"Trends, Networks and Critical Thinking in the 21st Century Culture",Humanities and Social Sciences,Grade 12,Valdez,Room 109,Saturday,8:30:00,9:30:00
+104,Personal Development,Humanities and Social Sciences,Grade 11,Bacani,Room 203,Saturday,8:30:00,9:30:00
+129,Discipline and Ideas in Applied Social Science,Humanities and Social Sciences,Grade 11,Berza,Room 147,Saturday,10:30:00,11:00:00
+134,Work Immersion/Culminating Activity,Humanities and Social Sciences,Grade 12,Abanto,Room 118,Saturday,11:00:00,12:00:00
+106,Physical Education and Health 2,Humanities and Social Sciences,Grade 11,Bognalos,Room 125,Saturday,12:00:00,13:00:00
+96,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,Humanities and Social Sciences,Grade 11,Morales,Room 112,Saturday,13:00:00,14:00:00
+67,Practical Research 2,Humanities and Social Sciences,Grade 11,Bacani,Room 118,Saturday,14:00:00,15:00:00
+78,General Mathematics,Humanities and Social Sciences,Grade 11,Binaluyo,Room 166,Saturday,15:00:00,16:00:00
+124,Introduction to Philosophy of the Human Person,Humanities and Social Sciences,Grade 12,Vallesteros,Room 136,Saturday,16:00:00,17:00:00
+133,Creative Non-Fiction,Humanities and Social Sciences,Grade 12,Morales,Room 187,Saturday,16:00:00,17:00:00
+84,21st Century Literature from the Philippines and the World,Humanities and Social Sciences,Grade 11,Dela Cruz,Room 112,Thursday,7:30:00,8:30:00
+81,Earth and Life Science,Humanities and Social Sciences,Grade 11,Lati,Room 246,Thursday,8:30:00,9:30:00
+121,Theology of the Body,Humanities and Social Sciences,Grade 12,Dela Cruz,Room 167,Thursday,8:30:00,9:30:00
+40,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,Humanities and Social Sciences,Grade 11,Alonzo,Room 119,Thursday,9:30:00,10:30:00
+55,Physical Education and Health 3,Humanities and Social Sciences,Grade 12,Berza,Room 184,Thursday,10:00:00,11:00:00
+93,Reading and Writing Skills,Humanities and Social Sciences,Grade 11,Bacongallo,Room 236,Thursday,11:00:00,12:00:00
+131,Creative Writing,Humanities and Social Sciences,Grade 12,Cabrera,Room 247,Thursday,12:00:00,13:00:00
+78,General Mathematics,Humanities and Social Sciences,Grade 11,Binaluyo,Room 101,Thursday,12:00:00,13:00:00
+61,Media and Information Literacy,Humanities and Social Sciences,Grade 12,Esquilona,Room 166,Thursday,13:00:00,14:00:00
+87,Physical Education and Health 1,Humanities and Social Sciences,Grade 11,Vallesteros,Room 151,Thursday,13:00:00,14:00:00
+64,Physical Education and Health 4,Humanities and Social Sciences,Grade 12,Paulo,Room 143,Thursday,14:00:00,15:00:00
+40,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,Humanities and Social Sciences,Grade 11,Alonzo,Room 137,Thursday,15:00:00,16:00:00
+115,English for Academic and Professional Purposes,Humanities and Social Sciences,Grade 11,Binaluyo,Room 161,Thursday,15:00:00,16:00:00
+102,Physical Science,Humanities and Social Sciences,Grade 11,Fernandez,Room 137,Thursday,16:00:00,17:00:00
+67,Practical Research 2,Humanities and Social Sciences,Grade 11,Bacani,Room 144,Thursday,16:00:00,17:00:00
+128,Intro to World Religions and Belief System,Humanities and Social Sciences,Grade 11,Acebes,Room 160,Thursday,16:00:00,17:00:00
+55,Physical Education and Health 3,Humanities and Social Sciences,Grade 12,Berza,Room 194,Tuesday,7:30:00,8:30:00
+96,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,Humanities and Social Sciences,Grade 11,Morales,Room 234,Tuesday,8:30:00,9:30:00
+58,Catholic Social Teaching,Humanities and Social Sciences,Grade 12,Cabrera,Room 236,Tuesday,9:30:00,10:30:00
+106,Physical Education and Health 2,Humanities and Social Sciences,Grade 11,Bognalos,Room 156,Tuesday,9:30:00,10:30:00
+131,Creative Writing,Humanities and Social Sciences,Grade 12,Cabrera,Room 161,Tuesday,10:00:00,11:00:00
+126,Philippine Politics and Governance,Humanities and Social Sciences,Grade 11,Obedoza,Room 125,Tuesday,10:00:00,11:00:00
+72,"Inquiries, Investigations and Immersion",Humanities and Social Sciences,Grade 12,Ramirez,Room 229,Tuesday,11:00:00,12:00:00
+121,Theology of the Body,Humanities and Social Sciences,Grade 12,Dela Cruz,Room 192,Tuesday,12:00:00,13:00:00
+70,Entrepreneurship,Humanities and Social Sciences,Grade 12,Evarola,Room 240,Tuesday,12:00:00,13:00:00
+132,"Trends, Networks and Critical Thinking in the 21st Century Culture",Humanities and Social Sciences,Grade 12,Valdez,Room 166,Tuesday,12:00:00,13:00:00
+90,Faith in the Light of the Epistles of Paul 2,Humanities and Social Sciences,Grade 11,Acebes,Room 163,Tuesday,13:00:00,14:00:00
+87,Physical Education and Health 1,Humanities and Social Sciences,Grade 11,Vallesteros,Room 196,Tuesday,14:00:00,15:00:00
+49,Contemporary Philippine Arts from the Regions,Humanities and Social Sciences,Grade 12,Dinapo,Room 120,Tuesday,14:00:00,15:00:00
+134,Work Immersion/Culminating Activity,Humanities and Social Sciences,Grade 12,Abanto,Room 177,Tuesday,15:00:00,16:00:00
+127,Discipline and Ideas in Social Sciences,Humanities and Social Sciences,Grade 11,Fernando,Room 151,Tuesday,16:00:00,17:00:00
+109,Empowerment Technologies,Humanities and Social Sciences,Grade 11,Noriega,Room 153,Wednesday,7:30:00,8:30:00
+124,Introduction to Philosophy of the Human Person,Humanities and Social Sciences,Grade 12,Vallesteros,Room 236,Wednesday,7:30:00,8:30:00
+131,Creative Writing,Humanities and Social Sciences,Grade 12,Cabrera,Room 104,Wednesday,7:30:00,8:30:00
+52,"Understanding Culture, Society, and Politics",Humanities and Social Sciences,Grade 12,Obedoza,Room 160,Wednesday,9:30:00,10:00:00
+130,"Community Engagement, Solidarity and Citizenship",Humanities and Social Sciences,Grade 12,Bacongallo,Room 165,Wednesday,9:30:00,10:30:00
+129,Discipline and Ideas in Applied Social Science,Humanities and Social Sciences,Grade 11,Berza,Room 118,Wednesday,10:00:00,11:00:00
+127,Discipline and Ideas in Social Sciences,Humanities and Social Sciences,Grade 11,Fernando,Room 140,Wednesday,10:30:00,11:00:00
+109,Empowerment Technologies,Humanities and Social Sciences,Grade 11,Noriega,Room 151,Wednesday,12:00:00,13:00:00
+112,Practical Research 1,Humanities and Social Sciences,Grade 11,Layag,Room 218,Wednesday,14:00:00,15:00:00
+133,Creative Non-Fiction,Humanities and Social Sciences,Grade 12,Morales,Room 125,Wednesday,14:00:00,15:00:00
+93,Reading and Writing Skills,Humanities and Social Sciences,Grade 11,Bacongallo,Room 111,Wednesday,14:00:00,15:00:00
+129,Discipline and Ideas in Applied Social Science,Humanities and Social Sciences,Grade 11,Berza,Room 153,Wednesday,14:00:00,15:00:00
+118,Pagsulat sa Filipino sa Piling Larangan (Akademik),Humanities and Social Sciences,Grade 12,Alejo,Room 221,Wednesday,14:00:00,15:00:00
+213,Reading Readiness,Kinder,Kinder,Laguidao,Room 121,Friday,10:30:00,11:00:00
+212,Language and Spelling,Kinder,Kinder,Bacani,Room 153,Friday,13:00:00,14:00:00
+213,Reading Readiness,Kinder,Kinder,Laguidao,Room 249,Saturday,15:00:00,16:00:00
+212,Language and Spelling,Kinder,Kinder,Bacani,Room 173,Tuesday,14:00:00,15:00:00
+211,Christian Living Education,Kinder,Kinder,Bartolome,Room 217,Wednesday,15:00:00,16:00:00
+211,Christian Living Education,Kinder,Kinder,Bartolome,Room 182,Wednesday,16:00:00,17:00:00
+210,Reading Readiness,Nursery,Nursery,Fernandez,Room 207,Monday,16:00:00,17:00:00
+207,Christian Living Education,Nursery,Nursery,Esquilona,Room 176,Saturday,12:00:00,13:00:00
+209,Number Readiness,Nursery,Nursery,Cabique,Room 238,Thursday,8:30:00,9:30:00
+208,Language and Spelling,Nursery,Nursery,Ignacio,Room 167,Thursday,11:00:00,12:00:00
+209,Number Readiness,Nursery,Nursery,Cabique,Room 104,Thursday,14:00:00,15:00:00
+208,Language and Spelling,Nursery,Nursery,Ignacio,Room 237,Thursday,14:00:00,15:00:00
+210,Reading Readiness,Nursery,Nursery,Fernandez,Room 161,Wednesday,7:30:00,8:30:00
+207,Christian Living Education,Nursery,Nursery,Esquilona,Room 209,Wednesday,14:00:00,15:00:00
+34,Faith in the Light of the Epistles of Paul 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Evarola,Room 119,Friday,8:30:00,9:30:00
+137,Basic Calculus,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabique,Room 217,Friday,8:30:00,9:30:00
+71,Entrepreneurship,"Science, Technology, Engineering, and Mathematics",Grade 12,Noriega,Room 116,Friday,9:30:00,10:00:00
+139,General Physics 1,"Science, Technology, Engineering, and Mathematics",Grade 12,Fernandez,Room 193,Friday,9:30:00,10:30:00
+74,"Inquiries, Investigations and Immersion","Science, Technology, Engineering, and Mathematics",Grade 12,Ballesteros,Room 105,Friday,11:00:00,12:00:00
+116,English for Academic and Professional Purposes,"Science, Technology, Engineering, and Mathematics",Grade 11,Napili,Room 188,Friday,11:00:00,12:00:00
+136,General Biology 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Ignacio,Room 201,Friday,11:00:00,12:00:00
+82,Earth and Life Science,"Science, Technology, Engineering, and Mathematics",Grade 11,Orolaza,Room 190,Friday,11:00:00,12:00:00
+53,"Understanding Culture, Society, and Politics","Science, Technology, Engineering, and Mathematics",Grade 12,Fernando,Room 223,Friday,11:00:00,12:00:00
+68,Practical Research 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Laguidao,Room 165,Friday,12:00:00,13:00:00
+110,Empowerment Technologies,"Science, Technology, Engineering, and Mathematics",Grade 11,Esquilona,Room 126,Friday,12:00:00,13:00:00
+241,"Inquiries, Investigations and Immersion (2nd Semester)","Science, Technology, Engineering, and Mathematics",Grade 12,Morales,Room 157,Friday,14:00:00,15:00:00
+68,Practical Research 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Laguidao,Room 121,Friday,14:00:00,15:00:00
+97,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,"Science, Technology, Engineering, and Mathematics",Grade 11,Abanto,Room 144,Friday,15:00:00,16:00:00
+79,General Mathematics,"Science, Technology, Engineering, and Mathematics",Grade 11,Napili,Room 180,Friday,16:00:00,17:00:00
+143,Work Immersion/Capstone Project,"Science, Technology, Engineering, and Mathematics",Grade 12,Millano,Room 166,Monday,7:30:00,8:30:00
+53,"Understanding Culture, Society, and Politics","Science, Technology, Engineering, and Mathematics",Grade 12,Fernando,Room 229,Monday,8:30:00,9:30:00
+125,Introduction to Philosophy of the Human Person,"Science, Technology, Engineering, and Mathematics",Grade 12,Dela Peña,Room 155,Monday,9:30:00,10:00:00
+113,Practical Research 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Gumabon,Room 210,Monday,9:30:00,10:30:00
+110,Empowerment Technologies,"Science, Technology, Engineering, and Mathematics",Grade 11,Esquilona,Room 176,Monday,9:30:00,10:30:00
+88,Physical Education and Health 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Dela Peña,Room 246,Monday,9:30:00,10:00:00
+65,Physical Education and Health 4,"Science, Technology, Engineering, and Mathematics",Grade 12,Fernandez,Room 218,Monday,11:00:00,12:00:00
+140,General Chemistry 1,"Science, Technology, Engineering, and Mathematics",Grade 12,Bacani,Room 160,Monday,11:00:00,12:00:00
+139,General Physics 1,"Science, Technology, Engineering, and Mathematics",Grade 12,Fernandez,Room 239,Monday,13:00:00,14:00:00
+141,General Physics 2,"Science, Technology, Engineering, and Mathematics",Grade 12,Laguidao,Room 135,Monday,14:00:00,15:00:00
+36,Oral Communication,"Science, Technology, Engineering, and Mathematics",Grade 11,Ramirez,Room 126,Monday,16:00:00,17:00:00
+140,General Chemistry 1,"Science, Technology, Engineering, and Mathematics",Grade 12,Bacani,Room 192,Monday,16:00:00,17:00:00
+239,DRRR,"Science, Technology, Engineering, and Mathematics",Grade 11,Bacongallo,Room 242,Saturday,8:30:00,9:30:00
+62,Media and Information Literacy,"Science, Technology, Engineering, and Mathematics",Grade 12,Ignacio,Room 224,Saturday,8:30:00,9:30:00
+138,General Biology 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Paulo,Room 230,Saturday,8:30:00,9:30:00
+135,Pre-Calculus,"Science, Technology, Engineering, and Mathematics",Grade 11,Esquilona,Room 134,Saturday,10:00:00,11:00:00
+94,Reading and Writing Skills,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabrera,Room 202,Saturday,10:00:00,11:00:00
+41,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,"Science, Technology, Engineering, and Mathematics",Grade 11,Binaluyo,Room 228,Saturday,10:30:00,11:00:00
+65,Physical Education and Health 4,"Science, Technology, Engineering, and Mathematics",Grade 12,Fernandez,Room 136,Saturday,11:00:00,12:00:00
+107,Physical Education and Health 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Millano,Room 240,Saturday,11:00:00,12:00:00
+91,Faith in the Light of the Epistles of Paul 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Berza,Room 234,Saturday,12:00:00,13:00:00
+85,21st Century Literature from the Philippines and the World,"Science, Technology, Engineering, and Mathematics",Grade 11,Dinapo,Room 150,Saturday,12:00:00,13:00:00
+59,Catholic Social Teaching,"Science, Technology, Engineering, and Mathematics",Grade 12,Valdez,Room 131,Saturday,13:00:00,14:00:00
+141,General Physics 2,"Science, Technology, Engineering, and Mathematics",Grade 12,Laguidao,Room 121,Saturday,13:00:00,14:00:00
+138,General Biology 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Paulo,Room 144,Saturday,14:00:00,15:00:00
+85,21st Century Literature from the Philippines and the World,"Science, Technology, Engineering, and Mathematics",Grade 11,Dinapo,Room 222,Saturday,14:00:00,15:00:00
+34,Faith in the Light of the Epistles of Paul 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Evarola,Room 243,Saturday,15:00:00,16:00:00
+142,General Chemistry 2,"Science, Technology, Engineering, and Mathematics",Grade 12,Bognalos,Room 225,Saturday,16:00:00,17:00:00
+79,General Mathematics,"Science, Technology, Engineering, and Mathematics",Grade 11,Napili,Room 208,Saturday,16:00:00,17:00:00
+59,Catholic Social Teaching,"Science, Technology, Engineering, and Mathematics",Grade 12,Valdez,Room 232,Thursday,7:30:00,8:30:00
+119,Pagsulat sa Filipino sa Piling Larangan (Akademik),"Science, Technology, Engineering, and Mathematics",Grade 12,Lati,Room 218,Thursday,8:30:00,9:30:00
+137,Basic Calculus,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabique,Room 133,Thursday,9:30:00,10:00:00
+119,Pagsulat sa Filipino sa Piling Larangan (Akademik),"Science, Technology, Engineering, and Mathematics",Grade 12,Lati,Room 241,Thursday,9:30:00,10:30:00
+122,Theology of the Body,"Science, Technology, Engineering, and Mathematics",Grade 12,Dinapo,Room 190,Thursday,10:30:00,11:00:00
+105,Personal Development,"Science, Technology, Engineering, and Mathematics",Grade 11,Laguidao,Room 117,Thursday,11:00:00,12:00:00
+139,General Physics 1,"Science, Technology, Engineering, and Mathematics",Grade 12,Fernandez,Room 115,Thursday,14:00:00,15:00:00
+143,Work Immersion/Capstone Project,"Science, Technology, Engineering, and Mathematics",Grade 12,Millano,Room 134,Thursday,16:00:00,17:00:00
+136,General Biology 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Ignacio,Room 181,Thursday,16:00:00,17:00:00
+141,General Physics 2,"Science, Technology, Engineering, and Mathematics",Grade 12,Laguidao,Room 229,Tuesday,7:30:00,8:30:00
+56,Physical Education and Health 3,"Science, Technology, Engineering, and Mathematics",Grade 12,Maniba,Room 191,Tuesday,7:30:00,8:30:00
+143,Work Immersion/Capstone Project,"Science, Technology, Engineering, and Mathematics",Grade 12,Millano,Room 127,Tuesday,7:30:00,8:30:00
+50,Contemporary Philippine Arts from the Regions,"Science, Technology, Engineering, and Mathematics",Grade 12,Vallesteros,Room 234,Tuesday,7:30:00,8:30:00
+142,General Chemistry 2,"Science, Technology, Engineering, and Mathematics",Grade 12,Bognalos,Room 150,Tuesday,8:30:00,9:30:00
+100,Statistics and Probability,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabique,Room 149,Tuesday,8:30:00,9:30:00
+116,English for Academic and Professional Purposes,"Science, Technology, Engineering, and Mathematics",Grade 11,Napili,Room 223,Tuesday,8:30:00,9:30:00
+88,Physical Education and Health 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Dela Peña,Room 102,Tuesday,9:30:00,10:00:00
+125,Introduction to Philosophy of the Human Person,"Science, Technology, Engineering, and Mathematics",Grade 12,Dela Peña,Room 189,Tuesday,11:00:00,12:00:00
+135,Pre-Calculus,"Science, Technology, Engineering, and Mathematics",Grade 11,Esquilona,Room 171,Tuesday,11:00:00,12:00:00
+239,DRRR,"Science, Technology, Engineering, and Mathematics",Grade 11,Bacongallo,Room 204,Tuesday,12:00:00,13:00:00
+71,Entrepreneurship,"Science, Technology, Engineering, and Mathematics",Grade 12,Noriega,Room 223,Tuesday,13:00:00,14:00:00
+94,Reading and Writing Skills,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabrera,Room 115,Tuesday,13:00:00,14:00:00
+113,Practical Research 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Gumabon,Room 156,Tuesday,13:00:00,14:00:00
+140,General Chemistry 1,"Science, Technology, Engineering, and Mathematics",Grade 12,Bacani,Room 230,Tuesday,14:00:00,15:00:00
+137,Basic Calculus,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabique,Room 165,Tuesday,14:00:00,15:00:00
+122,Theology of the Body,"Science, Technology, Engineering, and Mathematics",Grade 12,Dinapo,Room 150,Tuesday,15:00:00,16:00:00
+138,General Biology 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Paulo,Room 184,Tuesday,15:00:00,16:00:00
+241,"Inquiries, Investigations and Immersion (2nd Semester)","Science, Technology, Engineering, and Mathematics",Grade 12,Morales,Room 219,Tuesday,15:00:00,16:00:00
+97,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,"Science, Technology, Engineering, and Mathematics",Grade 11,Abanto,Room 197,Tuesday,16:00:00,17:00:00
+50,Contemporary Philippine Arts from the Regions,"Science, Technology, Engineering, and Mathematics",Grade 12,Vallesteros,Room 200,Wednesday,7:30:00,8:30:00
+136,General Biology 1,"Science, Technology, Engineering, and Mathematics",Grade 11,Ignacio,Room 191,Wednesday,8:30:00,9:30:00
+41,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,"Science, Technology, Engineering, and Mathematics",Grade 11,Binaluyo,Room 136,Wednesday,9:30:00,10:00:00
+135,Pre-Calculus,"Science, Technology, Engineering, and Mathematics",Grade 11,Esquilona,Room 224,Wednesday,10:00:00,11:00:00
+105,Personal Development,"Science, Technology, Engineering, and Mathematics",Grade 11,Laguidao,Room 144,Wednesday,11:00:00,12:00:00
+36,Oral Communication,"Science, Technology, Engineering, and Mathematics",Grade 11,Ramirez,Room 117,Wednesday,12:00:00,13:00:00
+62,Media and Information Literacy,"Science, Technology, Engineering, and Mathematics",Grade 12,Ignacio,Room 188,Wednesday,12:00:00,13:00:00
+82,Earth and Life Science,"Science, Technology, Engineering, and Mathematics",Grade 11,Orolaza,Room 240,Wednesday,12:00:00,13:00:00
+91,Faith in the Light of the Epistles of Paul 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Berza,Room 171,Wednesday,13:00:00,14:00:00
+74,"Inquiries, Investigations and Immersion","Science, Technology, Engineering, and Mathematics",Grade 12,Ballesteros,Room 140,Wednesday,15:00:00,16:00:00
+56,Physical Education and Health 3,"Science, Technology, Engineering, and Mathematics",Grade 12,Maniba,Room 179,Wednesday,15:00:00,16:00:00
+142,General Chemistry 2,"Science, Technology, Engineering, and Mathematics",Grade 12,Bognalos,Room 164,Wednesday,15:00:00,16:00:00
+100,Statistics and Probability,"Science, Technology, Engineering, and Mathematics",Grade 11,Cabique,Room 131,Wednesday,16:00:00,17:00:00
+107,Physical Education and Health 2,"Science, Technology, Engineering, and Mathematics",Grade 11,Millano,Room 171,Wednesday,16:00:00,17:00:00
+205,Number Readiness,Toddler,Toddler,Morales,Room 220,Friday,8:30:00,9:30:00
+203,Christian Living Education,Toddler,Toddler,Cabrera,Room 241,Friday,13:00:00,14:00:00
+206,Reading Readiness,Toddler,Toddler,Abanto,Room 164,Thursday,7:30:00,8:30:00
+204,Language and Spelling,Toddler,Toddler,Valdez,Room 110,Tuesday,12:00:00,13:00:00
