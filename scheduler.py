@@ -22,9 +22,9 @@ print("Loading subjects...")
 cursor.execute("SELECT * FROM subjects")
 subjects = cursor.fetchall()
 
-print("Loading teachers...")
-cursor.execute("SELECT * FROM teachers")
-teachers = cursor.fetchall()
+print("Loading teacher_subjects...")
+cursor.execute("SELECT * FROM teacher_subjects")
+teacher_subjects = cursor.fetchall()
 
 print("Loading rooms...")
 cursor.execute("SELECT * FROM rooms")
@@ -46,8 +46,8 @@ unassigned_subjects = []
 for subject in subjects:
     subject_code, subject_name, program, year_level, lecture_hours = subject  # Ignore subject_name
 
-    available_teachers = [t for t in teachers if t[2] == subject_code]
-    if not available_teachers:
+    available_teacher_subjects = [t for t in teacher_subjects if t[2] == subject_code]
+    if not available_teacher_subjects:
         print(f"⚠ No teacher available for {subject_code}, skipping...")
         unassigned_subjects.append((subject_code, "No available teacher"))
         continue
@@ -58,7 +58,7 @@ for subject in subjects:
     attempts = 0
 
     while hours_scheduled < 3 and attempts < max_attempts:
-        teacher = random.choice(available_teachers)
+        teacher = random.choice(available_teacher_subjects)
         room = random.choice(rooms)
 
         # Randomly select a time slot

@@ -1,53 +1,121 @@
 Subject Code,Program,Year Level,Teacher Name,Room Name,Day,Start Time,End Time
-SEC301,All,3,Prof. Schneier,Room 117,Friday,14:00:00,15:00:00
-AI101,All,3,Prof. Turing,Room 104,Monday,10:00:00,11:00:00
-MATH301,All,3,Prof. Euler,Room 114,Saturday,9:00:00,10:00:00
-MATH301,All,3,Prof. Euler,Room 117,Thursday,13:00:00,14:00:00
-ENT401,All,4,Prof. Musk,Room 109,Tuesday,7:00:00,8:00:00
-AI101,All,3,Prof. Turing,Room 104,Tuesday,8:00:00,9:00:00
-AI101,All,3,Prof. Turing,Room 112,Tuesday,14:00:00,15:00:00
-SEC301,All,3,Prof. Schneier,Room 113,Wednesday,8:00:00,9:00:00
-MATH301,All,3,Prof. Euler,Room 113,Wednesday,14:00:00,15:00:00
-CS103,BS Computer Science,3,Prof. Brown,Room 118,Friday,8:00:00,9:00:00
-CS102,BS Computer Science,2,Prof. Jones,Room 104,Friday,10:00:00,11:00:00
-CS103,BS Computer Science,3,Prof. Brown,Room 105,Friday,16:00:00,17:00:00
-CS102,BS Computer Science,2,Prof. Jones,Room 101,Saturday,8:00:00,9:00:00
-CS103,BS Computer Science,3,Prof. Brown,Room 103,Thursday,9:00:00,10:00:00
-CS101,BS Computer Science,1,Prof. Smith,Room 104,Thursday,11:00:00,12:00:00
-CS104,BS Computer Science,4,Prof. Tanenbaum,Room 113,Thursday,15:00:00,16:00:00
-CS101,BS Computer Science,1,Prof. Smith,Room 106,Tuesday,10:00:00,11:00:00
-CS101,BS Computer Science,1,Prof. Smith,Room 106,Tuesday,11:00:00,12:00:00
-CS102,BS Computer Science,2,Prof. Jones,Room 116,Wednesday,7:00:00,8:00:00
-CY102,BS Cyber Security,2,Prof. Magenta,Room 117,Friday,15:00:00,16:00:00
-CY101,BS Cyber Security,1,Prof. Cyan,Room 109,Monday,16:00:00,17:00:00
-CY102,BS Cyber Security,2,Prof. Magenta,Room 104,Saturday,10:00:00,11:00:00
-CY102,BS Cyber Security,2,Prof. Magenta,Room 112,Thursday,7:00:00,8:00:00
-CY101,BS Cyber Security,1,Prof. Cyan,Room 102,Tuesday,13:00:00,14:00:00
-CY103,BS Cyber Security,3,Prof. Lime,Room 120,Wednesday,9:00:00,10:00:00
-CY101,BS Cyber Security,1,Prof. Cyan,Room 118,Wednesday,13:00:00,14:00:00
-DS102,BS Data Science,2,Prof. Blue,Room 113,Friday,7:00:00,8:00:00
-DS102,BS Data Science,2,Prof. Blue,Room 111,Monday,7:00:00,8:00:00
-DS103,BS Data Science,3,Prof. Orange,Room 110,Monday,13:00:00,14:00:00
-DS104,BS Data Science,4,Prof. McKinney,Room 107,Monday,15:00:00,16:00:00
-DS103,BS Data Science,3,Prof. Orange,Room 101,Saturday,15:00:00,16:00:00
-DS103,BS Data Science,3,Prof. Orange,Room 114,Saturday,16:00:00,17:00:00
-DS102,BS Data Science,2,Prof. Blue,Room 102,Wednesday,10:00:00,11:00:00
-DS101,BS Data Science,1,Prof. Grey,Room 104,Wednesday,11:00:00,12:00:00
-DS101,BS Data Science,1,Prof. Grey,Room 105,Wednesday,15:00:00,16:00:00
-DS101,BS Data Science,1,Prof. Grey,Room 108,Wednesday,16:00:00,17:00:00
-IT102,BS Information Technology,2,Prof. Green,Room 115,Friday,11:00:00,12:00:00
-IT101,BS Information Technology,1,Prof. White,Room 116,Friday,13:00:00,14:00:00
-IT102,BS Information Technology,2,Prof. Green,Room 116,Monday,14:00:00,15:00:00
-IT102,BS Information Technology,2,Prof. Green,Room 102,Saturday,11:00:00,12:00:00
-IT103,BS Information Technology,3,Prof. Black,Room 120,Saturday,14:00:00,15:00:00
-IT104,BS Information Technology,4,Prof. Bezos,Room 116,Tuesday,9:00:00,10:00:00
-IT103,BS Information Technology,3,Prof. Black,Room 104,Tuesday,15:00:00,16:00:00
-IT101,BS Information Technology,1,Prof. White,Room 114,Tuesday,16:00:00,17:00:00
-SE102,BS Software Engineering,2,Prof. Yellow,Room 111,Friday,9:00:00,10:00:00
-SE103,BS Software Engineering,3,Prof. Purple,Room 106,Monday,8:00:00,9:00:00
-SE101,BS Software Engineering,1,Prof. Red,Room 118,Monday,9:00:00,10:00:00
-SE103,BS Software Engineering,3,Prof. Purple,Room 105,Monday,11:00:00,12:00:00
-SE102,BS Software Engineering,2,Prof. Yellow,Room 120,Saturday,7:00:00,8:00:00
-SE102,BS Software Engineering,2,Prof. Yellow,Room 109,Saturday,13:00:00,14:00:00
-SE101,BS Software Engineering,1,Prof. Red,Room 102,Thursday,10:00:00,11:00:00
-SE101,BS Software Engineering,1,Prof. Red,Room 118,Thursday,14:00:00,15:00:00
+42,"Accountancy, Business and Management",Grade 12,T033,Room 199,Friday,7:30:00,8:30:00
+39,"Accountancy, Business and Management",Grade 11,T029,Room 224,Friday,8:30:00,9:30:00
+33,"Accountancy, Business and Management",Grade 11,T010,Room 170,Friday,12:00:00,13:00:00
+38,"Accountancy, Business and Management",Grade 11,T028,Room 120,Monday,7:30:00,8:30:00
+33,"Accountancy, Business and Management",Grade 11,T010,Room 147,Monday,13:00:00,14:00:00
+51,"Accountancy, Business and Management",Grade 12,T067,Room 124,Monday,14:00:00,15:00:00
+38,"Accountancy, Business and Management",Grade 11,T028,Room 197,Monday,16:00:00,17:00:00
+37,"Accountancy, Business and Management",Grade 11,T027,Room 189,Saturday,8:30:00,9:30:00
+43,"Accountancy, Business and Management",Grade 12,T034,Room 114,Saturday,8:30:00,9:30:00
+43,"Accountancy, Business and Management",Grade 12,T034,Room 103,Saturday,10:00:00,11:00:00
+33,"Accountancy, Business and Management",Grade 11,T010,Room 156,Thursday,9:30:00,10:30:00
+38,"Accountancy, Business and Management",Grade 11,T028,Room 148,Thursday,10:00:00,11:00:00
+46,"Accountancy, Business and Management",Grade 12,T037,Room 147,Thursday,16:00:00,17:00:00
+45,"Accountancy, Business and Management",Grade 12,T036,Room 193,Thursday,16:00:00,17:00:00
+43,"Accountancy, Business and Management",Grade 12,T034,Room 170,Tuesday,7:30:00,8:30:00
+37,"Accountancy, Business and Management",Grade 11,T027,Room 178,Tuesday,8:30:00,9:30:00
+51,"Accountancy, Business and Management",Grade 12,T067,Room 134,Tuesday,12:00:00,13:00:00
+26,Grade 10,Grade 10,T002,Room 171,Friday,13:00:00,14:00:00
+32,Grade 10,Grade 10,T009,Room 207,Friday,16:00:00,17:00:00
+25,Grade 10,Grade 10,T001,Room 125,Monday,8:30:00,9:30:00
+29,Grade 10,Grade 10,T005,Room 212,Monday,12:00:00,13:00:00
+26,Grade 10,Grade 10,T002,Room 250,Monday,13:00:00,14:00:00
+31,Grade 10,Grade 10,T008,Room 184,Saturday,7:30:00,8:30:00
+27,Grade 10,Grade 10,T003,Room 107,Saturday,10:30:00,11:00:00
+28,Grade 10,Grade 10,T004,Room 224,Saturday,14:00:00,15:00:00
+26,Grade 10,Grade 10,T002,Room 165,Thursday,11:00:00,12:00:00
+27,Grade 10,Grade 10,T003,Room 153,Thursday,13:00:00,14:00:00
+30,Grade 10,Grade 10,T007,Room 220,Thursday,14:00:00,15:00:00
+28,Grade 10,Grade 10,T004,Room 147,Tuesday,11:00:00,12:00:00
+28,Grade 10,Grade 10,T004,Room 197,Tuesday,11:00:00,12:00:00
+27,Grade 10,Grade 10,T003,Room 176,Tuesday,12:00:00,13:00:00
+31,Grade 10,Grade 10,T008,Room 102,Tuesday,13:00:00,14:00:00
+30,Grade 10,Grade 10,T007,Room 157,Wednesday,7:30:00,8:30:00
+29,Grade 10,Grade 10,T005,Room 134,Wednesday,8:30:00,9:30:00
+30,Grade 10,Grade 10,T007,Room 130,Wednesday,14:00:00,15:00:00
+6,Grade 7,Grade 7,T076,Room 125,Friday,9:30:00,10:30:00
+6,Grade 7,Grade 7,T076,Room 153,Friday,10:00:00,11:00:00
+5,Grade 7,Grade 7,T065,Room 142,Friday,12:00:00,13:00:00
+1,Grade 7,Grade 7,T001,Room 131,Friday,14:00:00,15:00:00
+1,Grade 7,Grade 7,T001,Room 180,Friday,15:00:00,16:00:00
+6,Grade 7,Grade 7,T076,Room 225,Monday,9:30:00,10:00:00
+2,Grade 7,Grade 7,T069,Room 241,Monday,10:00:00,11:00:00
+4,Grade 7,Grade 7,T030,Room 223,Monday,10:30:00,11:00:00
+4,Grade 7,Grade 7,T030,Room 222,Monday,12:00:00,13:00:00
+7,Grade 7,Grade 7,T010,Room 187,Monday,14:00:00,15:00:00
+7,Grade 7,Grade 7,T010,Room 235,Saturday,9:30:00,10:30:00
+2,Grade 7,Grade 7,T069,Room 214,Saturday,12:00:00,13:00:00
+8,Grade 7,Grade 7,T034,Room 240,Saturday,14:00:00,15:00:00
+8,Grade 7,Grade 7,T034,Room 242,Thursday,7:30:00,8:30:00
+2,Grade 7,Grade 7,T069,Room 103,Thursday,8:30:00,9:30:00
+1,Grade 7,Grade 7,T001,Room 112,Thursday,8:30:00,9:30:00
+3,Grade 7,Grade 7,T006,Room 209,Thursday,14:00:00,15:00:00
+5,Grade 7,Grade 7,T065,Room 166,Tuesday,7:30:00,8:30:00
+3,Grade 7,Grade 7,T006,Room 191,Tuesday,8:30:00,9:30:00
+5,Grade 7,Grade 7,T065,Room 176,Wednesday,10:30:00,11:00:00
+4,Grade 7,Grade 7,T030,Room 109,Wednesday,11:00:00,12:00:00
+3,Grade 7,Grade 7,T006,Room 132,Wednesday,12:00:00,13:00:00
+8,Grade 7,Grade 7,T034,Room 179,Wednesday,14:00:00,15:00:00
+7,Grade 7,Grade 7,T010,Room 148,Wednesday,15:00:00,16:00:00
+16,Grade 8,Grade 8,T065,Room 178,Friday,8:30:00,9:30:00
+14,Grade 8,Grade 8,T006,Room 172,Friday,9:30:00,10:00:00
+13,Grade 8,Grade 8,T072,Room 236,Friday,11:00:00,12:00:00
+10,Grade 8,Grade 8,T002,Room 196,Monday,7:30:00,8:30:00
+11,Grade 8,Grade 8,T026,Room 106,Monday,8:30:00,9:30:00
+16,Grade 8,Grade 8,T065,Room 169,Monday,15:00:00,16:00:00
+15,Grade 8,Grade 8,T030,Room 141,Monday,15:00:00,16:00:00
+12,Grade 8,Grade 8,T037,Room 177,Monday,16:00:00,17:00:00
+13,Grade 8,Grade 8,T072,Room 139,Saturday,7:30:00,8:30:00
+9,Grade 8,Grade 8,T069,Room 218,Saturday,11:00:00,12:00:00
+10,Grade 8,Grade 8,T002,Room 229,Saturday,13:00:00,14:00:00
+10,Grade 8,Grade 8,T002,Room 152,Saturday,15:00:00,16:00:00
+12,Grade 8,Grade 8,T037,Room 107,Saturday,16:00:00,17:00:00
+12,Grade 8,Grade 8,T037,Room 249,Thursday,9:30:00,10:00:00
+13,Grade 8,Grade 8,T072,Room 154,Thursday,12:00:00,13:00:00
+14,Grade 8,Grade 8,T006,Room 224,Thursday,12:00:00,13:00:00
+11,Grade 8,Grade 8,T026,Room 111,Thursday,13:00:00,14:00:00
+16,Grade 8,Grade 8,T065,Room 238,Tuesday,9:30:00,10:00:00
+9,Grade 8,Grade 8,T069,Room 141,Tuesday,10:30:00,11:00:00
+14,Grade 8,Grade 8,T006,Room 167,Tuesday,14:00:00,15:00:00
+15,Grade 8,Grade 8,T030,Room 173,Tuesday,15:00:00,16:00:00
+11,Grade 8,Grade 8,T026,Room 129,Tuesday,15:00:00,16:00:00
+15,Grade 8,Grade 8,T030,Room 142,Wednesday,9:30:00,10:30:00
+9,Grade 8,Grade 8,T069,Room 143,Wednesday,16:00:00,17:00:00
+18,Grade 9,Grade 9,T010,Room 195,Friday,14:00:00,15:00:00
+23,Grade 9,Grade 9,T039,Room 134,Friday,15:00:00,16:00:00
+19,Grade 9,Grade 9,T034,Room 201,Monday,9:30:00,10:30:00
+18,Grade 9,Grade 9,T010,Room 109,Monday,11:00:00,12:00:00
+18,Grade 9,Grade 9,T010,Room 220,Saturday,9:30:00,10:00:00
+20,Grade 9,Grade 9,T070,Room 142,Saturday,11:00:00,12:00:00
+20,Grade 9,Grade 9,T070,Room 201,Saturday,12:00:00,13:00:00
+22,Grade 9,Grade 9,T028,Room 224,Saturday,13:00:00,14:00:00
+19,Grade 9,Grade 9,T034,Room 198,Saturday,15:00:00,16:00:00
+20,Grade 9,Grade 9,T070,Room 121,Saturday,16:00:00,17:00:00
+23,Grade 9,Grade 9,T039,Room 148,Thursday,7:30:00,8:30:00
+22,Grade 9,Grade 9,T028,Room 130,Thursday,10:30:00,11:00:00
+24,Grade 9,Grade 9,T074,Room 190,Thursday,15:00:00,16:00:00
+24,Grade 9,Grade 9,T074,Room 115,Thursday,15:00:00,16:00:00
+21,Grade 9,Grade 9,T004,Room 211,Tuesday,9:30:00,10:30:00
+21,Grade 9,Grade 9,T004,Room 128,Tuesday,13:00:00,14:00:00
+22,Grade 9,Grade 9,T028,Room 219,Tuesday,14:00:00,15:00:00
+17,Grade 9,Grade 9,T076,Room 180,Tuesday,16:00:00,17:00:00
+19,Grade 9,Grade 9,T034,Room 248,Tuesday,16:00:00,17:00:00
+21,Grade 9,Grade 9,T004,Room 194,Wednesday,7:30:00,8:30:00
+24,Grade 9,Grade 9,T074,Room 158,Wednesday,8:30:00,9:30:00
+23,Grade 9,Grade 9,T039,Room 156,Wednesday,13:00:00,14:00:00
+17,Grade 9,Grade 9,T076,Room 140,Wednesday,13:00:00,14:00:00
+17,Grade 9,Grade 9,T076,Room 192,Wednesday,16:00:00,17:00:00
+64,Humanities and Social Sciences,Grade 12,T004,Room 169,Friday,7:30:00,8:30:00
+40,Humanities and Social Sciences,Grade 11,T031,Room 192,Friday,11:00:00,12:00:00
+40,Humanities and Social Sciences,Grade 11,T031,Room 154,Friday,13:00:00,14:00:00
+70,Humanities and Social Sciences,Grade 12,T011,Room 137,Thursday,11:00:00,12:00:00
+35,Humanities and Social Sciences,Grade 11,T012,Room 160,Wednesday,12:00:00,13:00:00
+40,Humanities and Social Sciences,Grade 11,T031,Room 190,Wednesday,15:00:00,16:00:00
+34,"Science, Technology, Engineering, and Mathematics",Grade 11,T011,Room 209,Friday,10:30:00,11:00:00
+34,"Science, Technology, Engineering, and Mathematics",Grade 11,T011,Room 210,Friday,16:00:00,17:00:00
+36,"Science, Technology, Engineering, and Mathematics",Grade 11,T026,Room 141,Monday,11:00:00,12:00:00
+41,"Science, Technology, Engineering, and Mathematics",Grade 11,T032,Room 191,Tuesday,10:00:00,11:00:00
+50,"Science, Technology, Engineering, and Mathematics",Grade 12,T066,Room 141,Wednesday,9:30:00,10:00:00
+50,"Science, Technology, Engineering, and Mathematics",Grade 12,T066,Room 154,Wednesday,10:00:00,11:00:00
+34,"Science, Technology, Engineering, and Mathematics",Grade 11,T011,Room 122,Wednesday,11:00:00,12:00:00
