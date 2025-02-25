@@ -22,9 +22,9 @@ print("Loading subjects...")
 cursor.execute("SELECT * FROM subjects")
 subjects = cursor.fetchall()
 
-print("Loading teachers...")
-cursor.execute("SELECT * FROM teachers")
-teachers = cursor.fetchall()
+print("Loading teacher_subjects...")
+cursor.execute("SELECT * FROM teacher_subjects")
+teacher_subjects = cursor.fetchall()
 
 print("Loading rooms...")
 cursor.execute("SELECT * FROM rooms")
@@ -39,35 +39,39 @@ print("Clearing old schedule...")
 cursor.execute("DELETE FROM schedule")
 
 # Prepare to track assigned slots and unassigned subjects
-assigned_slots = set()
 unassigned_subjects = []
 
-# Schedule each subject for 3 hours a week
+# Schedule each subject for the required lecture hours
 for subject in subjects:
     subject_code, subject_name, program, year_level, lecture_hours = subject  # Ignore subject_name
 
-    available_teachers = [t for t in teachers if t[2] == subject_code]
-    if not available_teachers:
+    available_teacher_subjects = [t for t in teacher_subjects if t[2] == subject_code]
+    if not available_teacher_subjects:
         print(f"⚠ No teacher available for {subject_code}, skipping...")
         unassigned_subjects.append((subject_code, "No available teacher"))
         continue
 
-    # Schedule 3 hours for each subject
+    # Schedule required hours for each subject
     hours_scheduled = 0
     max_attempts = 10  # Maximum attempts to find a slot
     attempts = 0
 
-    while hours_scheduled < 3 and attempts < max_attempts:
-        teacher = random.choice(available_teachers)
+    while hours_scheduled < lecture_hours and attempts < max_attempts:
+        teacher = random.choice(available_teacher_subjects)
         room = random.choice(rooms)
 
         # Randomly select a time slot
         time_slot = random.choice(time_slots)
         slot_id, day, start_time, end_time = time_slot
 
-        # Check if the slot is already assigned
-        if slot_id not in assigned_slots:
-            assigned_slots.add(slot_id)
+        # Check if the slot can be reused for the same year level and section
+        cursor.execute("""
+            SELECT COUNT(*) FROM schedule 
+            WHERE subject_code = %s AND day = %s AND start_time = %s AND end_time = %s
+        """, (subject_code, day, start_time, end_time))
+        count = cursor.fetchone()[0]
+
+        if count < 1:  # If no existing schedule for this subject at this time
             hours_scheduled += 1  # Increment scheduled hours
 
             # Insert into schedule
@@ -77,11 +81,11 @@ for subject in subjects:
                 (subject_code, teacher[1], room[1], day, start_time, end_time)
             )
         else:
-            print(f"⚠ Slot {slot_id} already assigned, trying another slot...")
+            print(f"⚠ Slot {slot_id} already assigned for {subject_code}, trying another slot...")
 
         attempts += 1
 
-    if hours_scheduled < 3:
+    if hours_scheduled < lecture_hours:
         print(f"❌ Failed to schedule all hours for {subject_code} after {attempts} attempts.")
         unassigned_subjects.append((subject_code, "Failed to schedule all hours after maximum attempts"))
 

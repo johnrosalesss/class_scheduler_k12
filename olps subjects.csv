@@ -1,0 +1,237 @@
+subject_code,subject_name,year_level,program,lecture_hours
+,Filipino,7,7,3
+,English,7,7,4
+,Mathematics,7,7,4
+,Science & Health,7,7,4
+,Araling Panlipunan,7,7,3
+,Christian Living Education,7,7,3
+,MAPEH,7,7,3
+,TLE,7,7,2
+,Filipino,8,8,3
+,English,8,8,3
+,Mathematics,8,8,3
+,Science & Health,8,8,3
+,Araling Panlipunan,8,8,3
+,Christian Living Education,8,8,3
+,MAPEH,8,8,3
+,TLE,8,8,2
+,Filipino,9,9,3
+,English,9,9,3
+,Mathematics,9,9,3
+,Science & Health,9,9,3
+,Araling Panlipunan,9,9,3
+,Christian Living Education,9,9,3
+,MAPEH,9,9,3
+,TLE,9,9,2
+,Filipino,10,10,3
+,English,10,10,3
+,Mathematics,10,10,3
+,Science & Health,10,10,3
+,Araling Panlipunan,10,10,3
+,Christian Living Education,10,10,3
+,MAPEH,10,10,3
+,TLE,10,10,2
+,Faith in the Light of the Epistles of Paul 1,11,"Accountancy, Business and Management",2
+,Faith in the Light of the Epistles of Paul 1,11,"Science, Technology, Engineering, and Mathematics",2
+,Oral Communication,11,Humanities and Social Sciences,2
+,Oral Communication,11,"Science, Technology, Engineering, and Mathematics",2
+,Organization and Management,11,"Accountancy, Business and Management",3
+,Business Math,11,"Accountancy, Business and Management",3
+,"Fundamentals of Accountancy, Business and Mgnt 1",11,"Accountancy, Business and Management",3
+,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,11,Humanities and Social Sciences,2
+,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,11,"Science, Technology, Engineering, and Mathematics",2
+,Applied Economics,12,"Accountancy, Business and Management",3
+,"Fundamentals of Accountancy, Business and Mgnt 2",12,"Accountancy, Business and Management",3
+,Principles of Marketing,11,"Accountancy, Business and Management",3
+,Business Finance,12,"Accountancy, Business and Management",3
+,Business Ethics and Social Responsibility,12,"Accountancy, Business and Management",3
+,Work Immersion/Business Enterprise Simulation,12,"Accountancy, Business and Management",3
+,Contemporary Philippine Arts from the Regions,12,"Accountancy, Business and Management",2
+,Contemporary Philippine Arts from the Regions,12,Humanities and Social Sciences,2
+,Contemporary Philippine Arts from the Regions,12,"Science, Technology, Engineering, and Mathematics",2
+,"Understanding Culture, Society, and Politics",12,"Accountancy, Business and Management",2
+,"Understanding Culture, Society, and Politics",12,Humanities and Social Sciences,2
+,"Understanding Culture, Society, and Politics",12,"Science, Technology, Engineering, and Mathematics",2
+,Physical Education and Health 3,12,"Accountancy, Business and Management",2
+,Physical Education and Health 3,12,Humanities and Social Sciences,2
+,Physical Education and Health 3,12,"Science, Technology, Engineering, and Mathematics",2
+,Catholic Social Teaching,12,"Accountancy, Business and Management",2
+,Catholic Social Teaching,12,Humanities and Social Sciences,2
+,Catholic Social Teaching,12,"Science, Technology, Engineering, and Mathematics",2
+,Media and Information Literacy,12,"Accountancy, Business and Management",2
+,Media and Information Literacy,12,Humanities and Social Sciences,2
+,Media and Information Literacy,12,"Science, Technology, Engineering, and Mathematics",2
+,Physical Education and Health 4,12,"Accountancy, Business and Management",2
+,Physical Education and Health 4,12,Humanities and Social Sciences,2
+,Physical Education and Health 4,12,"Science, Technology, Engineering, and Mathematics",2
+,Practical Research 2,11,"Accountancy, Business and Management",2
+,Practical Research 2,11,Humanities and Social Sciences,2
+,Practical Research 2,11,"Science, Technology, Engineering, and Mathematics",2
+,Entrepreneurship,12,"Accountancy, Business and Management",2
+,Entrepreneurship,12,Humanities and Social Sciences,2
+,Entrepreneurship,12,"Science, Technology, Engineering, and Mathematics",2
+,"Inquiries, Investigations and Immersion",12,Humanities and Social Sciences,2
+,"Inquiries, Investigations and Immersion",12,"Accountancy, Business and Management",2
+,"Inquiries, Investigations and Immersion",12,"Science, Technology, Engineering, and Mathematics",2
+,Physical Education and Health 2,11,"Accountancy, Business and Management",2
+,Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino,11,"Accountancy, Business and Management",2
+,General Mathematics,11,"Accountancy, Business and Management",2
+,General Mathematics,11,Humanities and Social Sciences,2
+,General Mathematics,11,"Science, Technology, Engineering, and Mathematics",2
+,Earth and Life Science,11,"Accountancy, Business and Management",2
+,Earth and Life Science,11,Humanities and Social Sciences,2
+,Earth and Life Science,11,"Science, Technology, Engineering, and Mathematics",2
+,21st Century Literature from the Philippines and the World,11,"Accountancy, Business and Management",2
+,21st Century Literature from the Philippines and the World,11,Humanities and Social Sciences,2
+,21st Century Literature from the Philippines and the World,11,"Science, Technology, Engineering, and Mathematics",2
+,Physical Education and Health 1,11,"Accountancy, Business and Management",2
+,Physical Education and Health 1,11,Humanities and Social Sciences,2
+,Physical Education and Health 1,11,"Science, Technology, Engineering, and Mathematics",2
+,Faith in the Light of the Epistles of Paul 2,11,"Accountancy, Business and Management",2
+,Faith in the Light of the Epistles of Paul 2,11,Humanities and Social Sciences,2
+,Faith in the Light of the Epistles of Paul 2,11,"Science, Technology, Engineering, and Mathematics",2
+,Reading and Writing Skills,11,"Accountancy, Business and Management",2
+,Reading and Writing Skills,11,Humanities and Social Sciences,2
+,Reading and Writing Skills,11,"Science, Technology, Engineering, and Mathematics",2
+,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,11,"Accountancy, Business and Management",2
+,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,11,Humanities and Social Sciences,2
+,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,11,"Science, Technology, Engineering, and Mathematics",2
+,Statistics and Probability,11,"Accountancy, Business and Management",2
+,Statistics and Probability,11,Humanities and Social Sciences,2
+,Statistics and Probability,11,"Science, Technology, Engineering, and Mathematics",2
+,Physical Science,11,"Accountancy, Business and Management",2
+,Physical Science,11,Humanities and Social Sciences,2
+,Personal Development,11,"Accountancy, Business and Management",2
+,Personal Development,11,Humanities and Social Sciences,2
+,Personal Development,11,"Science, Technology, Engineering, and Mathematics",2
+,Physical Education and Health 2,11,Humanities and Social Sciences,2
+,Physical Education and Health 2,11,"Science, Technology, Engineering, and Mathematics",2
+,Empowerment Technologies,11,"Accountancy, Business and Management",2
+,Empowerment Technologies,11,Humanities and Social Sciences,2
+,Empowerment Technologies,11,"Science, Technology, Engineering, and Mathematics",2
+,Practical Research 1,11,"Accountancy, Business and Management",2
+,Practical Research 1,11,Humanities and Social Sciences,2
+,Practical Research 1,11,"Science, Technology, Engineering, and Mathematics",2
+,English for Academic and Professional Purposes,11,"Accountancy, Business and Management",2
+,English for Academic and Professional Purposes,11,Humanities and Social Sciences,2
+,English for Academic and Professional Purposes,11,"Science, Technology, Engineering, and Mathematics",2
+,Pagsulat sa Filipino sa Piling Larangan (Akademik),12,"Accountancy, Business and Management",2
+,Pagsulat sa Filipino sa Piling Larangan (Akademik),12,Humanities and Social Sciences,2
+,Pagsulat sa Filipino sa Piling Larangan (Akademik),12,"Science, Technology, Engineering, and Mathematics",2
+,Theology of the Body,12,"Accountancy, Business and Management",2
+,Theology of the Body,12,Humanities and Social Sciences,2
+,Theology of the Body,12,"Science, Technology, Engineering, and Mathematics",2
+,Introduction to Philosophy of the Human Person,12,"Accountancy, Business and Management",2
+,Introduction to Philosophy of the Human Person,12,Humanities and Social Sciences,2
+,Introduction to Philosophy of the Human Person,12,"Science, Technology, Engineering, and Mathematics",2
+,Philippine Politics and Governance,11,Humanities and Social Sciences,3
+,Discipline and Ideas in Social Sciences,11,Humanities and Social Sciences,3
+,Intro to World Religions and Belief System,11,Humanities and Social Sciences,3
+,Discipline and Ideas in Applied Social Science,11,Humanities and Social Sciences,3
+,"Community Engagement, Solidarity and Citizenship",12,Humanities and Social Sciences,3
+,Creative Writing,12,Humanities and Social Sciences,3
+,"Trends, Networks and Critical Thinking in the 21st Century Culture",12,Humanities and Social Sciences,3
+,Creative Non-Fiction,12,Humanities and Social Sciences,3
+,Work Immersion/Culminating Activity,12,Humanities and Social Sciences,3
+,Pre-Calculus,11,"Science, Technology, Engineering, and Mathematics",3
+,General Biology 1,11,"Science, Technology, Engineering, and Mathematics",3
+,Basic Calculus,11,"Science, Technology, Engineering, and Mathematics",3
+,General Biology 2,11,"Science, Technology, Engineering, and Mathematics",3
+,General Physics 1,12,"Science, Technology, Engineering, and Mathematics",3
+,General Chemistry 1,12,"Science, Technology, Engineering, and Mathematics",3
+,General Physics 2,12,"Science, Technology, Engineering, and Mathematics",3
+,General Chemistry 2,12,"Science, Technology, Engineering, and Mathematics",3
+,Work Immersion/Capstone Project,12,"Science, Technology, Engineering, and Mathematics",3
+,Reading and Literacy,10,10,1
+,Reading and Literacy,6,6,1
+,Reading and Literacy,5,5,1
+,Reading and Literacy,1,1,4
+,Language,1,1,3
+,Mathematics,1,1,4
+,Christian Living Education,1,1,3
+,Makabansa,1,1,3
+,Computer,1,1,1
+,Paulinian Writing,1,1,1
+,Filipino,2,2,3
+,English,2,2,3
+,Mathematics,2,2,4
+,Araling Panlipunan,2,2,3
+,Christian Living Education,2,2,3
+,MAPEH,2,2,3
+,Computer,2,2,1
+,Paulinian Writing,2,2,1
+,Filipino,3,3,3
+,English,3,3,3
+,Mathematics,3,3,4
+,Science & Health,3,3,3
+,Araling Panlipunan,3,3,3
+,Christian Living Education,3,3,3
+,MAPEH,3,3,3
+,Computer,3,3,1
+,Paulinian Writing,3,3,1
+,Filipino,4,4,3
+,English,4,4,4
+,Mathematics,4,4,4
+,Science & Health,4,4,4
+,Christian Living Education,4,4,3
+,MAPEH,4,4,3
+,Computer,4,4,2
+,HELE,4,4,2
+,Araling Panlipunan,4,4,3
+,Filipino,5,5,3
+,English,5,5,3
+,Mathematics,5,5,4
+,Science & Health,5,5,3
+,Araling Panlipunan,5,5,3
+,Christian Living Education,5,5,3
+,MAPEH,5,5,3
+,Computer,5,5,2
+,HELE,5,5,2
+,Filipino,6,6,3
+,English,6,6,3
+,Mathematics,6,6,4
+,Science & Health,6,6,3
+,Christian Living Education,6,6,3
+,MAPEH,6,6,3
+,Computer,6,6,2
+,HELE,6,6,2
+,Christian Living Education,Toddler,Toddler,1
+,Language and Spelling,Toddler,Toddler,1
+,Number Readiness,Toddler,Toddler,1
+,Reading Readiness,Toddler,Toddler,1
+,Christian Living Education,Nursery,Nursery,1.5
+,Language and Spelling,Nursery,Nursery,1.5
+,Number Readiness,Nursery,Nursery,1.5
+,Reading Readiness,Nursery,Nursery,1.5
+,Christian Living Education,Kinder,Kinder,2
+,Language and Spelling,Kinder,Kinder,2
+,Reading Readiness,Kinder,Kinder,2
+,Robotics,11,"Science, Technology, Engineering, and Mathematics",1
+,Robotics,12,"Science, Technology, Engineering, and Mathematics",1
+,Araling Panlipunan,6,6,3
+,Robotics ,7,7,1
+,Faith in the Light of the Epistles of Paul 1,11,Humanities and Social Sciences,2
+,Reading and Literacy,7,7,1
+,Robotics,8,8,1
+,Robotics,9,9,1
+,Robotics,10,10,1
+,Reading and Literacy,8,8,1
+,Reading And Literacy,9,9,1
+,Oral Communication,11,"Accountancy, Business and Management",2
+,ICT,10,10,2
+,ICT,7,7,2
+,ICT,9,9,2
+,ICT,8,8,2
+,Reading and Literacy,3,3,1
+,Reading and Literacy,2,2,1
+,Robotics,11,"Accountancy, Business and Management",1
+,Robotics,11,Humanities and Social Sciences,1
+,Robotics,12,"Accountancy, Business and Management",1
+,Robotics,12,Humanities and Social Sciences,1
+,Robotics,4,4,1
+,Robotics ,5,5,1
+,Robotics ,6,6,1
+,DRRR,11,"Science, Technology, Engineering, and Mathematics",2
+,"Inquiries, Investigations and Immersion (2nd Semester)",12,"Accountancy, Business and Management",2
+,"Inquiries, Investigations and Immersion (2nd Semester)",12,"Science, Technology, Engineering, and Mathematics",2
+,"Inquiries, Investigations and Immersion (2nd Semester)",12,Humanities and Social Sciences,2
