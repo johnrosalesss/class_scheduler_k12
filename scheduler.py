@@ -51,7 +51,8 @@ print(f"Fetched {len(sections)} sections.")
 print("Clearing old schedule...")
 cursor.execute("DELETE FROM schedule")
 
-unassigned_subjects = []  # To track subjects that couldn't be assigned
+unassigned_subjects = []  # To track subjects that couldn't be assigned at all
+partially_assigned_subjects = []  # To track subjects with some hours unassigned
 assigned_subjects = []    # To track successfully assigned subjects
 
 # Dictionary to store the count of successfully scheduled subjects per section
@@ -153,15 +154,18 @@ for section in sections:
                 )
                 assigned_subjects.append((subject_code, section_name, teacher_name, room[1], day, start_time, end_time))
                 section_schedule_counts[section_name]["count"] += 1  # Increment the count for this section
-                break  # Exit after successfully scheduling for this section
             else:
                 print(f"⚠ Slot {slot_id} already assigned for {subject_code} in {section_name}, trying another slot...")
 
             attempts += 1
 
         if hours_scheduled < hours_per_week:
-            print(f"❌ Failed to schedule all hours for {subject_code} in {section_name} after {attempts} attempts.")
-            unassigned_subjects.append((subject_code, section_name, "Failed to schedule all hours after maximum attempts"))
+            if hours_scheduled == 0:
+                print(f"❌ Failed to schedule any hours for {subject_code} in {section_name} after {attempts} attempts.")
+                unassigned_subjects.append((subject_code, section_name, "Failed to schedule any hours after maximum attempts"))
+            else:
+                print(f"⚠ Partially scheduled {hours_scheduled}/{hours_per_week} hours for {subject_code} in {section_name}.")
+                partially_assigned_subjects.append((subject_code, section_name, f"Partially scheduled {hours_scheduled}/{hours_per_week} hours"))
 
 # After running the schedule process, print unassigned subjects with reasons
 if unassigned_subjects:
@@ -272,17 +276,6 @@ def export_to_csv(cursor, filename):
 
 # Call the export function for the weekly schedule
 export_to_csv(cursor, 'weekly_schedule.csv')
-
-# Tally subjects by grade level
-grade_levels = ["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12",]
-for grade_level in grade_levels:
-    cursor.execute("""
-        SELECT COUNT(*) 
-        FROM weekly_schedule
-        WHERE year_level LIKE %s
-    """, (f"%{grade_level}%",))
-    count = cursor.fetchone()[0]
-    print(f"Subjects scheduled for {grade_level}: {count}")
 
 # Close connection
 cursor.close()
