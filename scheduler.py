@@ -47,7 +47,7 @@ unassigned_subjects = []
 
 # Schedule each subject for the required lecture hours
 for subject in subjects:
-    subject_code, subject_name, program, year_level, lecture_hours, semester = subject  
+    subject_code, subject_name, program, year_level, hours_per_week, semester = subject  
 
     available_teacher_subjects = [(t[0], t[1]) for t in teacher_subjects if t[2] == subject_code]
     if not available_teacher_subjects:
@@ -60,7 +60,7 @@ for subject in subjects:
     max_attempts = 10  # Maximum attempts to find a slot
     attempts = 0
 
-    while hours_scheduled < lecture_hours and attempts < max_attempts:
+    while hours_scheduled < hours_per_week and attempts < max_attempts:
         teacher_id, teacher_name = random.choice(available_teacher_subjects)
         room = random.choice(rooms)
 
@@ -89,7 +89,7 @@ for subject in subjects:
 
         attempts += 1
 
-    if hours_scheduled < lecture_hours:
+    if hours_scheduled < hours_per_week:
         print(f"❌ Failed to schedule all hours for {subject_code} after {attempts} attempts.")
         unassigned_subjects.append((subject_code, "Failed to schedule all hours after maximum attempts"))
 
@@ -184,7 +184,7 @@ print("\n=== Summary of Assigned and Unassigned Subjects ===")
 print("Assigned Subjects:")
 if len(subjects) - len(unassigned_subjects) > 0:
     for subject in subjects:
-        subject_code, subject_name, program, year_level, lecture_hours, semester = subject
+        subject_code, subject_name, program, year_level, hours_per_week, semester = subject
         if subject_code not in [unassigned[0] for unassigned in unassigned_subjects]:
             print(f"Subject Code: {subject_code} - Program: {program}, Year Level: {year_level}")
 else:

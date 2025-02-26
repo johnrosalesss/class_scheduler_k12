@@ -2,7 +2,7 @@ List of Subjects Senior High School
 
 
 1. Accountancy, Business, and Management (ABM)
-- Grade 11 - Semester 1
+- Grade 11 - Semester 1 (12 subjects)
 Faith in the Light of the Epistles of Paul 1
 Oral Communication
 Organization and Management
@@ -16,7 +16,7 @@ Empowerment Technologies
 Practical Research 1
 Robotics 11
 
-- Grade 11 - Semester 2
+- Grade 11 - Semester 2 (11 subjects)
 Faith in the Light of the Epistles of Paul 2
 Fundamentals of Accountancy, Business and Management 1
 Principles of Marketing
@@ -29,7 +29,7 @@ Physical Science
 Personal Development
 English for Academic and Professional Purposes
 
-Grade 12 - Semester 1
+Grade 12 - Semester 1 (9 subjects)
 Applied Economics
 Fundamentals of Accountancy, Business and Management 2
 Contemporary Philippine Arts from the Regions
@@ -40,7 +40,7 @@ Inquiries, Investigations, and Immersion
 Theology of the Body
 Introduction to Philosophy of the Human Person
 
--Grade 12 - Semester 2
+-Grade 12 - Semester 2 (9 subjects)
 Business Finance
 Business Ethics and Social Responsibility
 Work Immersion/Business Enterprise Simulation
@@ -53,7 +53,7 @@ Inquiries, Investigations and Immersion (2nd Semester)
 
 
 2. Humanities and Social Sciences (HUMSS)
-- Grade 11 - Semester 1
+- Grade 11 - Semester 1 (11 subjects)
 Oral Communication
 Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino
 General Mathematics
@@ -66,7 +66,7 @@ Philippine Politics and Governance
 Discipline and Ideas in Social Sciences
 Faith in the Light of the Epistles of Paul 1
 
-- Grade 11 - Semester 2
+- Grade 11 - Semester 2 (11 subjects)
 Faith in the Light of the Epistles of Paul 2
 Practical Research 2
 Reading and Writing Skills
@@ -79,7 +79,7 @@ English for Academic and Professional Purposes
 Intro to World Religions and Belief System
 Discipline and Ideas in Applied Social Science
 
-- Grade 12 - Semester 1
+- Grade 12 - Semester 1 (10 subjects)
 Contemporary Philippine Arts from the Regions
 Understanding Culture, Society, and Politics
 Physical Education and Health 3
@@ -91,7 +91,7 @@ Community Engagement, Solidarity, and Citizenship
 Creative Writing
 Robotics 12
 
-- Grade 12 - Semester 2
+- Grade 12 - Semester 2 (8 subjects)
 Catholic Social Teaching
 Media and Information Literacy
 Physical Education and Health 4
@@ -103,7 +103,7 @@ Inquiries, Investigations and Immersion (2nd Semester)
 
 
 3. Science, Technology, Engineering, and Mathematics (STEM)
-- Grade 11 - Semester 1
+- Grade 11 - Semester 1 (12 subjects)
 Faith in the Light of the Epistles of Paul 1
 Oral Communication
 Komunikasyon at Pananaliksik sa Wika at Kulturang Filipino
@@ -117,7 +117,7 @@ Pre-Calculus
 General Biology 1
 Robotics 11
 
-- Grade 11 - Semester 2
+- Grade 11 - Semester 2 (12 subjects)
 Faith in the Light of the Epistles of Paul 2
 Practical Research 2
 Reading and Writing Skills
@@ -131,7 +131,7 @@ Basic Calculus
 General Biology 2
 DRRR
 
-- Grade 12 - Semester 1
+- Grade 12 - Semester 1 (10 subjects)
 Contemporary Philippine Arts from the Regions
 Understanding Culture, Society, and Politics
 Physical Education and Health 3
@@ -143,7 +143,7 @@ General Physics 1
 General Chemistry 1
 Robotics 12
 
-- Grade 12 - Semester 2
+- Grade 12 - Semester 2 (8 subjects)
 Catholic Social Teaching
 Media and Information Literacy
 Physical Education and Health 4
