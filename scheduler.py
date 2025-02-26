@@ -58,22 +58,30 @@ assigned_subjects = []    # To track successfully assigned subjects
 # Dictionary to store the count of successfully scheduled subjects per section
 section_schedule_counts = {}
 
+# Debug: Print all subjects in the database
+print("All subjects in the database:")
+for subject in subjects:
+    print(f"Subject: {subject[1]}, Program: {subject[2]}, Year Level: {subject[3]}")
+
 # Schedule each subject for the required lecture hours
 for section in sections:
     section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
     print(f"\nProcessing section: {section_name} (Program: {program}, Year Level: {year_level})")
     
     # Convert program and year_level to match the subjects table
-    program_str = program.replace('Grade ', '') if program.startswith('Grade ') else program
-    year_level_str = f"Grade {year_level}" if isinstance(year_level, int) else year_level
+    program_str = program.replace('Grade ', '').strip().lower() if program.startswith('Grade ') else program.strip().lower()
+    year_level_str = "toddler" if year_level == 0 else f"grade {year_level}".strip().lower()
+    
+    # Debug: Print the values being compared
+    print(f"Looking for subjects with program: {program_str}, year_level: {year_level_str}")
     
     # Get subjects for the current section based on program and year level
     section_subjects = [
         subject for subject in subjects 
-        if str(subject[3]).strip() == str(year_level_str).strip() 
-        and str(subject[2]).strip() == str(program_str).strip()
+        if str(subject[3]).strip().lower() == year_level_str
+        and str(subject[2]).strip().lower() == program_str
     ]
-    print(f"Subjects for this section: {section_subjects}")
+    print(f"Found subjects: {section_subjects}")
 
     # Initialize the count of successfully scheduled subjects for this section
     section_schedule_counts[section_name] = {"year_level": year_level, "count": 0}
@@ -233,15 +241,16 @@ for section in sections:
 # Commit the schedule to the database
 conn.commit()
 
-# Create a view to see the classes of each section during the week, including year level and program
-print("Creating view for weekly schedule by section...")
+# Create a view to summarize schedules assigned to each section
 create_view_query = """
-CREATE OR REPLACE VIEW weekly_schedule AS
+CREATE OR REPLACE VIEW section_schedule_summary AS
 SELECT 
-    s.subject_code,
-    sub.subject_name,
+    s.section_id,
+    sec.section_name,
     sec.program,
     sec.year_level,
+    s.subject_code,
+    sub.subject_name,
     s.teacher_name,
     s.room_name,
     s.day,
@@ -250,32 +259,32 @@ SELECT
 FROM 
     schedule s
 JOIN 
-    subjects sub ON s.subject_code = sub.subject_code
-JOIN
     sections sec ON s.section_id = sec.section_id
+JOIN 
+    subjects sub ON s.subject_code = sub.subject_code
 ORDER BY 
-    sec.program, sec.year_level, s.day, s.start_time;
+    sec.section_name, s.day, s.start_time;
 """
 cursor.execute(create_view_query)
-print("View 'weekly_schedule' created successfully.")
+print("View 'section_schedule_summary' created successfully.")
 
-# Export the weekly schedule to a CSV file
-def export_to_csv(cursor, filename):
-    cursor.execute("SELECT * FROM weekly_schedule")
+# Export the view to a CSV file
+def export_view_to_csv(cursor, view_name, filename):
+    cursor.execute(f"SELECT * FROM {view_name}")
     rows = cursor.fetchall()
     
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         # Write the header
-        writer.writerow(['Subject Code', 'Subject Name', 'Program', 'Year Level', 'Teacher Name', 'Room Name', 'Day', 'Start Time', 'End Time'])
+        writer.writerow(['Section ID', 'Section Name', 'Program', 'Year Level', 'Subject Code', 'Subject Name', 'Teacher Name', 'Room Name', 'Day', 'Start Time', 'End Time'])
         # Write the data
         for row in rows:
             writer.writerow(row)
     
-    print(f"Data exported to {filename} successfully.")
+    print(f"View '{view_name}' exported to {filename} successfully.")
 
-# Call the export function for the weekly schedule
-export_to_csv(cursor, 'weekly_schedule.csv')
+# Call the export function for the view
+export_view_to_csv(cursor, 'section_schedule_summary', 'section_schedule_summary.csv')
 
 # Close connection
 cursor.close()
