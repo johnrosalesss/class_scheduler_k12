@@ -21,22 +21,31 @@ print("Connected successfully!")
 print("Loading subjects...")
 cursor.execute("SELECT * FROM subjects")
 subjects = cursor.fetchall()
+print(f"Fetched {len(subjects)} subjects.")
 
-print("Loading teacher_subjects with teacher names...")
+print("Loading teachers with their subjects...")
 cursor.execute("""
-    SELECT ts.teacher_id, t.teacher_name, ts.subject_code
-    FROM teacher_subjects ts
-    JOIN teachers t ON ts.teacher_id = t.teacher_id
+    SELECT t.teacher_id, CONCAT(t.teacher_first_name, ' ', t.teacher_last_name) AS teacher_name, t.subject_name
+    FROM teachers t
 """)
 teacher_subjects = cursor.fetchall()
+print(f"Fetched {len(teacher_subjects)} teachers with subjects.")
 
 print("Loading rooms...")
 cursor.execute("SELECT * FROM rooms")
 rooms = cursor.fetchall()
+print(f"Fetched {len(rooms)} rooms.")
 
 print("Loading time slots...")
 cursor.execute("SELECT * FROM time_slots")
 time_slots = cursor.fetchall()
+print(f"Fetched {len(time_slots)} time slots.")
+
+# Load sections
+print("Loading sections...")
+cursor.execute("SELECT * FROM sections")
+sections = cursor.fetchall()
+print(f"Fetched {len(sections)} sections.")
 
 # Clear old schedule
 print("Clearing old schedule...")
@@ -49,11 +58,22 @@ unassigned_subjects = []
 for subject in subjects:
     subject_code, subject_name, program, year_level, hours_per_week, semester = subject  
 
-    available_teacher_subjects = [(t[0], t[1]) for t in teacher_subjects if t[2] == subject_code]
+    # Find available teachers for the current subject
+    available_teacher_subjects = []
+    for teacher in teacher_subjects:
+        teacher_id, teacher_name, teacher_subjects_list = teacher
+        # Split the teacher's subjects into a list
+        teacher_subjects_list = teacher_subjects_list.split(', ')
+        
+        # Check if the current subject is in the teacher's list of subjects
+        if subject_name in teacher_subjects_list:
+            available_teacher_subjects.append((teacher_id, teacher_name))
+
     if not available_teacher_subjects:
-        print(f"⚠ No teacher available for {subject_code}, skipping...")
+        print(f"⚠ No teacher available for {subject_name}, skipping...")
         unassigned_subjects.append((subject_code, "No available teacher"))
         continue
+
 
     # Schedule required hours for each subject
     hours_scheduled = 0
@@ -63,21 +83,45 @@ for subject in subjects:
     while hours_scheduled < hours_per_week and attempts < max_attempts:
         teacher_id, teacher_name = random.choice(available_teacher_subjects)
         room = random.choice(rooms)
-
-        # Randomly select a time slot
         time_slot = random.choice(time_slots)
+
+        # Extract time slot details
         slot_id, day, start_time, end_time = time_slot
 
-        # Check if the slot is available
+        # Check for recess and lunch breaks based on year level
+        if (program == "Grade School" and (
+            (start_time >= "10:00" and end_time <= "10:30") or  # Recess after 2nd period
+            (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
+        )) or (program == "High School" and (
+            (start_time >= "11:00" and end_time <= "11:30") or  # Recess after 3rd period
+            (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
+        )):
+            print(f"⚠ Slot {slot_id} is during recess/lunch for {program}, trying another slot...")
+            attempts += 1
+            continue
+
+        # Check for hard constraints
         cursor.execute("""
             SELECT COUNT(*) FROM schedule 
-            WHERE subject_code = %s AND day = %s AND start_time = %s AND end_time = %s
-        """, (subject_code, day, start_time, end_time))
+            WHERE (teacher_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
+                  (room_name = %s AND day = %s AND start_time < %s AND end_time > %s)
+        """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time))
+        conflicts = cursor.fetchone()[0]
+
+        if conflicts > 0:
+            print(f"⚠ Conflict detected for {subject_code} with {teacher_name} in {room[1]} at {day} {start_time}-{end_time}, trying another slot...")
+            attempts += 1
+            continue
+
+        # Check if the slot is available for the subject, room, and teacher
+        cursor.execute("""
+            SELECT COUNT(*) FROM schedule 
+            WHERE subject_code = %s AND day = %s AND start_time = %s AND end_time = %s AND room_name = %s
+        """, (subject_code, day, start_time, end_time, room[1]))
         count = cursor.fetchone()[0]
 
-        if count < 1:  # If no existing schedule for this subject at this time
+        if count < 1:  # If no existing schedule for this subject at this time and room
             hours_scheduled += 1  # Increment scheduled hours
-
             # Insert into schedule
             print(f"Inserting: {subject_code} - {teacher_name} in {room[1]} at {day} {start_time}-{end_time}")
             cursor.execute(
@@ -85,7 +129,7 @@ for subject in subjects:
                 (subject_code, teacher_name, room[1], day, start_time, end_time)
             )
         else:
-            print(f"⚠ Slot {slot_id} already assigned for {subject_code}, trying another slot...")
+            print(f"⚠ Slot {slot_id} already assigned for {subject_code} in room {room[1]}, trying another slot...")
 
         attempts += 1
 
@@ -93,8 +137,161 @@ for subject in subjects:
         print(f"❌ Failed to schedule all hours for {subject_code} after {attempts} attempts.")
         unassigned_subjects.append((subject_code, "Failed to schedule all hours after maximum attempts"))
 
+# Schedule homeroom periods
+for section in sections:
+    section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
+
+    # Determine the day for homeroom based on the program
+    if program == "Grade School":
+        # Homeroom can be scheduled any day for 1 hour
+        for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
+            time_slot = ("09:00", "10:00")  # Example time for homeroom
+            cursor.execute("""
+                SELECT COUNT(*) FROM schedule 
+                WHERE day = %s AND start_time = %s AND end_time = %s
+            """, (day, time_slot[0], time_slot[1]))
+            count = cursor.fetchone()[0]
+
+            if count < 1:  # If no existing schedule for this time
+                print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
+                cursor.execute(
+                    "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
+                    ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1])
+                )
+                break  # Exit after scheduling homeroom for this section
+
+    elif program == "High School":
+        # Homeroom is scheduled on Friday during the 1st period
+        day = "Friday"
+        time_slot = ("08:00", "09:00")  # Example time for homeroom
+        cursor.execute("""
+            SELECT COUNT(*) FROM schedule 
+            WHERE day = %s AND start_time = %s AND end_time = %s
+        """, (day, time_slot[0], time_slot[1]))
+        count = cursor.fetchone()[0]
+
+        if count < 1:  # If no existing schedule for this time
+            print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
+            cursor.execute(
+                "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
+                ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1])
+            )
+
 # Commit the schedule to the database
 conn.commit()
+# Existing code...
+
+# Create a view to see the classes of each program during the week, including year level
+print("Creating view for weekly schedule by program...")
+create_view_query = """
+CREATE OR REPLACE VIEW weekly_schedule AS
+SELECT 
+    s.subject_code,
+    sub.subject_name,
+    sub.program,
+    sub.year_level,
+    s.teacher_name,
+    s.room_name,
+    s.day,
+    s.start_time,
+    s.end_time
+FROM 
+    schedule s
+JOIN 
+    subjects sub ON s.subject_code = sub.subject_code
+ORDER BY 
+    sub.program, s.day, s.start_time;
+"""
+
+cursor.execute(create_view_query)
+print("View 'weekly_schedule' created successfully.")
+
+# Create a view for room schedules
+print("Creating view for room schedules...")
+create_room_schedules_view = """
+CREATE OR REPLACE VIEW room_schedules AS
+SELECT 
+    s.room_name,
+    s.subject_code,
+    sub.subject_name,
+    s.teacher_name,
+    s.day,
+    s.start_time,
+    s.end_time
+FROM 
+    schedule s
+JOIN 
+    subjects sub ON s.subject_code = sub.subject_code
+ORDER BY 
+    s.room_name, s.day, s.start_time;
+"""
+
+cursor.execute(create_room_schedules_view)
+print("View 'room_schedules' created successfully.")
+
+# Create a view for teacher subjects
+print("Creating view for teacher subjects...")
+create_teacher_subjects_view = """
+CREATE OR REPLACE VIEW teacher_subjects AS
+SELECT 
+    s.teacher_name,
+    s.subject_code,
+    sub.subject_name,
+    s.room_name,
+    s.day,
+    s.start_time,
+    s.end_time
+FROM 
+    schedule s
+JOIN 
+    subjects sub ON s.subject_code = sub.subject_code
+ORDER BY 
+    s.teacher_name, s.day, s.start_time;
+"""
+
+cursor.execute(create_teacher_subjects_view)
+print("View 'teacher_subjects' created successfully.")
+
+# Function to fetch and display the weekly schedule
+def fetch_weekly_schedule(cursor):
+    print("\n=== Weekly Schedule ===")
+    cursor.execute("SELECT * FROM weekly_schedule")
+    schedule_rows = cursor.fetchall()
+    
+    for row in schedule_rows:
+        subject_code, subject_name, program, year_level, teacher_name, room_name, day, start_time, end_time = row
+        print(f"Program: {program}, Year Level: {year_level}, Subject: {subject_code} - {subject_name}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
+
+# Fetch and display the room schedules
+def fetch_room_schedules(cursor):
+    print("\n=== Room Schedules ===")
+    cursor.execute("SELECT * FROM room_schedules")
+    room_schedule_rows = cursor.fetchall()
+    
+    for row in room_schedule_rows:
+        room_name, subject_code, subject_name, teacher_name, day, start_time, end_time = row
+        print(f"Room: {room_name}, Subject: {subject_code} - {subject_name}, Teacher: {teacher_name}, Day: {day}, Time: {start_time} - {end_time}")
+
+# Fetch and display the teacher subjects
+def fetch_teacher_subjects(cursor):
+    print("\n=== Teacher Subjects ===")
+    cursor.execute("SELECT * FROM teacher_subjects")
+    teacher_subject_rows = cursor.fetchall()
+    
+    for row in teacher_subject_rows:
+        teacher_name, subject_code, subject_name, room_name, day, start_time, end_time = row
+        print(f"Teacher: {teacher_name}, Subject: {subject_code} - {subject_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
+
+# Fetch and display the weekly schedule
+fetch_weekly_schedule(cursor)
+
+# Fetch and display the room schedules
+fetch_room_schedules(cursor)
+
+# Fetch and display the teacher subjects
+fetch_teacher_subjects(cursor)
+
+# Existing code continues...
 
 # Create a view to see the classes of each program during the week, including year level
 print("Creating view for weekly schedule by program...")
