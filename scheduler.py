@@ -22,8 +22,12 @@ print("Loading subjects...")
 cursor.execute("SELECT * FROM subjects")
 subjects = cursor.fetchall()
 
-print("Loading teacher_subjects...")
-cursor.execute("SELECT * FROM teacher_subjects")
+print("Loading teacher_subjects with teacher names...")
+cursor.execute("""
+    SELECT ts.teacher_id, t.teacher_name, ts.subject_code
+    FROM teacher_subjects ts
+    JOIN teachers t ON ts.teacher_id = t.teacher_id
+""")
 teacher_subjects = cursor.fetchall()
 
 print("Loading rooms...")
@@ -43,9 +47,9 @@ unassigned_subjects = []
 
 # Schedule each subject for the required lecture hours
 for subject in subjects:
-    subject_code, subject_name, program, year_level, lecture_hours = subject  # Ignore subject_name
+    subject_code, subject_name, program, year_level, hours_per_week, semester = subject  
 
-    available_teacher_subjects = [t for t in teacher_subjects if t[2] == subject_code]
+    available_teacher_subjects = [(t[0], t[1]) for t in teacher_subjects if t[2] == subject_code]
     if not available_teacher_subjects:
         print(f"⚠ No teacher available for {subject_code}, skipping...")
         unassigned_subjects.append((subject_code, "No available teacher"))
@@ -56,15 +60,15 @@ for subject in subjects:
     max_attempts = 10  # Maximum attempts to find a slot
     attempts = 0
 
-    while hours_scheduled < lecture_hours and attempts < max_attempts:
-        teacher = random.choice(available_teacher_subjects)
+    while hours_scheduled < hours_per_week and attempts < max_attempts:
+        teacher_id, teacher_name = random.choice(available_teacher_subjects)
         room = random.choice(rooms)
 
         # Randomly select a time slot
         time_slot = random.choice(time_slots)
         slot_id, day, start_time, end_time = time_slot
 
-        # Check if the slot can be reused for the same year level and section
+        # Check if the slot is available
         cursor.execute("""
             SELECT COUNT(*) FROM schedule 
             WHERE subject_code = %s AND day = %s AND start_time = %s AND end_time = %s
@@ -75,17 +79,17 @@ for subject in subjects:
             hours_scheduled += 1  # Increment scheduled hours
 
             # Insert into schedule
-            print(f"Inserting: {subject_code} - {teacher[1]} in {room[1]} at {day} {start_time}-{end_time}")
+            print(f"Inserting: {subject_code} - {teacher_name} in {room[1]} at {day} {start_time}-{end_time}")
             cursor.execute(
                 "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
-                (subject_code, teacher[1], room[1], day, start_time, end_time)
+                (subject_code, teacher_name, room[1], day, start_time, end_time)
             )
         else:
             print(f"⚠ Slot {slot_id} already assigned for {subject_code}, trying another slot...")
 
         attempts += 1
 
-    if hours_scheduled < lecture_hours:
+    if hours_scheduled < hours_per_week:
         print(f"❌ Failed to schedule all hours for {subject_code} after {attempts} attempts.")
         unassigned_subjects.append((subject_code, "Failed to schedule all hours after maximum attempts"))
 
@@ -98,6 +102,7 @@ create_view_query = """
 CREATE OR REPLACE VIEW weekly_schedule AS
 SELECT 
     s.subject_code,
+    sub.subject_name,
     sub.program,
     sub.year_level,
     s.teacher_name,
@@ -123,8 +128,8 @@ def fetch_weekly_schedule(cursor):
     schedule_rows = cursor.fetchall()
     
     for row in schedule_rows:
-        subject_code, program, year_level, teacher_name, room_name, day, start_time, end_time = row
-        print(f"Program: {program}, Year Level: {year_level}, Subject: {subject_code}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
+        subject_code, subject_name, program, year_level, teacher_name, room_name, day, start_time, end_time = row
+        print(f"Program: {program}, Year Level: {year_level}, Subject: {subject_code} - {subject_name}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
 
 # Fetch and display the weekly schedule
 fetch_weekly_schedule(cursor)
@@ -137,22 +142,49 @@ def export_to_csv(cursor, filename):
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         # Write the header
-        writer.writerow(['Subject Code', 'Program', 'Year Level', 'Teacher Name', 'Room Name', 'Day', 'Start Time', 'End Time'])
+        writer.writerow(['Subject Code', 'Subject Name', 'Program', 'Year Level', 'Teacher Name', 'Room Name', 'Day', 'Start Time', 'End Time'])
         # Write the data
         for row in rows:
             writer.writerow(row)
     
     print(f"Data exported to {filename} successfully.")
 
-# Call the export function
+# Call the export function for the weekly schedule
 export_to_csv(cursor, 'weekly_schedule.csv')
+
+# Tally subjects by grade level
+grade_levels = [
+    "Toddler", "Nursery", "Kinder",
+    "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6",
+    "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"
+]
+
+# Initialize a dictionary to hold the tally
+subject_tally = {grade: 0 for grade in grade_levels}
+
+# Count subjects for each grade level
+for subject in subjects:
+    _, _, _, year_level, _, _ = subject
+    if year_level in subject_tally:
+        subject_tally[year_level] += 1
+
+# Write the tally to a new CSV file
+with open('subject_tally_by_grade.csv', mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    # Write the header
+    writer.writerow(['Grade Level', 'Number of Subjects'])
+    # Write the tally data
+    for grade, count in subject_tally.items():
+        writer.writerow([grade, count])
+
+print("Subject tally by grade exported to 'subject_tally_by_grade.csv' successfully.")
 
 # Summary of assigned and unassigned subjects
 print("\n=== Summary of Assigned and Unassigned Subjects ===")
 print("Assigned Subjects:")
 if len(subjects) - len(unassigned_subjects) > 0:
     for subject in subjects:
-        subject_code, subject_name, program, year_level, lecture_hours = subject
+        subject_code, subject_name, program, year_level, hours_per_week, semester = subject
         if subject_code not in [unassigned[0] for unassigned in unassigned_subjects]:
             print(f"Subject Code: {subject_code} - Program: {program}, Year Level: {year_level}")
 else:
