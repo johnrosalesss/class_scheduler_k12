@@ -54,6 +54,9 @@ cursor.execute("DELETE FROM schedule")
 unassigned_subjects = []  # To track subjects that couldn't be assigned
 assigned_subjects = []    # To track successfully assigned subjects
 
+# Dictionary to store the count of successfully scheduled subjects per section
+section_schedule_counts = {}
+
 # Schedule each subject for the required lecture hours
 for section in sections:
     section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
@@ -71,11 +74,10 @@ for section in sections:
     ]
     print(f"Subjects for this section: {section_subjects}")
 
-    # Debug: Print all subjects for comparison
-    print("All subjects in the database:")
-    for subject in subjects:
-        print(f"Subject: {subject[1]}, Program: {subject[2]}, Year Level: {subject[3]}")
+    # Initialize the count of successfully scheduled subjects for this section
+    section_schedule_counts[section_name] = {"year_level": year_level, "count": 0}
 
+    # Schedule subjects for this section
     for subject in section_subjects:
         subject_code, subject_name, program, year_level, hours_per_week, semester = subject
         print(f"\nScheduling subject: {subject_name} (Code: {subject_code}, Hours/Week: {hours_per_week})")
@@ -150,6 +152,7 @@ for section in sections:
                     (subject_code, teacher_name, room[1], day, start_time, end_time, section_id)
                 )
                 assigned_subjects.append((subject_code, section_name, teacher_name, room[1], day, start_time, end_time))
+                section_schedule_counts[section_name]["count"] += 1  # Increment the count for this section
                 break  # Exit after successfully scheduling for this section
             else:
                 print(f"⚠ Slot {slot_id} already assigned for {subject_code} in {section_name}, trying another slot...")
@@ -159,7 +162,7 @@ for section in sections:
         if hours_scheduled < hours_per_week:
             print(f"❌ Failed to schedule all hours for {subject_code} in {section_name} after {attempts} attempts.")
             unassigned_subjects.append((subject_code, section_name, "Failed to schedule all hours after maximum attempts"))
-            
+
 # After running the schedule process, print unassigned subjects with reasons
 if unassigned_subjects:
     print("\nUnassigned Subjects with Reasons:")
@@ -175,6 +178,11 @@ if assigned_subjects:
         print(f"Subject: {subject_code}, Section: {section_name}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time}-{end_time}")
 else:
     print("No subjects assigned.")
+
+# Print the number of successfully scheduled subjects per section
+print("\nSuccessfully Scheduled Subjects per Section:")
+for section_name, data in section_schedule_counts.items():
+    print(f"Section: {section_name}, Year Level: {data['year_level']}, Successfully Scheduled Subjects: {data['count']}")
 
 # Schedule homeroom periods
 for section in sections:
