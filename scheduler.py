@@ -47,7 +47,7 @@ unassigned_subjects = []
 
 # Schedule each subject for the required lecture hours
 for subject in subjects:
-    subject_code, subject_name, program, year_level, lecture_hours = subject  
+    subject_code, subject_name, program, year_level, lecture_hours, semester = subject  
 
     available_teacher_subjects = [(t[0], t[1]) for t in teacher_subjects if t[2] == subject_code]
     if not available_teacher_subjects:
@@ -164,7 +164,7 @@ subject_tally = {grade: 0 for grade in grade_levels}
 
 # Count subjects for each grade level
 for subject in subjects:
-    _, _, _, year_level, _ = subject
+    _, _, _, year_level, _, _ = subject
     if year_level in subject_tally:
         subject_tally[year_level] += 1
 
@@ -184,7 +184,7 @@ print("\n=== Summary of Assigned and Unassigned Subjects ===")
 print("Assigned Subjects:")
 if len(subjects) - len(unassigned_subjects) > 0:
     for subject in subjects:
-        subject_code, subject_name, program, year_level, lecture_hours = subject
+        subject_code, subject_name, program, year_level, lecture_hours, semester = subject
         if subject_code not in [unassigned[0] for unassigned in unassigned_subjects]:
             print(f"Subject Code: {subject_code} - Program: {program}, Year Level: {year_level}")
 else:
