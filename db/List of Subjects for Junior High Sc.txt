@@ -1,0 +1,53 @@
+List of Subjects for Junior High School (Grades 7-10)
+10. Grade 7
+
+Reading and Literacy 7
+Filipino 7
+English 7
+Mathematics 7
+Science & Health 7
+Araling Panlipunan 7
+Christian Living Education 7
+MAPEH 7
+TLE 7
+Robotics 7
+ICT 7
+11. Grade 8
+
+Reading and Literacy 8
+Filipino 8
+English 8
+Mathematics 8
+Science & Health 8
+Araling Panlipunan 8
+Christian Living Education 8
+MAPEH 8
+TLE 8
+Robotics 8
+ICT 8
+12. Grade 9
+
+Reading and Literacy 9
+Filipino 9
+English 9
+Mathematics 9
+Science & Health 9
+Araling Panlipunan 9
+Christian Living Education 9
+MAPEH 9
+TLE 9
+Robotics 9
+ICT 9
+13. Grade 10
+
+Reading and Literacy 10
+Filipino 10
+English 10
+Mathematics 10
+Science & Health 10
+Araling Panlipunan 10
+Christian Living Education 10
+MAPEH 10
+TLE 10
+Robotics 10
+ICT 10

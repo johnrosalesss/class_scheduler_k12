@@ -1,0 +1,72 @@
+List of Subjects for Grade School (Grades 1-6)
+4. Grade 1
+
+Reading and Literacy 1
+Language 1
+Mathematics 1
+Christian Living Education 1
+Makabansa 1
+Computer 1
+Paulinian Writing 1
+5. Grade 2
+
+Reading and Literacy 2
+Filipino 2
+English 2
+Mathematics 2
+Araling Panlipunan 2
+Christian Living Education 2
+MAPEH 2
+Computer 2
+Paulinian Writing 2
+6. Grade 3
+
+Reading and Literacy 3
+Filipino 3
+English 3
+Mathematics 3
+Science & Health 3
+Araling Panlipunan 3
+Christian Living Education 3
+MAPEH 3
+Computer 3
+Paulinian Writing 3
+7. Grade 4
+
+Reading and Literacy 4
+Filipino 4
+English 4
+Mathematics 4
+Science & Health 4
+Araling Panlipunan 4
+Christian Living Education 4
+MAPEH 4
+Computer 4
+HELE 4
+Robotics 4
+8. Grade 5
+
+Reading and Literacy 5
+Filipino 5
+English 5
+Mathematics 5
+Science & Health 5
+Araling Panlipunan 5
+Christian Living Education 5
+MAPEH 5
+Computer 5
+HELE 5
+Robotics 5
+9. Grade 6
+
+Reading and Literacy 6
+Filipino 6
+English 6
+Mathematics 6
+Science & Health 6
+Araling Panlipunan 6
+Christian Living Education 6
+MAPEH 6
+Computer 6
+HELE 6
+Robotics 6

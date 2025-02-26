@@ -1,0 +1,79 @@
+Teacher ID,Teacher Name,Subject Name
+T-028,Ballesteros Ballesteros,"Robotics 7, Robotics 8, Robotics 9, Robotics 10"
+T-063,De Lara De Lara,"Mathematics 9, Science & Health 9, Araling Panlipunan 9"
+T-074,Cabrera Cabrera,"Reading and Literacy 7, Filipino 7, English 7"
+T-075,Valdez Valdez,"Reading and Literacy 8, Filipino 8, English 8"
+T-029,Layag Layag,"ICT 7, ICT 8, ICT 9, ICT 10"
+T-036,Lati Lati,"Christian Living Education 5, MAPEH 5"
+T-035,Alejo Alejo,"Christian Living Education 4, MAPEH 4"
+T-034,Alde Alde,"Christian Living Education 3, MAPEH 3"
+T-033,Napili Napili,"Christian Living Education 2, MAPEH 2"
+T-032,Binaluyo Binaluyo,Computer 1
+T-027,Esquilona Esquilona,"Computer 6, HELE 6, Robotics 6"
+T-026,Ramirez Ramirez,"Computer 5, HELE 5, Robotics 5"
+T-025,Bitancor Bitancor,"Computer 4, HELE 4, Robotics 4"
+T-024,Botalon Botalon,"Computer 3, Paulinian Writing 3"
+T-023,Alvarez Alvarez,Computer 2
+T-022,Capranca Capranca,Substitute / Support Teacher
+T-077,Abanto Abanto,"Reading and Literacy 10, Filipino 10, English 10"
+T-076,Morales Morales,"Reading and Literacy 9, Filipino 9, English 9"
+T-048,Cabasbas Cabasbas,"Christian Living Education 7, MAPEH 7, TLE 7"
+T-049,Cabasbas Cabasbas,"Christian Living Education 8, MAPEH 8, TLE 8"
+T-064,De Asis De Asis,"Mathematics 10, Science & Health 10, Araling Panlipunan 10"
+T-062,Manago Manago,"Mathematics 8, Science & Health 8, Araling Panlipunan 8"
+T-061,Canadilla Canadilla,"Mathematics 7, Science & Health 7, Araling Panlipunan 7"
+T-051,Baraquel Baraquel,"Christian Living Education 10, MAPEH 10, TLE 10"
+T-050,Gante Gante,"Christian Living Education 9, MAPEH 9, TLE 9"
+T-030,Gumabon Gumabon,"Christian Living Education 9, MAPEH 9, TLE 9"
+T-031,Alonzo Alonzo,"Christian Living Education 10, MAPEH 10, TLE 10"
+T-038,Tabones Tabones,"Christian Living Education 7, MAPEH 7, TLE 7"
+T-039,Dela Cruz Dela Cruz,"Christian Living Education 8, MAPEH 8, TLE 8"
+T-040,Dinapo Dinapo,"Christian Living Education 9, MAPEH 9, TLE 9"
+T-041,Barretto Barretto,"Christian Living Education 10, MAPEH 10, TLE 10"
+T-037,Orolaza Orolaza,"Christian Living Education 6, MAPEH 6"
+T-042,Gutierrez Gutierrez,"Makabansa 1, Paulinian Writing 1"
+T-043,Laque Laque,"Araling Panlipunan 2, Paulinian Writing 2"
+T-044,Odtohan Odtohan,"Science & Health 3, Araling Panlipunan 3"
+T-045,Rimarim Rimarim,"Science & Health 4, Araling Panlipunan 4"
+T-046,Delos Santos Delos Santos,"Science & Health 5, Araling Panlipunan 5"
+T-047,Baraquel Baraquel,"Science & Health 6, Araling Panlipunan 6"
+T-055,Achapero Achapero,"Mathematics 1, Christian Living Education 1"
+T-057,Orbita Orbita,"English 3, Mathematics 3"
+T-056,Carrasco Carrasco,"English 2, Mathematics 2"
+T-058,Dela Cruz Dela Cruz,"English 4, Mathematics 4"
+T-060,Gabiola Gabiola,"English 6, Mathematics 6"
+T-059,Cadiente Cadiente,"English 5, Mathematics 5"
+T-068,Obedoza Obedoza,"Reading and Literacy 1, Language 1"
+T-069,Fernando Fernando,"Reading and Literacy 2, Filipino 2"
+T-070,Acebes Acebes,"Reading and Literacy 3, Filipino 3"
+T-071,Berza Berza,"Reading and Literacy 4, Filipino 4"
+T-015,Royeca Royeca,Reading Readiness
+T-073,Bacongallo Bacongallo,"Reading and Literacy 6, Filipino 6"
+T-014,Gante Gante,Language and Spelling
+T-013,Fructuoso Fructuoso,Christian Living Education
+T-012,Tanguin Tanguin,Reading Readiness
+T-011,Tulang Tulang,Language and Spelling
+T-010,Owit Owit,Christian Living Education
+T-009,Vallesteros Vallesteros,Christian Living Education
+T-008,Fructuoso Fructuoso,Reading Readiness
+T-007,Jugarap Jugarap,Number Readiness
+T-006,Antenor Antenor,Language and Spelling
+T-005,Capilos Capilos,Christian Living Education
+T-004,Dela Peña Dela Peña,Reading Readiness
+T-003,Cabique Cabique,Number Readiness
+T-002,Ignacio Ignacio,Language and Spelling
+T-001,Esquilona Esquilona,Christian Living Education
+T-072,Maniba Maniba,"Reading and Literacy 5, Filipino 5"
+SEC004,Paulo Paulo,"Applied Economics, Business Finance, Business Ethics and Social Responsibility, Inquiries, Investigations and Immersion, Inquiries, Investigations and Immersion (2nd Semester), Fundamentals of Accountancy, Business and Mgnt 2"
+SEC005,Fernandez Fernandez,"Creative Writing, Trends Networks and Critical Thinking, Creative Non-Fiction, Inquiries, Investigations and Immersion, Inquiries, Investigations and Immersion (2nd Semester)"
+SEC006,Bartolome Bartolome,"General Physics 1, General Chemistry 1, Inquiries Investigations and Immersion, Inquiries Investigations and Immersion (2nd Semester)"
+SEC007,Bacani Bacani,"General Physics 2, General Chemistry 2, Work Immersion/Capstone Project"
+SEC007,Bacani Bacani,"General Physics 2, General Chemistry 2, Work Immersion/Capstone Project"
+SEC008,Laguidao Laguidao,"Contemporary Philippine Arts, Understanding Culture Society and Politics, Robotics 12"
+SEC009,Bognalos Bognalos,"Media and Information Literacy, Catholic Social Teaching, Physical Education and Health 4"
+SEC010,Millano Millano,"Business Math, Organization and Management, Principles of Marketing, Oral Communication, Fundamentals of Accountancy, Business and Mgnt 1"
+SEC011,Evarola Evarola,"Philippine Politics and Governance, Discipline and Ideas in Social Sciences, Intro to World Religions, Faith in the Light of the Epistles of Paul 1, Oral Communication"
+SEC012,Noriega Noriega,"Pre-Calculus, General Biology 1, Practical Research 1, Oral Communication"
+SEC013,Tagoy Tagoy,"Basic Calculus, General Biology 2, DRRR, Oral Communication"
+SEC014,Encarnacion Encarnacion,"Statistics and Probability, Physical Science, Robotics 11"
+SEC015,Langcauon Langcauon,"Earth and Life Science, Empowerment Technologies, Personal Development"
