@@ -55,103 +55,124 @@ unassigned_subjects = []  # To track subjects that couldn't be assigned
 assigned_subjects = []    # To track successfully assigned subjects
 
 # Schedule each subject for the required lecture hours
-for subject in subjects:
-    subject_code, subject_name, program, year_level, hours_per_week, semester = subject  
+for section in sections:
+    section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
+    print(f"\nProcessing section: {section_name} (Program: {program}, Year Level: {year_level})")
+    
+    # Convert program and year_level to match the subjects table
+    program_str = program.replace('Grade ', '') if program.startswith('Grade ') else program
+    year_level_str = f"Grade {year_level}" if isinstance(year_level, int) else year_level
+    
+    # Get subjects for the current section based on program and year level
+    section_subjects = [
+        subject for subject in subjects 
+        if str(subject[3]).strip() == str(year_level_str).strip() 
+        and str(subject[2]).strip() == str(program_str).strip()
+    ]
+    print(f"Subjects for this section: {section_subjects}")
 
-    # Find available teachers for the current subject
-    available_teacher_subjects = []
-    for teacher in teacher_subjects:
-        teacher_id, teacher_name, teacher_subjects_list = teacher
-        # Split the teacher's subjects into a list
-        teacher_subjects_list = teacher_subjects_list.split(', ')
+    # Debug: Print all subjects for comparison
+    print("All subjects in the database:")
+    for subject in subjects:
+        print(f"Subject: {subject[1]}, Program: {subject[2]}, Year Level: {subject[3]}")
+
+    for subject in section_subjects:
+        subject_code, subject_name, program, year_level, hours_per_week, semester = subject
+        print(f"\nScheduling subject: {subject_name} (Code: {subject_code}, Hours/Week: {hours_per_week})")
         
-        # Check if the current subject is in the teacher's list of subjects
-        if subject_name in teacher_subjects_list:
-            available_teacher_subjects.append((teacher_id, teacher_name))
+        # Find available teachers for the current subject
+        available_teacher_subjects = []
+        for teacher in teacher_subjects:
+            teacher_id, teacher_name, teacher_subjects_list = teacher
+            teacher_subjects_list = teacher_subjects_list.split(', ')
+            
+            if subject_name in teacher_subjects_list:
+                available_teacher_subjects.append((teacher_id, teacher_name))
+        print(f"Available teachers for {subject_name}: {available_teacher_subjects}")
 
-    if not available_teacher_subjects:
-        print(f"⚠ No teacher available for {subject_name}, skipping...")
-        unassigned_subjects.append((subject_code, "No available teacher"))
-        continue
-
-    # Schedule required hours for each subject
-    hours_scheduled = 0
-    max_attempts = 10  # Maximum attempts to find a slot
-    attempts = 0
-
-    while hours_scheduled < hours_per_week and attempts < max_attempts:
-        teacher_id, teacher_name = random.choice(available_teacher_subjects)
-        room = random.choice(rooms)
-        time_slot = random.choice(time_slots)
-
-        # Extract time slot details
-        slot_id, day, start_time, end_time = time_slot
-
-        # Check for recess and lunch breaks based on year level
-        if (program == "Grade School" and (
-            (start_time >= "10:00" and end_time <= "10:30") or  # Recess after 2nd period
-            (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
-        )) or (program == "High School" and (
-            (start_time >= "11:00" and end_time <= "11:30") or  # Recess after 3rd period
-            (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
-        )):
-            print(f"⚠ Slot {slot_id} is during recess/lunch for {program}, trying another slot...")
-            attempts += 1
+        if not available_teacher_subjects:
+            print(f"⚠ No teacher available for {subject_name} in {section_name}, skipping...")
+            unassigned_subjects.append((subject_code, section_name, "No available teacher"))
             continue
 
-        # Check for room and teacher conflicts (not available for the subject)
-        cursor.execute("""
-            SELECT COUNT(*) FROM schedule 
-            WHERE (teacher_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
-                  (room_name = %s AND day = %s AND start_time < %s AND end_time > %s)
-        """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time))
-        conflicts = cursor.fetchone()[0]
+        # Initialize hours_scheduled before starting to schedule
+        hours_scheduled = 0
+        max_attempts = 50  # Increased to allow more attempts
+        attempts = 0
 
-        if conflicts > 0:
-            print(f"⚠ Conflict detected for {subject_code} with {teacher_name} in {room[1]} at {day} {start_time}-{end_time}, trying another slot...")
+        while hours_scheduled < hours_per_week and attempts < max_attempts:
+            teacher_id, teacher_name = random.choice(available_teacher_subjects)
+            room = random.choice(rooms)
+            time_slot = random.choice(time_slots)
+
+            slot_id, day, start_time, end_time = time_slot
+            print(f"Attempt {attempts + 1}: Trying slot {slot_id} ({day} {start_time}-{end_time}) with teacher {teacher_name} in room {room[1]}")
+
+            # Check for recess and lunch breaks
+            if (program == "Grade School" and (
+                (start_time >= "10:00" and end_time <= "10:30") or  # Recess after 2nd period
+                (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
+            )) or (program == "High School" and (
+                (start_time >= "11:00" and end_time <= "11:30") or  # Recess after 3rd period
+                (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
+            )):
+                print(f"⚠ Slot {slot_id} is during recess/lunch for {program}, trying another slot...")
+                attempts += 1
+                continue
+
+            # Check for conflicts
+            cursor.execute("""
+                SELECT COUNT(*) FROM schedule 
+                WHERE (teacher_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
+                      (room_name = %s AND day = %s AND start_time < %s AND end_time > %s)
+            """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time))
+            conflicts = cursor.fetchone()[0]
+            print(f"Conflicts detected: {conflicts}")
+
+            if conflicts > 0:
+                print(f"⚠ Conflict detected for {subject_code} with {teacher_name} in {room[1]} at {day} {start_time}-{end_time}, trying another slot...")
+                attempts += 1
+                continue
+
+            # Ensure no existing schedule for the subject in the specific section
+            cursor.execute("""
+                SELECT COUNT(*) FROM schedule 
+                WHERE subject_code = %s AND section_id = %s AND day = %s AND start_time = %s AND end_time = %s AND room_name = %s
+            """, (subject_code, section_id, day, start_time, end_time, room[1]))
+            count = cursor.fetchone()[0]
+            print(f"Existing schedules for this subject: {count}")
+
+            if count < 1:  # If no existing schedule for this subject at this time and room
+                hours_scheduled += 1
+                print(f"✅ Inserting: {subject_code} for section {section_name} - {teacher_name} in {room[1]} at {day} {start_time}-{end_time}")
+                cursor.execute(
+                    "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+                    (subject_code, teacher_name, room[1], day, start_time, end_time, section_id)
+                )
+                assigned_subjects.append((subject_code, section_name, teacher_name, room[1], day, start_time, end_time))
+                break  # Exit after successfully scheduling for this section
+            else:
+                print(f"⚠ Slot {slot_id} already assigned for {subject_code} in {section_name}, trying another slot...")
+
             attempts += 1
-            continue
 
-        # Check if the slot is available for the subject, room, and teacher
-        cursor.execute("""
-            SELECT COUNT(*) FROM schedule 
-            WHERE subject_code = %s AND day = %s AND start_time = %s AND end_time = %s AND room_name = %s
-        """, (subject_code, day, start_time, end_time, room[1]))
-        count = cursor.fetchone()[0]
-
-        if count < 1:  # If no existing schedule for this subject at this time and room
-            hours_scheduled += 1  # Increment scheduled hours
-            # Insert into schedule
-            print(f"Inserting: {subject_code} - {teacher_name} in {room[1]} at {day} {start_time}-{end_time}")
-            cursor.execute(
-                "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
-                (subject_code, teacher_name, room[1], day, start_time, end_time)
-            )
-            # Add to the assigned subjects list
-            assigned_subjects.append((subject_code, teacher_name, room[1], day, start_time, end_time))
-        else:
-            print(f"⚠ Slot {slot_id} already assigned for {subject_code} in room {room[1]}, trying another slot...")
-
-        attempts += 1
-
-    if hours_scheduled < hours_per_week:
-        print(f"❌ Failed to schedule all hours for {subject_code} after {attempts} attempts.")
-        # Add reason why the subject couldn't be scheduled
-        unassigned_subjects.append((subject_code, "Failed to schedule all hours after maximum attempts"))
-
+        if hours_scheduled < hours_per_week:
+            print(f"❌ Failed to schedule all hours for {subject_code} in {section_name} after {attempts} attempts.")
+            unassigned_subjects.append((subject_code, section_name, "Failed to schedule all hours after maximum attempts"))
+            
 # After running the schedule process, print unassigned subjects with reasons
 if unassigned_subjects:
     print("\nUnassigned Subjects with Reasons:")
-    for subject_code, reason in unassigned_subjects:
-        print(f"Subject: {subject_code}, Reason: {reason}")
+    for subject_code, section_name, reason in unassigned_subjects:  # Unpack all three values
+        print(f"Subject: {subject_code}, Section: {section_name}, Reason: {reason}")
 else:
     print("All subjects assigned successfully.")
 
 # Print the summary of assigned subjects
 print("\nAssigned Subjects:")
 if assigned_subjects:
-    for subject_code, teacher_name, room_name, day, start_time, end_time in assigned_subjects:
-        print(f"Subject: {subject_code}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time}-{end_time}")
+    for subject_code, section_name, teacher_name, room_name, day, start_time, end_time in assigned_subjects:
+        print(f"Subject: {subject_code}, Section: {section_name}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time}-{end_time}")
 else:
     print("No subjects assigned.")
 
@@ -174,8 +195,8 @@ for section in sections:
             if count < 1:  # If no existing schedule for this time
                 print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
                 cursor.execute(
-                    "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
-                    ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1])
+                    "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+                    ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
                 )
                 homeroom_scheduled = True
                 break  # Exit after scheduling homeroom for this section
@@ -193,22 +214,22 @@ for section in sections:
         if count < 1:  # If no existing schedule for this time
             print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
             cursor.execute(
-                "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
-                ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1])
+                "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+                ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
             )
 
 # Commit the schedule to the database
 conn.commit()
 
-# Create a view to see the classes of each program during the week, including year level
-print("Creating view for weekly schedule by program...")
+# Create a view to see the classes of each section during the week, including year level and program
+print("Creating view for weekly schedule by section...")
 create_view_query = """
 CREATE OR REPLACE VIEW weekly_schedule AS
 SELECT 
     s.subject_code,
     sub.subject_name,
-    sub.program,
-    sub.year_level,
+    sec.program,
+    sec.year_level,
     s.teacher_name,
     s.room_name,
     s.day,
@@ -218,8 +239,10 @@ FROM
     schedule s
 JOIN 
     subjects sub ON s.subject_code = sub.subject_code
+JOIN
+    sections sec ON s.section_id = sec.section_id
 ORDER BY 
-    sub.program, s.day, s.start_time;
+    sec.program, sec.year_level, s.day, s.start_time;
 """
 cursor.execute(create_view_query)
 print("View 'weekly_schedule' created successfully.")
