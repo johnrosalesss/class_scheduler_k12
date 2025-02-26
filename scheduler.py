@@ -51,8 +51,8 @@ print(f"Fetched {len(sections)} sections.")
 print("Clearing old schedule...")
 cursor.execute("DELETE FROM schedule")
 
-# Prepare to track assigned slots and unassigned subjects
-unassigned_subjects = []
+unassigned_subjects = []  # To track subjects that couldn't be assigned
+assigned_subjects = []    # To track successfully assigned subjects
 
 # Schedule each subject for the required lecture hours
 for subject in subjects:
@@ -73,7 +73,6 @@ for subject in subjects:
         print(f"⚠ No teacher available for {subject_name}, skipping...")
         unassigned_subjects.append((subject_code, "No available teacher"))
         continue
-
 
     # Schedule required hours for each subject
     hours_scheduled = 0
@@ -100,7 +99,7 @@ for subject in subjects:
             attempts += 1
             continue
 
-        # Check for hard constraints
+        # Check for room and teacher conflicts (not available for the subject)
         cursor.execute("""
             SELECT COUNT(*) FROM schedule 
             WHERE (teacher_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
@@ -128,6 +127,8 @@ for subject in subjects:
                 "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
                 (subject_code, teacher_name, room[1], day, start_time, end_time)
             )
+            # Add to the assigned subjects list
+            assigned_subjects.append((subject_code, teacher_name, room[1], day, start_time, end_time))
         else:
             print(f"⚠ Slot {slot_id} already assigned for {subject_code} in room {room[1]}, trying another slot...")
 
@@ -135,13 +136,31 @@ for subject in subjects:
 
     if hours_scheduled < hours_per_week:
         print(f"❌ Failed to schedule all hours for {subject_code} after {attempts} attempts.")
+        # Add reason why the subject couldn't be scheduled
         unassigned_subjects.append((subject_code, "Failed to schedule all hours after maximum attempts"))
+
+# After running the schedule process, print unassigned subjects with reasons
+if unassigned_subjects:
+    print("\nUnassigned Subjects with Reasons:")
+    for subject_code, reason in unassigned_subjects:
+        print(f"Subject: {subject_code}, Reason: {reason}")
+else:
+    print("All subjects assigned successfully.")
+
+# Print the summary of assigned subjects
+print("\nAssigned Subjects:")
+if assigned_subjects:
+    for subject_code, teacher_name, room_name, day, start_time, end_time in assigned_subjects:
+        print(f"Subject: {subject_code}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time}-{end_time}")
+else:
+    print("No subjects assigned.")
 
 # Schedule homeroom periods
 for section in sections:
     section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
 
     # Determine the day for homeroom based on the program
+    homeroom_scheduled = False
     if program == "Grade School":
         # Homeroom can be scheduled any day for 1 hour
         for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
@@ -158,6 +177,7 @@ for section in sections:
                     "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time) VALUES (%s, %s, %s, %s, %s, %s)",
                     ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1])
                 )
+                homeroom_scheduled = True
                 break  # Exit after scheduling homeroom for this section
 
     elif program == "High School":
@@ -179,7 +199,6 @@ for section in sections:
 
 # Commit the schedule to the database
 conn.commit()
-# Existing code...
 
 # Create a view to see the classes of each program during the week, including year level
 print("Creating view for weekly schedule by program...")
@@ -202,134 +221,8 @@ JOIN
 ORDER BY 
     sub.program, s.day, s.start_time;
 """
-
 cursor.execute(create_view_query)
 print("View 'weekly_schedule' created successfully.")
-
-# Create a view for room schedules
-print("Creating view for room schedules...")
-create_room_schedules_view = """
-CREATE OR REPLACE VIEW room_schedules AS
-SELECT 
-    s.room_name,
-    s.subject_code,
-    sub.subject_name,
-    s.teacher_name,
-    s.day,
-    s.start_time,
-    s.end_time
-FROM 
-    schedule s
-JOIN 
-    subjects sub ON s.subject_code = sub.subject_code
-ORDER BY 
-    s.room_name, s.day, s.start_time;
-"""
-
-cursor.execute(create_room_schedules_view)
-print("View 'room_schedules' created successfully.")
-
-# Create a view for teacher subjects
-print("Creating view for teacher subjects...")
-create_teacher_subjects_view = """
-CREATE OR REPLACE VIEW teacher_subjects AS
-SELECT 
-    s.teacher_name,
-    s.subject_code,
-    sub.subject_name,
-    s.room_name,
-    s.day,
-    s.start_time,
-    s.end_time
-FROM 
-    schedule s
-JOIN 
-    subjects sub ON s.subject_code = sub.subject_code
-ORDER BY 
-    s.teacher_name, s.day, s.start_time;
-"""
-
-cursor.execute(create_teacher_subjects_view)
-print("View 'teacher_subjects' created successfully.")
-
-# Function to fetch and display the weekly schedule
-def fetch_weekly_schedule(cursor):
-    print("\n=== Weekly Schedule ===")
-    cursor.execute("SELECT * FROM weekly_schedule")
-    schedule_rows = cursor.fetchall()
-    
-    for row in schedule_rows:
-        subject_code, subject_name, program, year_level, teacher_name, room_name, day, start_time, end_time = row
-        print(f"Program: {program}, Year Level: {year_level}, Subject: {subject_code} - {subject_name}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
-
-# Fetch and display the room schedules
-def fetch_room_schedules(cursor):
-    print("\n=== Room Schedules ===")
-    cursor.execute("SELECT * FROM room_schedules")
-    room_schedule_rows = cursor.fetchall()
-    
-    for row in room_schedule_rows:
-        room_name, subject_code, subject_name, teacher_name, day, start_time, end_time = row
-        print(f"Room: {room_name}, Subject: {subject_code} - {subject_name}, Teacher: {teacher_name}, Day: {day}, Time: {start_time} - {end_time}")
-
-# Fetch and display the teacher subjects
-def fetch_teacher_subjects(cursor):
-    print("\n=== Teacher Subjects ===")
-    cursor.execute("SELECT * FROM teacher_subjects")
-    teacher_subject_rows = cursor.fetchall()
-    
-    for row in teacher_subject_rows:
-        teacher_name, subject_code, subject_name, room_name, day, start_time, end_time = row
-        print(f"Teacher: {teacher_name}, Subject: {subject_code} - {subject_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
-
-# Fetch and display the weekly schedule
-fetch_weekly_schedule(cursor)
-
-# Fetch and display the room schedules
-fetch_room_schedules(cursor)
-
-# Fetch and display the teacher subjects
-fetch_teacher_subjects(cursor)
-
-# Existing code continues...
-
-# Create a view to see the classes of each program during the week, including year level
-print("Creating view for weekly schedule by program...")
-create_view_query = """
-CREATE OR REPLACE VIEW weekly_schedule AS
-SELECT 
-    s.subject_code,
-    sub.subject_name,
-    sub.program,
-    sub.year_level,
-    s.teacher_name,
-    s.room_name,
-    s.day,
-    s.start_time,
-    s.end_time
-FROM 
-    schedule s
-JOIN 
-    subjects sub ON s.subject_code = sub.subject_code
-ORDER BY 
-    sub.program, s.day, s.start_time;
-"""
-
-cursor.execute(create_view_query)
-print("View 'weekly_schedule' created successfully.")
-
-# Function to fetch and display the weekly schedule
-def fetch_weekly_schedule(cursor):
-    print("\n=== Weekly Schedule ===")
-    cursor.execute("SELECT * FROM weekly_schedule")
-    schedule_rows = cursor.fetchall()
-    
-    for row in schedule_rows:
-        subject_code, subject_name, program, year_level, teacher_name, room_name, day, start_time, end_time = row
-        print(f"Program: {program}, Year Level: {year_level}, Subject: {subject_code} - {subject_name}, Teacher: {teacher_name}, Room: {room_name}, Day: {day}, Time: {start_time} - {end_time}")
-
-# Fetch and display the weekly schedule
-fetch_weekly_schedule(cursor)
 
 # Export the weekly schedule to a CSV file
 def export_to_csv(cursor, filename):
@@ -350,51 +243,17 @@ def export_to_csv(cursor, filename):
 export_to_csv(cursor, 'weekly_schedule.csv')
 
 # Tally subjects by grade level
-grade_levels = [
-    "Toddler", "Nursery", "Kinder",
-    "Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6",
-    "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12"
-]
+grade_levels = ["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5", "Grade 6", "Grade 7", "Grade 8", "Grade 9", "Grade 10", "Grade 11", "Grade 12",]
+for grade_level in grade_levels:
+    cursor.execute("""
+        SELECT COUNT(*) 
+        FROM weekly_schedule
+        WHERE year_level LIKE %s
+    """, (f"%{grade_level}%",))
+    count = cursor.fetchone()[0]
+    print(f"Subjects scheduled for {grade_level}: {count}")
 
-# Initialize a dictionary to hold the tally
-subject_tally = {grade: 0 for grade in grade_levels}
-
-# Count subjects for each grade level
-for subject in subjects:
-    _, _, _, year_level, _, _ = subject
-    if year_level in subject_tally:
-        subject_tally[year_level] += 1
-
-# Write the tally to a new CSV file
-with open('subject_tally_by_grade.csv', mode='w', newline='', encoding='utf-8') as file:
-    writer = csv.writer(file)
-    # Write the header
-    writer.writerow(['Grade Level', 'Number of Subjects'])
-    # Write the tally data
-    for grade, count in subject_tally.items():
-        writer.writerow([grade, count])
-
-print("Subject tally by grade exported to 'subject_tally_by_grade.csv' successfully.")
-
-# Summary of assigned and unassigned subjects
-print("\n=== Summary of Assigned and Unassigned Subjects ===")
-print("Assigned Subjects:")
-if len(subjects) - len(unassigned_subjects) > 0:
-    for subject in subjects:
-        subject_code, subject_name, program, year_level, hours_per_week, semester = subject
-        if subject_code not in [unassigned[0] for unassigned in unassigned_subjects]:
-            print(f"Subject Code: {subject_code} - Program: {program}, Year Level: {year_level}")
-else:
-    print("All subjects were unassigned.")
-
-print("\nUnassigned Subjects:")
-if unassigned_subjects:
-    for subject_code, reason in unassigned_subjects:
-        print(f"Subject Code: {subject_code} - Reason: {reason}")
-else:
-    print("All subjects were successfully scheduled.")
-
-# Close the connection
+# Close connection
+cursor.close()
 conn.close()
-
 print("✅ Schedule generation process completed!")
