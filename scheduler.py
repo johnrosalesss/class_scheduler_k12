@@ -286,6 +286,47 @@ def export_view_to_csv(cursor, view_name, filename):
 # Call the export function for the view
 export_view_to_csv(cursor, 'section_schedule_summary', 'section_schedule_summary.csv')
 
+# Export room schedules to CSV
+def export_room_schedules_to_csv(cursor, filename):
+    cursor.execute("""
+        SELECT room_name, day, start_time, end_time, subject_code, section_id, teacher_name
+        FROM schedule
+        ORDER BY room_name, day, start_time
+    """)
+    rows = cursor.fetchall()
+    
+    with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        # Write the header
+        writer.writerow(['Room Name', 'Day', 'Start Time', 'End Time', 'Subject Code', 'Section ID', 'Teacher Name'])
+        # Write the data
+        for row in rows:
+            writer.writerow(row)
+    
+    print(f"Room schedules exported to {filename} successfully.")
+
+export_room_schedules_to_csv(cursor, 'room_schedules.csv')
+
+# Export teacher subjects to CSV
+def export_teacher_subjects_to_csv(cursor, filename):
+    cursor.execute("""
+        SELECT teacher_id, CONCAT(teacher_first_name, ' ', teacher_last_name) AS teacher_name, subject_name
+        FROM teachers
+    """)
+    rows = cursor.fetchall()
+    
+    with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        # Write the header
+        writer.writerow(['Teacher ID', 'Teacher Name', 'Subject Name'])
+        # Write the data
+        for row in rows:
+            writer.writerow(row)
+    
+    print(f"Teacher subjects exported to {filename} successfully.")
+
+export_teacher_subjects_to_csv(cursor, 'teacher_subjects.csv')
+
 # Close connection
 cursor.close()
 conn.close()
