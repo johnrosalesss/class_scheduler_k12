@@ -80,6 +80,38 @@ def export_room_schedules_to_csv(cursor, filename):
     
     print(f"Room schedules exported to {filename} successfully.")
 
+def export_room_schedules_to_csv_by_room(cursor):
+    cursor.execute("SELECT DISTINCT room_name FROM schedule")
+    rooms = cursor.fetchall()
+    
+    # Create directory for room schedules if it doesn't exist
+    output_dir = 'room_schedule_csv'
+    os.makedirs(output_dir, exist_ok=True)
+
+    for room in rooms:
+        room_name = room[0]  # Unpack the tuple
+        cursor.execute("""
+            SELECT room_name, day, start_time, end_time, subject_code, section_id, teacher_name
+            FROM schedule
+            WHERE room_name = %s
+            ORDER BY day, start_time
+        """, (room_name,))
+        rows = cursor.fetchall()
+        
+        if rows:
+            # Create a valid filename
+            filename = f"{room_name.replace(' ', '_')}_schedule.csv"
+            filepath = os.path.join(output_dir, filename)
+            with open(filepath, mode='w', newline='', encoding='utf-8') as file:
+                writer = csv.writer(file)
+                # Write the header
+                writer.writerow(['Room Name', 'Day', 'Start Time', 'End Time', 'Subject Code', 'Section ID', 'Teacher Name'])
+                # Write the data
+                for row in rows:
+                    writer.writerow(row)
+            
+            print(f"Room schedule for '{room_name}' exported to {filepath} successfully.")
+
 def export_teacher_subjects_to_csv(cursor, filename):
     cursor.execute("""
         SELECT teacher_id, CONCAT(teacher_first_name, ' ', teacher_last_name) AS teacher_name, subject_name
@@ -217,6 +249,9 @@ def main():
 
     # Export room schedules to CSV
     export_room_schedules_to_csv(cursor, 'room_schedules.csv')
+
+    # Export room schedules by room to CSV
+    export_room_schedules_to_csv_by_room(cursor)
 
     # Export teacher subjects to CSV
     export_teacher_subjects_to_csv(cursor, 'teacher_subjects.csv')
