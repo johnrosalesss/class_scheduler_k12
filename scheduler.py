@@ -240,6 +240,37 @@ for section in sections:
 # Commit the schedule to the database
 conn.commit()
 
+# Identify sections with zero subjects scheduled
+unscheduled_sections = []
+for section_name, data in section_schedule_counts.items():
+    if data["count"] == 0:
+        unscheduled_sections.append(section_name)
+
+# Analyze the reasons for unscheduled sections
+print("\nSummary of Unscheduled Sections and Possible Reasons:")
+for section_name in unscheduled_sections:
+    reason = []
+    
+    # Check if no matching subjects were found for this section
+    if not any(subject for subject in subjects if subject[3] == section_name):
+        reason.append("No matching subjects found for this section.")
+
+    # Check if all required subjects lacked teachers
+    unassigned_for_section = [sub for sub in unassigned_subjects if sub[1] == section_name]
+    if unassigned_for_section:
+        reason.append("No available teachers for required subjects.")
+
+    # Check if scheduling conflicts prevented assignments
+    if section_name in [sub[1] for sub in partially_assigned_subjects]:
+        reason.append("Scheduling conflicts prevented full assignment.")
+
+    # If no clear reason, assume rooms/time slots were unavailable
+    if not reason:
+        reason.append("Possible room/time slot constraints.")
+
+    print(f"- Section: {section_name} -> Reason(s): {', '.join(reason)}")
+
+
 # Close connection
 cursor.close()
 conn.close()
