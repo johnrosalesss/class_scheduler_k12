@@ -1,6 +1,5 @@
 import mysql.connector
 import random
-import csv
 
 # Debug message
 print("Connecting to MySQL...")
@@ -70,7 +69,7 @@ for section in sections:
     
     # Convert program and year_level to match the subjects table
     program_str = program.replace('Grade ', '').strip().lower() if program.startswith('Grade ') else program.strip().lower()
-    year_level_str = "toddler" if year_level == 0 else f"grade {year_level}".strip().lower()
+    year_level_str = "oddler" if year_level == 0 else f"grade {year_level}".strip().lower()
     
     # Debug: Print the values being compared
     print(f"Looking for subjects with program: {program_str}, year_level: {year_level_str}")
@@ -240,92 +239,6 @@ for section in sections:
 
 # Commit the schedule to the database
 conn.commit()
-
-# Create a view to summarize schedules assigned to each section
-create_view_query = """
-CREATE OR REPLACE VIEW section_schedule_summary AS
-SELECT 
-    s.section_id,
-    sec.section_name,
-    sec.program,
-    sec.year_level,
-    s.subject_code,
-    sub.subject_name,
-    s.teacher_name,
-    s.room_name,
-    s.day,
-    s.start_time,
-    s.end_time
-FROM 
-    schedule s
-JOIN 
-    sections sec ON s.section_id = sec.section_id
-JOIN 
-    subjects sub ON s.subject_code = sub.subject_code
-ORDER BY 
-    sec.section_name, s.day, s.start_time;
-"""
-cursor.execute(create_view_query)
-print("View 'section_schedule_summary' created successfully.")
-
-# Export the view to a CSV file
-def export_view_to_csv(cursor, view_name, filename):
-    cursor.execute(f"SELECT * FROM {view_name}")
-    rows = cursor.fetchall()
-    
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write the header
-        writer.writerow(['Section ID', 'Section Name', 'Program', 'Year Level', 'Subject Code', 'Subject Name', 'Teacher Name', 'Room Name', 'Day', 'Start Time', 'End Time'])
-        # Write the data
-        for row in rows:
-            writer.writerow(row)
-    
-    print(f"View '{view_name}' exported to {filename} successfully.")
-
-# Call the export function for the view
-export_view_to_csv(cursor, 'section_schedule_summary', 'section_schedule_summary.csv')
-
-# Export room schedules to CSV
-def export_room_schedules_to_csv(cursor, filename):
-    cursor.execute("""
-        SELECT room_name, day, start_time, end_time, subject_code, section_id, teacher_name
-        FROM schedule
-        ORDER BY room_name, day, start_time
-    """)
-    rows = cursor.fetchall()
-    
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write the header
-        writer.writerow(['Room Name', 'Day', 'Start Time', 'End Time', 'Subject Code', 'Section ID', 'Teacher Name'])
-        # Write the data
-        for row in rows:
-            writer.writerow(row)
-    
-    print(f"Room schedules exported to {filename} successfully.")
-
-export_room_schedules_to_csv(cursor, 'room_schedules.csv')
-
-# Export teacher subjects to CSV
-def export_teacher_subjects_to_csv(cursor, filename):
-    cursor.execute("""
-        SELECT teacher_id, CONCAT(teacher_first_name, ' ', teacher_last_name) AS teacher_name, subject_name
-        FROM teachers
-    """)
-    rows = cursor.fetchall()
-    
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write the header
-        writer.writerow(['Teacher ID', 'Teacher Name', 'Subject Name'])
-        # Write the data
-        for row in rows:
-            writer.writerow(row)
-    
-    print(f"Teacher subjects exported to {filename} successfully.")
-
-export_teacher_subjects_to_csv(cursor, 'teacher_subjects.csv')
 
 # Close connection
 cursor.close()

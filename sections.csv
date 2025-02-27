@@ -61,18 +61,18 @@ SEC019,Nursery,0,30,"OUR LADY, QUEEN OF PEACE",Capilos,Capilos
 SEC018,Kinder,0,30,"OUR LADY, QUEEN OF HEAVEN",Tanguin,Tanguin
 SEC017,Kinder,0,30,"OUR LADY, MOTHER OF GOD",Tulang,Tulang
 SEC016,Kinder,0,30,"OUR LADY, QUEEN OF ANGELS",Owit,Owit
-SEC015,Grade 11 STEM,11,30,STEM-11D - OUR LADY OF GRACE,Langcauon,Langcauon
-SEC014,Grade 11 STEM,11,30,STEM-11C - OUR LADY OF ROSE,Encarnacion,Encarnacion
-SEC013,Grade 11 STEM,11,30,STEM-11B - OUR LADY OF LIGHT,Tagoy,Tagoy
-SEC012,Grade 11 STEM,11,30,STEM-11A - OUR LADY MARY HELP OF CHRISTIANS,Noriega,Noriega
-SEC011,Grade 11 HUMSS,11,30,HUMSS-11A - OUR LADY OF CANDELARIA,Evarola,Evarola
-SEC010,Grade 11 ABM,11,30,ABM-11A - OUR LADY OF LA NAVAL,Millano,Millano
-SEC009,Grade 12 STEM,12,30,STEM-12D - OUR LADY OF CHARITY,Bognalos,Bognalos
-SEC008,Grade 12 STEM,12,30,STEM-12C - OUR LADY OF PENAFRANCIA,Laguidao,Laguidao
-SEC007,Grade 12 STEM,12,30,STEM-12B - OUR LADY OF PIAT,Bacani,Bacani
-SEC006,Grade 12 STEM,12,30,STEM-12A - OUR LADY OF MANAOAG,Bartolome,Bartolome
-SEC005,Grade 12 HUMSS,12,30,HUMSS-12A-OUR LADY OF THE PILLAR,Fernandez,Fernandez
-SEC004,Grade 12 ABM,12,30,ABM-12A-OUR LADY OF PEACE & GOOD VOYAGE,Paulo,Paulo
+SEC015,"Science, Technology, Engineering, and Mathematics",11,30,STEM-11D - OUR LADY OF GRACE,Langcauon,Langcauon
+SEC014,"Science, Technology, Engineering, and Mathematics",11,30,STEM-11C - OUR LADY OF ROSE,Encarnacion,Encarnacion
+SEC013,"Science, Technology, Engineering, and Mathematics",11,30,STEM-11B - OUR LADY OF LIGHT,Tagoy,Tagoy
+SEC012,"Science, Technology, Engineering, and Mathematics",11,30,STEM-11A - OUR LADY MARY HELP OF CHRISTIANS,Noriega,Noriega
+SEC011,Humanities and Social Sciences,11,30,HUMSS-11A - OUR LADY OF CANDELARIA,Evarola,Evarola
+SEC010,"Accountancy, Business, and Management",11,30,ABM-11A - OUR LADY OF LA NAVAL,Millano,Millano
+SEC009,"Science, Technology, Engineering, and Mathematics",12,30,STEM-12D - OUR LADY OF CHARITY,Bognalos,Bognalos
+SEC008,"Science, Technology, Engineering, and Mathematics",12,30,STEM-12C - OUR LADY OF PENAFRANCIA,Laguidao,Laguidao
+SEC007,"Science, Technology, Engineering, and Mathematics",12,30,STEM-12B - OUR LADY OF PIAT,Bacani,Bacani
+SEC006,"Science, Technology, Engineering, and Mathematics",12,30,STEM-12A - OUR LADY OF MANAOAG,Bartolome,Bartolome
+SEC005,Humanities and Social Sciences,12,30,HUMSS-12A-OUR LADY OF THE PILLAR,Fernandez,Fernandez
+SEC004,"Accountancy, Business, and Management",12,30,ABM-12A-OUR LADY OF PEACE & GOOD VOYAGE,Paulo,Paulo
 SEC003,Toddler,0,30,ST. CECILIA,Cabique,Cabique
 SEC002,Toddler,0,30,ST. ALOYSIUS GONZAGA,Ignacio,Ignacio
 SEC001,Toddler,0,30,ST. AGATHA,Esquilona,Esquilona
