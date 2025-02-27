@@ -93,9 +93,9 @@ Subject Code,Subject Name,Program,Year Level,Hours Per Week,Semester
 92,Reading and Writing Skills,11,"Accountancy, Business and Management",2,2
 93,Reading and Writing Skills,11,Humanities and Social Sciences,2,2
 94,Reading and Writing Skills,11,"Science, Technology, Engineering, and Mathematics",2,1
-95,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,11,"Accountancy, Business and Management",2,2
-96,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,11,Humanities and Social Sciences,2,2
-97,Pagbasa at Pagsusuri ng Iba't ibang Teksto Tungo sa Pananaliksik,11,"Science, Technology, Engineering, and Mathematics",2,2
+95,Pagbasa at Pagsusuri ng Ibat ibang Teksto Tungo sa Pananaliksik,11,"Accountancy, Business and Management",2,2
+96,Pagbasa at Pagsusuri ng Ibat ibang Teksto Tungo sa Pananaliksik,11,Humanities and Social Sciences,2,2
+97,Pagbasa at Pagsusuri ng Ibat ibang Teksto Tungo sa Pananaliksik,11,"Science, Technology, Engineering, and Mathematics",2,2
 98,Statistics and Probability,11,"Accountancy, Business and Management",2,2
 99,Statistics and Probability,11,Humanities and Social Sciences,2,2
 100,Statistics and Probability,11,"Science, Technology, Engineering, and Mathematics",2,2
@@ -201,17 +201,17 @@ Subject Code,Subject Name,Program,Year Level,Hours Per Week,Semester
 200,MAPEH 6,6,Grade 6,3,
 201,Computer 6,6,Grade 6,2,
 202,HELE 6,6,Grade 6,2,
-203,Christian Living Education,0,Toddler,1,
-204,Language and Spelling,0,Toddler,1,
-205,Number Readiness,0,Toddler,1,
-206,Reading Readiness,0,Toddler,1,
-207,Christian Living Education,0,Nursery,2,
-208,Language and Spelling,0,Nursery,2,
-209,Number Readiness,0,Nursery,2,
-210,Reading Readiness,0,Nursery,2,
-211,Christian Living Education,0,Kinder,2,
-212,Language and Spelling,0,Kinder,2,
-213,Reading Readiness,0,Kinder,2,
+203,Christian Living Education,1,Toddler,1,
+204,Language and Spelling,1,Toddler,1,
+205,Number Readiness,1,Toddler,1,
+206,Reading Readiness,1,Toddler,1,
+207,Christian Living Education,2,Nursery,2,
+208,Language and Spelling,2,Nursery,2,
+209,Number Readiness,2,Nursery,2,
+210,Reading Readiness,2,Nursery,2,
+211,Christian Living Education,3,Kinder,2,
+212,Language and Spelling,3,Kinder,2,
+213,Reading Readiness,3,Kinder,2,
 214,Robotics 11,11,"Science, Technology, Engineering, and Mathematics",1,1
 215,Robotics 12,12,"Science, Technology, Engineering, and Mathematics",1,1
 216,Araling Panlipunan 6,6,Grade 6,3,
