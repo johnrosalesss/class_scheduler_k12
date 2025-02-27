@@ -1,6 +1,6 @@
 import mysql.connector
 import random
-import csv
+from collections import defaultdict
 
 # Debug message
 print("Connecting to MySQL...")
@@ -25,7 +25,7 @@ print(f"Fetched {len(subjects)} subjects.")
 
 print("Loading teachers with their subjects...")
 cursor.execute("""
-    SELECT t.teacher_id, CONCAT(t.teacher_first_name, ' ', t.teacher_last_name) AS teacher_name, t.subject_name
+    SELECT t.teacher_id, CONCAT(t.teacher_first_name, ' ', t.teacher_last_name) AS teacher_name, t.subject_name, t.teacher_type
     FROM teachers t
 """)
 teacher_subjects = cursor.fetchall()
@@ -41,7 +41,6 @@ cursor.execute("SELECT * FROM time_slots")
 time_slots = cursor.fetchall()
 print(f"Fetched {len(time_slots)} time slots.")
 
-# Load sections
 print("Loading sections...")
 cursor.execute("SELECT * FROM sections")
 sections = cursor.fetchall()
@@ -51,12 +50,12 @@ print(f"Fetched {len(sections)} sections.")
 print("Clearing old schedule...")
 cursor.execute("DELETE FROM schedule")
 
-unassigned_subjects = []  # To track subjects that couldn't be assigned at all
-partially_assigned_subjects = []  # To track subjects with some hours unassigned
-assigned_subjects = []    # To track successfully assigned subjects
-
-# Dictionary to store the count of successfully scheduled subjects per section
-section_schedule_counts = {}
+# Trackers
+unassigned_subjects = []  # Subjects that couldn't be assigned at all
+partially_assigned_subjects = []  # Subjects with some hours unassigned
+assigned_subjects = []    # Successfully assigned subjects
+section_schedule_counts = defaultdict(lambda: {"year_level": 0, "count": 0})  # Successfully scheduled subjects per section
+teacher_subject_counts = defaultdict(int)  # Track subjects assigned to part-time teachers
 
 # Debug: Print all subjects in the database
 print("All subjects in the database:")
@@ -70,7 +69,7 @@ for section in sections:
     
     # Convert program and year_level to match the subjects table
     program_str = program.replace('Grade ', '').strip().lower() if program.startswith('Grade ') else program.strip().lower()
-    year_level_str = "toddler" if year_level == 0 else f"grade {year_level}".strip().lower()
+    year_level_str = "oddler" if year_level == 0 else f"grade {year_level}".strip().lower()
     
     # Debug: Print the values being compared
     print(f"Looking for subjects with program: {program_str}, year_level: {year_level_str}")
@@ -84,7 +83,7 @@ for section in sections:
     print(f"Found subjects: {section_subjects}")
 
     # Initialize the count of successfully scheduled subjects for this section
-    section_schedule_counts[section_name] = {"year_level": year_level, "count": 0}
+    section_schedule_counts[section_name]["year_level"] = year_level
 
     # Schedule subjects for this section
     for subject in section_subjects:
@@ -94,11 +93,15 @@ for section in sections:
         # Find available teachers for the current subject
         available_teacher_subjects = []
         for teacher in teacher_subjects:
-            teacher_id, teacher_name, teacher_subjects_list = teacher
+            teacher_id, teacher_name, teacher_subjects_list, teacher_type = teacher
             teacher_subjects_list = teacher_subjects_list.split(', ')
             
             if subject_name in teacher_subjects_list:
-                available_teacher_subjects.append((teacher_id, teacher_name))
+                # Check part-time teacher restriction
+                if teacher_type == "Part-Time" and teacher_subject_counts[teacher_id] >= 5:
+                    print(f"⚠ Teacher {teacher_name} (Part-Time) has reached the maximum of 5 subjects.")
+                    continue
+                available_teacher_subjects.append((teacher_id, teacher_name, teacher_type))
         print(f"Available teachers for {subject_name}: {available_teacher_subjects}")
 
         if not available_teacher_subjects:
@@ -112,31 +115,20 @@ for section in sections:
         attempts = 0
 
         while hours_scheduled < hours_per_week and attempts < max_attempts:
-            teacher_id, teacher_name = random.choice(available_teacher_subjects)
+            teacher_id, teacher_name, teacher_type = random.choice(available_teacher_subjects)
             room = random.choice(rooms)
             time_slot = random.choice(time_slots)
 
             slot_id, day, start_time, end_time = time_slot
             print(f"Attempt {attempts + 1}: Trying slot {slot_id} ({day} {start_time}-{end_time}) with teacher {teacher_name} in room {room[1]}")
 
-            # Check for recess and lunch breaks
-            if (program == "Grade School" and (
-                (start_time >= "10:00" and end_time <= "10:30") or  # Recess after 2nd period
-                (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
-            )) or (program == "High School" and (
-                (start_time >= "11:00" and end_time <= "11:30") or  # Recess after 3rd period
-                (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
-            )):
-                print(f"⚠ Slot {slot_id} is during recess/lunch for {program}, trying another slot...")
-                attempts += 1
-                continue
-
             # Check for conflicts
             cursor.execute("""
                 SELECT COUNT(*) FROM schedule 
                 WHERE (teacher_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
-                      (room_name = %s AND day = %s AND start_time < %s AND end_time > %s)
-            """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time))
+                      (room_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
+                      (section_id = %s AND day = %s AND start_time < %s AND end_time > %s)
+            """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time, section_id, day, end_time, start_time))
             conflicts = cursor.fetchone()[0]
             print(f"Conflicts detected: {conflicts}")
 
@@ -162,6 +154,8 @@ for section in sections:
                 )
                 assigned_subjects.append((subject_code, section_name, teacher_name, room[1], day, start_time, end_time))
                 section_schedule_counts[section_name]["count"] += 1  # Increment the count for this section
+                if teacher_type == "Part-Time":
+                    teacher_subject_counts[teacher_id] += 1  # Increment part-time teacher's subject count
             else:
                 print(f"⚠ Slot {slot_id} already assigned for {subject_code} in {section_name}, trying another slot...")
 
@@ -178,7 +172,7 @@ for section in sections:
 # After running the schedule process, print unassigned subjects with reasons
 if unassigned_subjects:
     print("\nUnassigned Subjects with Reasons:")
-    for subject_code, section_name, reason in unassigned_subjects:  # Unpack all three values
+    for subject_code, section_name, reason in unassigned_subjects:
         print(f"Subject: {subject_code}, Section: {section_name}, Reason: {reason}")
 else:
     print("All subjects assigned successfully.")
@@ -202,26 +196,27 @@ for section in sections:
 
     # Determine the day for homeroom based on the program
     homeroom_scheduled = False
-    if program == "Grade School":
-        # Homeroom can be scheduled any day for 1 hour
-        for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
-            time_slot = ("09:00", "10:00")  # Example time for homeroom
-            cursor.execute("""
-                SELECT COUNT(*) FROM schedule 
-                WHERE day = %s AND start_time = %s AND end_time = %s
-            """, (day, time_slot[0], time_slot[1]))
-            count = cursor.fetchone()[0]
+    if program.startswith("Grade "):
+        grade = int(program.split(" ")[1])
+        if grade <= 6:  # Grades 1-6
+            for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
+                time_slot = ("09:00", "10:00")  # Example time for homeroom
+                cursor.execute("""
+                    SELECT COUNT(*) FROM schedule 
+                    WHERE day = %s AND start_time = %s AND end_time = %s
+                """, (day, time_slot[0], time_slot[1]))
+                count = cursor.fetchone()[0]
 
-            if count < 1:  # If no existing schedule for this time
-                print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
-                cursor.execute(
-                    "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-                    ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
-                )
-                homeroom_scheduled = True
-                break  # Exit after scheduling homeroom for this section
+                if count < 1:  # If no existing schedule for this time
+                    print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
+                    cursor.execute(
+                        "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+                        ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
+                    )
+                    homeroom_scheduled = True
+                    break  # Exit after scheduling homeroom for this section
 
-    elif program == "High School":
+    elif program.startswith("Grade 7") or program.startswith("Grade 8") or program.startswith("Grade 9") or program.startswith("Grade 10") or program.startswith("Grade 11") or program.startswith("Grade 12"):
         # Homeroom is scheduled on Friday during the 1st period
         day = "Friday"
         time_slot = ("08:00", "09:00")  # Example time for homeroom
@@ -241,91 +236,35 @@ for section in sections:
 # Commit the schedule to the database
 conn.commit()
 
-# Create a view to summarize schedules assigned to each section
-create_view_query = """
-CREATE OR REPLACE VIEW section_schedule_summary AS
-SELECT 
-    s.section_id,
-    sec.section_name,
-    sec.program,
-    sec.year_level,
-    s.subject_code,
-    sub.subject_name,
-    s.teacher_name,
-    s.room_name,
-    s.day,
-    s.start_time,
-    s.end_time
-FROM 
-    schedule s
-JOIN 
-    sections sec ON s.section_id = sec.section_id
-JOIN 
-    subjects sub ON s.subject_code = sub.subject_code
-ORDER BY 
-    sec.section_name, s.day, s.start_time;
-"""
-cursor.execute(create_view_query)
-print("View 'section_schedule_summary' created successfully.")
+# Identify sections with zero subjects scheduled
+unscheduled_sections = []
+for section_name, data in section_schedule_counts.items():
+    if data["count"] == 0:
+        unscheduled_sections.append(section_name)
 
-# Export the view to a CSV file
-def export_view_to_csv(cursor, view_name, filename):
-    cursor.execute(f"SELECT * FROM {view_name}")
-    rows = cursor.fetchall()
+# Analyze the reasons for unscheduled sections
+print("\nSummary of Unscheduled Sections and Possible Reasons:")
+for section_name in unscheduled_sections:
+    reason = []
     
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write the header
-        writer.writerow(['Section ID', 'Section Name', 'Program', 'Year Level', 'Subject Code', 'Subject Name', 'Teacher Name', 'Room Name', 'Day', 'Start Time', 'End Time'])
-        # Write the data
-        for row in rows:
-            writer.writerow(row)
-    
-    print(f"View '{view_name}' exported to {filename} successfully.")
+    # Check if no matching subjects were found for this section
+    if not any(subject for subject in subjects if subject[3] == section_name):
+        reason.append("No matching subjects found for this section.")
 
-# Call the export function for the view
-export_view_to_csv(cursor, 'section_schedule_summary', 'section_schedule_summary.csv')
+    # Check if all required subjects lacked teachers
+    unassigned_for_section = [sub for sub in unassigned_subjects if sub[1] == section_name]
+    if unassigned_for_section:
+        reason.append("No available teachers for required subjects.")
 
-# Export room schedules to CSV
-def export_room_schedules_to_csv(cursor, filename):
-    cursor.execute("""
-        SELECT room_name, day, start_time, end_time, subject_code, section_id, teacher_name
-        FROM schedule
-        ORDER BY room_name, day, start_time
-    """)
-    rows = cursor.fetchall()
-    
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write the header
-        writer.writerow(['Room Name', 'Day', 'Start Time', 'End Time', 'Subject Code', 'Section ID', 'Teacher Name'])
-        # Write the data
-        for row in rows:
-            writer.writerow(row)
-    
-    print(f"Room schedules exported to {filename} successfully.")
+    # Check if scheduling conflicts prevented assignments
+    if section_name in [sub[1] for sub in partially_assigned_subjects]:
+        reason.append("Scheduling conflicts prevented full assignment.")
 
-export_room_schedules_to_csv(cursor, 'room_schedules.csv')
+    # If no clear reason, assume rooms/time slots were unavailable
+    if not reason:
+        reason.append("Possible room/time slot constraints.")
 
-# Export teacher subjects to CSV
-def export_teacher_subjects_to_csv(cursor, filename):
-    cursor.execute("""
-        SELECT teacher_id, CONCAT(teacher_first_name, ' ', teacher_last_name) AS teacher_name, subject_name
-        FROM teachers
-    """)
-    rows = cursor.fetchall()
-    
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        # Write the header
-        writer.writerow(['Teacher ID', 'Teacher Name', 'Subject Name'])
-        # Write the data
-        for row in rows:
-            writer.writerow(row)
-    
-    print(f"Teacher subjects exported to {filename} successfully.")
-
-export_teacher_subjects_to_csv(cursor, 'teacher_subjects.csv')
+    print(f"- Section: {section_name} -> Reason(s): {', '.join(reason)}")
 
 # Close connection
 cursor.close()
