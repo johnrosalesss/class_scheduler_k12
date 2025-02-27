@@ -1,0 +1,168 @@
+Timestamp,Message
+2025-02-27 16:41:54,Connecting to MySQL...
+2025-02-27 16:41:54,Connected successfully!
+2025-02-27 16:41:54,Loading subjects...
+2025-02-27 16:41:54,Fetched 237 subjects.
+2025-02-27 16:41:54,Loading teachers...
+2025-02-27 16:41:54,Fetched 78 teachers.
+2025-02-27 16:41:54,Loading rooms...
+2025-02-27 16:41:54,Fetched 150 rooms.
+2025-02-27 16:41:54,Loading time_slots...
+2025-02-27 16:41:54,Fetched 120 time_slots.
+2025-02-27 16:41:54,Loading sections...
+2025-02-27 16:41:54,Fetched 77 sections.
+2025-02-27 16:41:54,Clearing old schedule...
+2025-02-27 16:41:54,Processing section: ST. ALPHONSUS DE LIGUORI
+2025-02-27 16:41:54,Found 0 subjects for ST. ALPHONSUS DE LIGUORI
+2025-02-27 16:41:54,Processing section: ST. JOHN PAUL II
+2025-02-27 16:41:54,Found 0 subjects for ST. JOHN PAUL II
+2025-02-27 16:41:54,Processing section: ST. CATHERINE OF SIENA
+2025-02-27 16:41:54,Found 0 subjects for ST. CATHERINE OF SIENA
+2025-02-27 16:41:54,Processing section: ST. JEROME
+2025-02-27 16:41:54,Found 0 subjects for ST. JEROME
+2025-02-27 16:41:54,Processing section: ST. BONAVENTURE
+2025-02-27 16:41:54,Found 0 subjects for ST. BONAVENTURE
+2025-02-27 16:41:54,Processing section: ST. AMBROSE
+2025-02-27 16:41:54,Found 0 subjects for ST. AMBROSE
+2025-02-27 16:41:54,Processing section: ST. ANSELM
+2025-02-27 16:41:54,Found 0 subjects for ST. ANSELM
+2025-02-27 16:41:54,Processing section: ST. AUGUSTINE
+2025-02-27 16:41:54,Found 0 subjects for ST. AUGUSTINE
+2025-02-27 16:41:54,Processing section: ST. SEBASTIAN
+2025-02-27 16:41:54,Found 0 subjects for ST. SEBASTIAN
+2025-02-27 16:41:54,Processing section: ST. PEDRO CALUNGSOD
+2025-02-27 16:41:54,Found 0 subjects for ST. PEDRO CALUNGSOD
+2025-02-27 16:41:54,Processing section: ST. LORENZO RUIZ
+2025-02-27 16:41:54,Found 0 subjects for ST. LORENZO RUIZ
+2025-02-27 16:41:54,Processing section: ST. MAXIMILIAN KOLBE
+2025-02-27 16:41:54,Found 0 subjects for ST. MAXIMILIAN KOLBE
+2025-02-27 16:41:54,Processing section: ST. JOHN THE BAPTIST
+2025-02-27 16:41:54,Found 0 subjects for ST. JOHN THE BAPTIST
+2025-02-27 16:41:54,Processing section: ST. PAUL
+2025-02-27 16:41:54,Found 0 subjects for ST. PAUL
+2025-02-27 16:41:54,Processing section: ST. PETER
+2025-02-27 16:41:54,Found 0 subjects for ST. PETER
+2025-02-27 16:41:54,Processing section: ST. JOHN
+2025-02-27 16:41:54,Found 0 subjects for ST. JOHN
+2025-02-27 16:41:54,Processing section: ST. JAMES
+2025-02-27 16:41:54,Found 0 subjects for ST. JAMES
+2025-02-27 16:41:54,Processing section: ST. MATTHEW
+2025-02-27 16:41:54,Found 0 subjects for ST. MATTHEW
+2025-02-27 16:41:54,Processing section: ST. ANDREW
+2025-02-27 16:41:54,Found 0 subjects for ST. ANDREW
+2025-02-27 16:41:54,Processing section: ST. JOSEPH OF CUPERTINO
+2025-02-27 16:41:54,Found 0 subjects for ST. JOSEPH OF CUPERTINO
+2025-02-27 16:41:54,Processing section: ST. JOHN BOSCO
+2025-02-27 16:41:54,Found 0 subjects for ST. JOHN BOSCO
+2025-02-27 16:41:54,Processing section: ST. VINCENT FERRER
+2025-02-27 16:41:54,Found 0 subjects for ST. VINCENT FERRER
+2025-02-27 16:41:54,Processing section: ST. DOMINIC SAVIO
+2025-02-27 16:41:54,Found 0 subjects for ST. DOMINIC SAVIO
+2025-02-27 16:41:54,Processing section: ST. RAPHAEL
+2025-02-27 16:41:54,Found 0 subjects for ST. RAPHAEL
+2025-02-27 16:41:54,Processing section: ST. MICHAEL
+2025-02-27 16:41:54,Found 0 subjects for ST. MICHAEL
+2025-02-27 16:41:54,Processing section: ANGEL OF PEACE
+2025-02-27 16:41:54,Found 0 subjects for ANGEL OF PEACE
+2025-02-27 16:41:54,Processing section: ST. GABRIEL
+2025-02-27 16:41:54,Found 0 subjects for ST. GABRIEL
+2025-02-27 16:41:54,Processing section: ANGEL REMIEL
+2025-02-27 16:41:54,Found 0 subjects for ANGEL REMIEL
+2025-02-27 16:41:54,Processing section: SERAPHIM
+2025-02-27 16:41:54,Found 0 subjects for SERAPHIM
+2025-02-27 16:41:54,Processing section: CHERUBIM
+2025-02-27 16:41:54,Found 0 subjects for CHERUBIM
+2025-02-27 16:41:54,Processing section: ST. JHUDIEL
+2025-02-27 16:41:54,Found 0 subjects for ST. JHUDIEL
+2025-02-27 16:41:54,Processing section: ST. BLANDINE
+2025-02-27 16:41:54,Found 0 subjects for ST. BLANDINE
+2025-02-27 16:41:54,Processing section: ST. ROSE OF LIMA
+2025-02-27 16:41:54,Found 0 subjects for ST. ROSE OF LIMA
+2025-02-27 16:41:54,Processing section: ST. RITA OF CASCIA
+2025-02-27 16:41:54,Found 0 subjects for ST. RITA OF CASCIA
+2025-02-27 16:41:54,Processing section: ST. MARIA GORETTI
+2025-02-27 16:41:54,Found 0 subjects for ST. MARIA GORETTI
+2025-02-27 16:41:54,Processing section: ST. AGNES
+2025-02-27 16:41:54,Found 0 subjects for ST. AGNES
+2025-02-27 16:41:54,Processing section: ST. CLARE
+2025-02-27 16:41:54,Found 0 subjects for ST. CLARE
+2025-02-27 16:41:54,Processing section: ST. FRANCIS OF ASSISI
+2025-02-27 16:41:54,Found 0 subjects for ST. FRANCIS OF ASSISI
+2025-02-27 16:41:54,Processing section: ST. ROCH
+2025-02-27 16:41:54,Found 0 subjects for ST. ROCH
+2025-02-27 16:41:54,Processing section: ST. LAWRENCE
+2025-02-27 16:41:54,Found 0 subjects for ST. LAWRENCE
+2025-02-27 16:41:54,Processing section: ST. BLASÉ
+2025-02-27 16:41:54,Found 0 subjects for ST. BLASÉ
+2025-02-27 16:41:54,Processing section: ST. PADRE PIO
+2025-02-27 16:41:54,Found 0 subjects for ST. PADRE PIO
+2025-02-27 16:41:54,Processing section: ST. TERESA OF CALCUTTA
+2025-02-27 16:41:54,Found 0 subjects for ST. TERESA OF CALCUTTA
+2025-02-27 16:41:54,Processing section: ST. MARTIN DE PORRES
+2025-02-27 16:41:54,Found 0 subjects for ST. MARTIN DE PORRES
+2025-02-27 16:41:54,Processing section: ST. CAMILLUS DE LELLIS
+2025-02-27 16:41:54,Found 0 subjects for ST. CAMILLUS DE LELLIS
+2025-02-27 16:41:54,Processing section: ST. ANNE
+2025-02-27 16:41:54,Found 0 subjects for ST. ANNE
+2025-02-27 16:41:54,Processing section: ST. LUKE
+2025-02-27 16:41:54,Found 0 subjects for ST. LUKE
+2025-02-27 16:41:54,Processing section: ST. FRANCIS XAVIER
+2025-02-27 16:41:54,Found 0 subjects for ST. FRANCIS XAVIER
+2025-02-27 16:41:54,Processing section: ST. JUSTIN
+2025-02-27 16:41:54,Found 0 subjects for ST. JUSTIN
+2025-02-27 16:41:54,Processing section: ST. ANTHONY OF PADUA
+2025-02-27 16:41:54,Found 0 subjects for ST. ANTHONY OF PADUA
+2025-02-27 16:41:54,Processing section: ST. PATRICK
+2025-02-27 16:41:54,Found 0 subjects for ST. PATRICK
+2025-02-27 16:41:54,Processing section: ST. CHRISTOPHER
+2025-02-27 16:41:54,Found 0 subjects for ST. CHRISTOPHER
+2025-02-27 16:41:54,Processing section: OUR LADY OF LA SALETTE
+2025-02-27 16:41:54,Found 0 subjects for OUR LADY OF LA SALETTE
+2025-02-27 16:41:54,Processing section: OUR LADY OF LOURDES
+2025-02-27 16:41:54,Found 0 subjects for OUR LADY OF LOURDES
+2025-02-27 16:41:54,Processing section: OUR LADY OF FATIMA
+2025-02-27 16:41:54,Found 0 subjects for OUR LADY OF FATIMA
+2025-02-27 16:41:54,Processing section: OUR LADY OF CHARTRES
+2025-02-27 16:41:54,Found 0 subjects for OUR LADY OF CHARTRES
+2025-02-27 16:41:54,Processing section: OUR LADY OF GUADALUPE
+2025-02-27 16:41:54,Found 0 subjects for OUR LADY OF GUADALUPE
+2025-02-27 16:41:54,"Processing section: OUR LADY, STAR OF THE SEA"
+2025-02-27 16:41:54,"Found 0 subjects for OUR LADY, STAR OF THE SEA"
+2025-02-27 16:41:54,"Processing section: OUR LADY, QUEEN OF PEACE"
+2025-02-27 16:41:54,"Found 0 subjects for OUR LADY, QUEEN OF PEACE"
+2025-02-27 16:41:54,"Processing section: OUR LADY, QUEEN OF HEAVEN"
+2025-02-27 16:41:54,"Found 0 subjects for OUR LADY, QUEEN OF HEAVEN"
+2025-02-27 16:41:54,"Processing section: OUR LADY, MOTHER OF GOD"
+2025-02-27 16:41:54,"Found 0 subjects for OUR LADY, MOTHER OF GOD"
+2025-02-27 16:41:54,"Processing section: OUR LADY, QUEEN OF ANGELS"
+2025-02-27 16:41:54,"Found 0 subjects for OUR LADY, QUEEN OF ANGELS"
+2025-02-27 16:41:54,Processing section: STEM-11D - OUR LADY OF GRACE
+2025-02-27 16:41:54,Found 0 subjects for STEM-11D - OUR LADY OF GRACE
+2025-02-27 16:41:54,Processing section: STEM-11C - OUR LADY OF ROSE
+2025-02-27 16:41:54,Found 0 subjects for STEM-11C - OUR LADY OF ROSE
+2025-02-27 16:41:54,Processing section: STEM-11B - OUR LADY OF LIGHT
+2025-02-27 16:41:54,Found 0 subjects for STEM-11B - OUR LADY OF LIGHT
+2025-02-27 16:41:54,Processing section: STEM-11A - OUR LADY MARY HELP OF CHRISTIANS
+2025-02-27 16:41:54,Found 0 subjects for STEM-11A - OUR LADY MARY HELP OF CHRISTIANS
+2025-02-27 16:41:54,Processing section: HUMSS-11A - OUR LADY OF CANDELARIA
+2025-02-27 16:41:54,Found 0 subjects for HUMSS-11A - OUR LADY OF CANDELARIA
+2025-02-27 16:41:54,Processing section: ABM-11A - OUR LADY OF LA NAVAL
+2025-02-27 16:41:54,Found 0 subjects for ABM-11A - OUR LADY OF LA NAVAL
+2025-02-27 16:41:54,Processing section: STEM-12D - OUR LADY OF CHARITY
+2025-02-27 16:41:54,Found 0 subjects for STEM-12D - OUR LADY OF CHARITY
+2025-02-27 16:41:54,Processing section: STEM-12C - OUR LADY OF PENAFRANCIA
+2025-02-27 16:41:54,Found 0 subjects for STEM-12C - OUR LADY OF PENAFRANCIA
+2025-02-27 16:41:54,Processing section: STEM-12B - OUR LADY OF PIAT
+2025-02-27 16:41:54,Found 0 subjects for STEM-12B - OUR LADY OF PIAT
+2025-02-27 16:41:54,Processing section: STEM-12A - OUR LADY OF MANAOAG
+2025-02-27 16:41:54,Found 0 subjects for STEM-12A - OUR LADY OF MANAOAG
+2025-02-27 16:41:54,Processing section: HUMSS-12A-OUR LADY OF THE PILLAR
+2025-02-27 16:41:54,Found 0 subjects for HUMSS-12A-OUR LADY OF THE PILLAR
+2025-02-27 16:41:54,Processing section: ABM-12A-OUR LADY OF PEACE & GOOD VOYAGE
+2025-02-27 16:41:54,Found 0 subjects for ABM-12A-OUR LADY OF PEACE & GOOD VOYAGE
+2025-02-27 16:41:54,Processing section: ST. CECILIA
+2025-02-27 16:41:54,Found 0 subjects for ST. CECILIA
+2025-02-27 16:41:54,Processing section: ST. ALOYSIUS GONZAGA
+2025-02-27 16:41:54,Found 0 subjects for ST. ALOYSIUS GONZAGA
+2025-02-27 16:41:54,Processing section: ST. AGATHA
+2025-02-27 16:41:54,Found 0 subjects for ST. AGATHA
