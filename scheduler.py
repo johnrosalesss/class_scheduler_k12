@@ -50,6 +50,61 @@ print(f"Fetched {len(sections)} sections.")
 print("Clearing old schedule...")
 cursor.execute("DELETE FROM schedule")
 
+# Step 1: Remove any subjects assigned on Friday 7:30 - 8:30 AM
+print("Clearing schedules for Friday 7:30 - 8:30 AM to enforce homeroom...")
+cursor.execute("""
+    DELETE FROM schedule
+    WHERE day = 'Friday' AND start_time = '07:30' AND end_time = '08:30'
+""")
+conn.commit()
+
+# Step 2: Insert homeroom schedule for all sections based on grade level
+homeroom_schedules = []
+for section in sections:
+    section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
+
+    # Ensure the adviser exists
+    adviser_name = f"{adviser_first_name} {adviser_last_name}" if adviser_first_name and adviser_last_name else "TBA"
+
+    # Determine the appropriate time slot based on the grade level
+    if year_level in range(1, 7):  # Grades 1 to 6
+        time_slot_id = 'GS_TS041'  # Time slot ID for Grades 1-6
+    elif year_level in range(7, 11):  # Grades 7 to 10
+        time_slot_id = 'HS_TS041'  # Time slot ID for Grades 7-10
+    else:
+        print(f"⚠ No valid time slot for {section_name}, skipping...")
+        continue
+
+    # Fetch the time slot details
+    cursor.execute("SELECT start_time, end_time FROM time_slots WHERE time_slot_id = %s", (time_slot_id,))
+    time_slot = cursor.fetchone()
+    
+    if time_slot:
+        start_time, end_time = time_slot
+        day = "Friday"  # Homeroom is scheduled on Friday
+
+        # Extract the numeric part of the section_id and calculate the room number
+        section_number = int(section_id[3:])  # Extract the numeric part after 'SEC'
+        room_number = 100 + section_number  # Calculate the room number (e.g., SEC077 -> 177)
+        room_name = f"Room {room_number}"  # Format the room name
+
+        print(f"Inserting Homeroom for {section_name} on {day} from {start_time} to {end_time} (Adviser: {adviser_name}, Room: {room_name})")
+        cursor.execute("""
+            INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+        """, ("Homeroom", adviser_name, room_name, day, start_time, end_time, section_id))
+
+        homeroom_schedules.append((section_name, day, start_time, end_time, room_name))
+    else:
+        print(f"⚠ Time slot not found for {section_name}, skipping...")
+
+conn.commit()
+
+# Step 3: Print the enforced homeroom schedule
+print("\nEnforced Homeroom Schedule:")
+for section_name, day, start_time, end_time, room_name in homeroom_schedules:
+    print(f"Section: {section_name}, Day: {day}, Time: {start_time}-{end_time}, Room: {room_name}")
+
 # Trackers
 unassigned_subjects = []  # Subjects that couldn't be assigned at all
 partially_assigned_subjects = []  # Subjects with some hours unassigned
@@ -191,63 +246,6 @@ print("\nSuccessfully Scheduled Subjects per Section:")
 for section_name, data in section_schedule_counts.items():
     print(f"Section: {section_name}, Year Level: {data['year_level']}, Successfully Scheduled Subjects: {data['count']}")
     print(f"Subjects Assigned: {', '.join(data['subjects'])}")
-
-# Schedule homeroom periods
-homeroom_schedules = []
-for section in sections:
-    section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
-
-    # Determine the day for homeroom based on the program
-    homeroom_scheduled = False
-    if program.startswith("Grade "):
-        grade = int(program.split(" ")[1])
-        if grade <= 6:  # Grades 1-6
-            for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
-                time_slot = ("09:00", "10:00")  # Example time for homeroom
-                cursor.execute("""
-                    SELECT COUNT(*) FROM schedule 
-                    WHERE day = %s AND start_time = %s AND end_time = %s
-                """, (day, time_slot[0], time_slot[1]))
-                count = cursor.fetchone()[0]
-
-                if count < 1:  # If no existing schedule for this time
-                    print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
-                    cursor.execute(
-                        "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-                        ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
-                    )
-                    homeroom_schedules.append((section_name, day, time_slot[0], time_slot[1]))
-                    homeroom_scheduled = True
-                    break  # Exit after scheduling homeroom for this section
-
-    elif program.startswith("Grade 7") or program.startswith("Grade 8") or program.startswith("Grade 9") or program.startswith("Grade 10") or program.startswith("Grade 11") or program.startswith("Grade 12"):
-        # Homeroom is scheduled on Friday during the 1st period
-        day = "Friday"
-        time_slot = ("08:00", "09:00")  # Example time for homeroom
-        cursor.execute("""
-            SELECT COUNT(*) FROM schedule 
-            WHERE day = %s AND start_time = %s AND end_time = %s
-        """, (day, time_slot[0], time_slot[1]))
-        count = cursor.fetchone()[0]
-
-        if count < 1:  # If no existing schedule for this time
-            print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
-            cursor.execute(
-                "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-                ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
-            )
-            homeroom_schedules.append((section_name, day, time_slot[0], time_slot[1]))
-
-# Commit the schedule to the database
-conn.commit()
-
-# Print the homeroom schedule for each section
-print("\nHomeroom Schedule:")
-if homeroom_schedules:
-    for section_name, day, start_time, end_time in homeroom_schedules:
-        print(f"Section: {section_name}, Day: {day}, Time: {start_time}-{end_time}")
-else:
-    print("No homeroom schedules found.")
 
 # Identify sections with zero subjects scheduled
 unscheduled_sections = []
