@@ -1,195 +1,81 @@
 id,teacher_id,teacher_first_name,teacher_last_name,subject_name,section_advisory,teacher_type
-1,T-001,Esquilona,Esquilona,Christian Living Education,KINDER-1 - Our Lady of Peace,Full-time
-2,T-001,Esquilona,Esquilona,Language and Spelling,KINDER-1 - Our Lady of Peace,Full-time
-3,T-002,Esquilona,Esquilona,Reading Readiness,KINDER-2 - St. Agatha,Full-time
-4,T-002,Esquilona,Esquilona,Number Readiness,KINDER-2 - St. Agatha,Full-time
-5,T-003,Cabique,Cabique,Christian Living Education,NURSERY-1 - Our Lady of Charity,Full-time
-6,T-003,Cabique,Cabique,Language and Spelling,NURSERY-1 - Our Lady of Charity,Full-time
-7,T-004,Ignacio,Ignacio,Number Readiness,NURSERY-2 - St. Aloysius Gonzaga,Full-time
-8,T-004,Ignacio,Ignacio,Reading Readiness,NURSERY-2 - St. Aloysius Gonzaga,Full-time
-9,T-005,Alvarez,Alvarez,Christian Living Education,TODDLER-1 - Our Lady of Fatima,Full-time
-10,T-005,Alvarez,Alvarez,Language and Spelling,TODDLER-1 - Our Lady of Fatima,Full-time
-11,T-006,Cabique,Cabique,Reading Readiness,TODDLER-2 - St. Cecilia,Full-time
-12,T-006,Cabique,Cabique,Number Readiness,TODDLER-2 - St. Cecilia,Full-time
-13,T-019,Tabones,Tabones,Filipino 4,GRADE 5A - St. Lawrence,Full-time
-14,T-019,Tabones,Tabones,Filipino 3,GRADE 5A - St. Lawrence,Full-time
-15,T-019,Tabones,Tabones,Filipino 2,GRADE 5A - St. Lawrence,Full-time
-16,T-019,Tabones,Tabones,Filipino 1,GRADE 5A - St. Lawrence,Full-time
-17,T-018,Orolaza,Orolaza,Science & Health 6,GRADE 4C - St. Blasé,Full-time
-18,T-018,Orolaza,Orolaza,Science & Health 5,GRADE 4C - St. Blasé,Full-time
-19,T-018,Orolaza,Orolaza,Science & Health 4,GRADE 4C - St. Blasé,Full-time
-20,T-018,Orolaza,Orolaza,Science & Health 3,GRADE 4C - St. Blasé,Full-time
-21,T-017,Lati,Lati,Mathematics 6,GRADE 4B - St. Padre Pio,Full-time
-22,T-017,Lati,Lati,Mathematics 5,GRADE 4B - St. Padre Pio,Full-time
-23,T-017,Lati,Lati,Mathematics 4,GRADE 4B - St. Padre Pio,Full-time
-24,T-017,Lati,Lati,Mathematics 3,GRADE 4B - St. Padre Pio,Full-time
-25,T-017,Lati,Lati,Mathematics 2,GRADE 4B - St. Padre Pio,Full-time
-26,T-017,Lati,Lati,Mathematics 1,GRADE 4B - St. Padre Pio,Full-time
-27,T-016,Alejo,Alejo,Robotics 6,GRADE 4A - St. Teresa of Calcutta,Full-time
-28,T-016,Alejo,Alejo,Robotics 5,GRADE 4A - St. Teresa of Calcutta,Full-time
-29,T-016,Alejo,Alejo,Robotics 4,GRADE 4A - St. Teresa of Calcutta,Full-time
-30,T-015,Alde,Alde,HELE 6,GRADE 3C - St. Martin de Porres,Full-time
-31,T-015,Alde,Alde,HELE 5,GRADE 3C - St. Martin de Porres,Full-time
-32,T-015,Alde,Alde,HELE 4,GRADE 3C - St. Martin de Porres,Full-time
-33,T-014,Napili,Napili,MAPEH 6,GRADE 3B - St. Camillus de Lellis,Full-time
-34,T-014,Napili,Napili,MAPEH 5,GRADE 3B - St. Camillus de Lellis,Full-time
-35,T-014,Napili,Napili,MAPEH 4,GRADE 3B - St. Camillus de Lellis,Full-time
-36,T-014,Napili,Napili,MAPEH 3,GRADE 3B - St. Camillus de Lellis,Full-time
-37,T-014,Napili,Napili,MAPEH 2,GRADE 3B - St. Camillus de Lellis,Full-time
-38,T-013,Binaluyo,Binaluyo,Computer 6,GRADE 3A - St. Anne,Full-time
-39,T-013,Binaluyo,Binaluyo,Computer 5,GRADE 3A - St. Anne,Full-time
-40,T-013,Binaluyo,Binaluyo,Computer 4,GRADE 3A - St. Anne,Full-time
-41,T-013,Binaluyo,Binaluyo,Computer 3,GRADE 3A - St. Anne,Full-time
-42,T-013,Binaluyo,Binaluyo,Computer 2,GRADE 3A - St. Anne,Full-time
-43,T-013,Binaluyo,Binaluyo,Computer 1,GRADE 3A - St. Anne,Full-time
-44,T-012,Alonzo,Alonzo,Araling Panlipunan 6,GRADE 2C - St. Luke,Full-time
-45,T-012,Alonzo,Alonzo,Araling Panlipunan 5,GRADE 2C - St. Luke,Full-time
-46,T-012,Alonzo,Alonzo,Araling Panlipunan 4,GRADE 2C - St. Luke,Full-time
-47,T-012,Alonzo,Alonzo,Araling Panlipunan 3,GRADE 2C - St. Luke,Full-time
-48,T-012,Alonzo,Alonzo,Araling Panlipunan 2,GRADE 2C - St. Luke,Full-time
-49,T-011,Gumabon,Gumabon,Science & Health 6,GRADE 2B - St. Francis Xavier,Full-time
-50,T-011,Gumabon,Gumabon,Science & Health 5,GRADE 2B - St. Francis Xavier,Full-time
-51,T-011,Gumabon,Gumabon,Science & Health 4,GRADE 2B - St. Francis Xavier,Full-time
-52,T-011,Gumabon,Gumabon,Science & Health 3,GRADE 2B - St. Francis Xavier,Full-time
-53,T-010,Layag,Layag,Christian Living Education 6,GRADE 2A - St. Justin,Full-time
-54,T-010,Layag,Layag,Christian Living Education 5,GRADE 2A - St. Justin,Full-time
-55,T-010,Layag,Layag,Christian Living Education 4,GRADE 2A - St. Justin,Full-time
-56,T-010,Layag,Layag,Christian Living Education 3,GRADE 2A - St. Justin,Full-time
-57,T-010,Layag,Layag,Christian Living Education 2,GRADE 2A - St. Justin,Full-time
-58,T-010,Layag,Layag,Christian Living Education 1,GRADE 2A - St. Justin,Full-time
-59,T-009,Ballesteros,Ballesteros,Filipino 6,GRADE 1C - St. Anthony of Padua,Full-time
-60,T-009,Ballesteros,Ballesteros,Filipino 5,GRADE 1C - St. Anthony of Padua,Full-time
-61,T-009,Ballesteros,Ballesteros,Filipino 4,GRADE 1C - St. Anthony of Padua,Full-time
-62,T-009,Ballesteros,Ballesteros,Filipino 3,GRADE 1C - St. Anthony of Padua,Full-time
-63,T-009,Ballesteros,Ballesteros,Filipino 2,GRADE 1C - St. Anthony of Padua,Full-time
-64,T-009,Ballesteros,Ballesteros,Filipino 1,GRADE 1C - St. Anthony of Padua,Full-time
-65,T-008,Esquilona,Esquilona,Mathematics 6,GRADE 1B - St. Patrick,Full-time
-66,T-008,Esquilona,Esquilona,Mathematics 5,GRADE 1B - St. Patrick,Full-time
-67,T-008,Esquilona,Esquilona,Mathematics 4,GRADE 1B - St. Patrick,Full-time
-68,T-008,Esquilona,Esquilona,Mathematics 3,GRADE 1B - St. Patrick,Full-time
-69,T-008,Esquilona,Esquilona,Mathematics 2,GRADE 1B - St. Patrick,Full-time
-70,T-008,Esquilona,Esquilona,Mathematics 1,GRADE 1B - St. Patrick,Full-time
-71,T-007,Ramirez,Ramirez,English 6,GRADE 1A - St. Christopher,Full-time
-72,T-007,Ramirez,Ramirez,English 5,GRADE 1A - St. Christopher,Full-time
-73,T-007,Ramirez,Ramirez,English 4,GRADE 1A - St. Christopher,Full-time
-74,T-007,Ramirez,Ramirez,English 3,GRADE 1A - St. Christopher,Full-time
-75,T-007,Ramirez,Ramirez,English 2,GRADE 1A - St. Christopher,Full-time
-76,T-007,Ramirez,Ramirez,English 1,GRADE 1A - St. Christopher,Full-time
-77,T-019,Tabones,Tabones,Filipino 5,GRADE 5A - St. Lawrence,Full-time
-78,T-019,Tabones,Tabones,Filipino 6,GRADE 5A - St. Lawrence,Full-time
-79,T-020,Dela Cruz,Dela Cruz,English 1,GRADE 5B - St. Roch,Full-time
-80,T-020,Dela Cruz,Dela Cruz,English 2,GRADE 5B - St. Roch,Full-time
-81,T-020,Dela Cruz,Dela Cruz,English 3,GRADE 5B - St. Roch,Full-time
-82,T-020,Dela Cruz,Dela Cruz,English 4,GRADE 5B - St. Roch,Full-time
-83,T-020,Dela Cruz,Dela Cruz,English 5,GRADE 5B - St. Roch,Full-time
-84,T-020,Dela Cruz,Dela Cruz,English 6,GRADE 5B - St. Roch,Full-time
-85,T-021,Dinapo,Dinapo,Araling Panlipunan 1,GRADE 5C - St. Francis of Assisi,Full-time
-86,T-021,Dinapo,Dinapo,Araling Panlipunan 2,GRADE 5C - St. Francis of Assisi,Full-time
-87,T-021,Dinapo,Dinapo,Araling Panlipunan 3,GRADE 5C - St. Francis of Assisi,Full-time
-88,T-021,Dinapo,Dinapo,Araling Panlipunan 4,GRADE 5C - St. Francis of Assisi,Full-time
-89,T-021,Dinapo,Dinapo,Araling Panlipunan 5,GRADE 5C - St. Francis of Assisi,Full-time
-90,T-021,Dinapo,Dinapo,Araling Panlipunan 6,GRADE 5C - St. Francis of Assisi,Full-time
-91,T-021,Dinapo,Dinapo,Makabansa 1,GRADE 5C - St. Francis of Assisi,Full-time
-92,T-022,Barretto,Barretto,MAPEH 1,GRADE 6A - St. Clare,Full-time
-93,T-022,Barretto,Barretto,MAPEH 2,GRADE 6A - St. Clare,Full-time
-94,T-022,Barretto,Barretto,MAPEH 3,GRADE 6A - St. Clare,Full-time
-95,T-022,Barretto,Barretto,MAPEH 4,GRADE 6A - St. Clare,Full-time
-96,T-022,Barretto,Barretto,MAPEH 5,GRADE 6A - St. Clare,Full-time
-97,T-022,Barretto,Barretto,MAPEH 6,GRADE 6A - St. Clare,Full-time
-98,T-023,Guttierez,Guttierez,Paulinian Writing 1,GRADE 6B - St. Agnes,Full-time
-99,T-023,Guttierez,Guttierez,Paulinian Writing 2,GRADE 6B - St. Agnes,Full-time
-100,T-023,Guttierez,Guttierez,Paulinian Writing 3,GRADE 6B - St. Agnes,Full-time
-101,T-023,Guttierez,Guttierez,Paulinian Writing 4,GRADE 6B - St. Agnes,Full-time
-102,T-023,Guttierez,Guttierez,Paulinian Writing 5,GRADE 6B - St. Agnes,Full-time
-103,T-023,Guttierez,Guttierez,Paulinian Writing 6,GRADE 6B - St. Agnes,Full-time
-104,T-024,Laque,Laque,Computer 1,GRADE 6C - St. Maria Goretti,Full-time
-105,T-024,Laque,Laque,Computer 2,GRADE 6C - St. Maria Goretti,Full-time
-106,T-024,Laque,Laque,Computer 3,GRADE 6C - St. Maria Goretti,Full-time
-107,T-024,Laque,Laque,Computer 4,GRADE 6C - St. Maria Goretti,Full-time
-108,T-024,Laque,Laque,Computer 5,GRADE 6C - St. Maria Goretti,Full-time
-109,T-024,Laque,Laque,Computer 6,GRADE 6C - St. Maria Goretti,Full-time
-110,T-025,Odtohan,Odtohan,Science & Health 7,GRADE 7A - St. Rita of Cascia,Full-time
-111,T-025,Odtohan,Odtohan,Science & Health 8,GRADE 7A - St. Rita of Cascia,Full-time
-112,T-041,Baraquel,Baraquel,Science & Health 9,GRADE 9B - Angel of Peace,Full-time
-113,T-043,Fructuoso,Fructuoso,Science & Health 10,GRADE 10A - ST. MICHAEL,Full-time
-114,T-026,Rimarim,Rimarim,Filipino 7,GRADE 7B - St. Rose of Lima,Full-time
-115,T-026,Rimarim,Rimarim,Filipino 8,GRADE 7B - St. Rose of Lima,Full-time
-116,T-026,Rimarim,Rimarim,Filipino 9,GRADE 7B - St. Rose of Lima,Full-time
-117,T-045,Achapero,Achapero,Filipino 10,GRADE 10C - ST. DOMINIC SAVIO,Full-time
-118,T-031,Gante,Gante,English 7,GRADE 9A - Angel Remiel,Full-time
-119,T-031,Gante,Gante,English 8,GRADE 9A - Angel Remiel,Full-time
-120,T-044,Gante,Gante,English 9,GRADE 10B - ST. RAPHAEL,Full-time
-121,T-044,Gante,Gante,English 10,GRADE 10B - ST. RAPHAEL,Full-time
-122,T-030,Cabasbas,Cabasbas,Mathematics 7,GRADE 8C - Seraphim,Full-time
-123,T-030,Cabasbas,Cabasbas,Mathematics 8,GRADE 8C - Seraphim,Full-time
-124,T-042,Fructuoso,Fructuoso,Mathematics 9,GRADE 9C - ST. GABRIEL,Full-time
-125,T-042,Fructuoso,Fructuoso,Mathematics 10,GRADE 9C - ST. GABRIEL,Full-time
-126,T-027,Delos Santos,Delos Santos,Araling Panlipunan 7,GRADE 7C - St. Blandine,Full-time
-127,T-027,Delos Santos,Delos Santos,Araling Panlipunan 8,GRADE 7C - St. Blandine,Full-time
-128,T-027,Delos Santos,Delos Santos,Araling Panlipunan 9,GRADE 7C - St. Blandine,Full-time
-129,T-027,Delos Santos,Delos Santos,Araling Panlipunan 10,GRADE 7C - St. Blandine,Full-time
-130,T-028,Baraquel,Baraquel,MAPEH 7,GRADE 8A - St. Jhudiel,Full-time
-131,T-028,Baraquel,Baraquel,MAPEH 8,GRADE 8A - St. Jhudiel,Full-time
-132,T-028,Baraquel,Baraquel,MAPEH 9,GRADE 8A - St. Jhudiel,Full-time
-133,T-028,Baraquel,Baraquel,MAPEH 10,GRADE 8A - St. Jhudiel,Full-time
-134,T-029,Cabasbas,Cabasbas,Christian Living Education 7,GRADE 8B - Cherubim,Full-time
-135,T-029,Cabasbas,Cabasbas,Christian Living Education 8,GRADE 8B - Cherubim,Full-time
-136,T-029,Cabasbas,Cabasbas,Christian Living Education 9,GRADE 8B - Cherubim,Full-time
-137,T-029,Cabasbas,Cabasbas,Christian Living Education 10,GRADE 8B - Cherubim,Full-time
-138,T-025,Odtohan,Odtohan,Reading and Literacy 7,GRADE 7A - St. Rita of Cascia,Full-time
-139,T-025,Odtohan,Odtohan,Reading and Literacy 8,GRADE 7A - St. Rita of Cascia,Full-time
-140,T-025,Odtohan,Odtohan,Reading and Literacy 9,GRADE 7A - St. Rita of Cascia,Full-time
-141,T-025,Odtohan,Odtohan,Reading and Literacy 10,GRADE 7A - St. Rita of Cascia,Full-time
-142,T-026,Rimarim,Rimarim,TLE 7,GRADE 7B - St. Rose of Lima,Full-time
-143,T-026,Rimarim,Rimarim,TLE 8,GRADE 7B - St. Rose of Lima,Full-time
-144,T-026,Rimarim,Rimarim,TLE 9,GRADE 7B - St. Rose of Lima,Full-time
-145,T-026,Rimarim,Rimarim,TLE 10,GRADE 7B - St. Rose of Lima,Full-time
-146,T-027,Delos Santos,Delos Santos,Robotics 7,GRADE 7C - St. Blandine,Full-time
-147,T-027,Delos Santos,Delos Santos,Robotics 8,GRADE 7C - St. Blandine,Full-time
-148,T-027,Delos Santos,Delos Santos,Robotics 9,GRADE 7C - St. Blandine,Full-time
-149,T-027,Delos Santos,Delos Santos,Robotics 10,GRADE 7C - St. Blandine,Full-time
-150,T-028,Baraquel,Baraquel,ICT 7,GRADE 8A - St. Jhudiel,Full-time
-151,T-028,Baraquel,Baraquel,ICT 8,GRADE 8A - St. Jhudiel,Full-time
-152,T-028,Baraquel,Baraquel,ICT 9,GRADE 8A - St. Jhudiel,Full-time
-153,T-028,Baraquel,Baraquel,ICT 10,GRADE 8A - St. Jhudiel,Full-time
-154,T-046,Carrasco,Carrasco,Social Studies,GRADE 10D - ST. JOHN BOSCO,Full-time
-155,T-046,Carrasco,Carrasco,Disciplines and Ideas in Social Sciences,HUMSS-12A - OUR LADY OF THE PILLAR,Full-time
-156,T-047,Orbita,Orbita,Christian Living,GRADE 10E - ST. VINCENT FERRER,Full-time
-157,T-047,Orbita,Orbita,Christian Living (Catholic Social Teaching),SHS,Full-time
-158,T-048,Dela Cruz,Dela Cruz,Science,GRADE 10F - ST. JOSEPH OF CUPERTINO,Full-time
-159,T-048,Dela Cruz,Dela Cruz,Earth & Life Science,STEM-11A - OUR LADY MARY HELP OF CHRISTIAN,Full-time
-160,T-049,Cadiente,Cadiente,Mathematics,GRADE 10G - ST. MATTHEW,Full-time
-161,T-049,Cadiente,Cadiente,Basic Calculus & Pre-Calculus,STEM-12C - OUR LADY OF PENAFRANCIA,Full-time
-162,T-050,Gabiola,Gabiola,English 10,GRADE 10H - ST. ANDREW,Full-time
-163,T-050,Gabiola,Gabiola,Reading & Writing Skills,HUMSS-11C - OUR LADY OF GUADALUPE,Full-time
-164,T-051,Canadilla,Canadilla,Filipino,GRADE 10I - ST. JAMES,Full-time
-165,T-051,Canadilla,Canadilla,Pagsulat sa Filipino sa Piling Larangan,HUMSS-12C - OUR LADY OF FATIMA,Full-time
-166,T-052,Manago,Manago,Social Studies,GRADE 10J - ST. JOHN,Full-time
-167,T-052,Manago,Manago,"Understanding Culture, Society, & Politics",HUMSS-11B - OUR LADY OF GRACE,Full-time
-168,T-053,De Lara,De Lara,Christian Living,GRADE 10K - ST. PAUL,Full-time
-169,T-053,De Lara,De Lara,Faith in the Light of the Epistles of Paul 1 & 2,SHS,Full-time
-170,T-054,De Asis,De Asis,Science,GRADE 10L - ST. PETER,Full-time
-171,T-054,De Asis,De Asis,Physical Science,STEM-12A - OUR LADY OF MANAOAG,Full-time
-172,T-055,Royeca,Royeca,Mathematics,GRADE 10M - ST. JOHN THE BAPTIST,Full-time
-173,T-055,Royeca,Royeca,General Mathematics,STEM-11A - OUR LADY MARY HELP OF CHRISTIAN,Full-time
-174,T-055,Royeca,Royeca,Business Math,ABM-11D - OUR LADY OF LOURDES,Full-time
-175,T-056,Vallesteros,Vallesteros,English 10,GRADE 10N - ST. LORENZO RUIZ,Full-time
-176,T-056,Vallesteros,Vallesteros,English for Academic & Professional Purposes,HUMSS-12B - OUR LADY OF CHARITY,Full-time
-177,T-057,Dela Peña,Dela Peña,Filipino,GRADE 10O - ST. MAXIMILIAN KOLBE,Full-time
-178,T-057,Dela Peña,Dela Peña,Komunikasyon at Pananaliksik sa Wika at Kulturang ,HUMSS-11A - OUR LADY OF CANDELARIA,Full-time
-179,T-079,Millano,Millano,Business Finance,ABM-11A - OUR LADY OF LA NAVAL,Full-time
-180,T-080,Paulo,Paulo,Principles of Marketing,ABM-12A - OUR LADY OF PEACE & GOOD VOYAGE,Full-time
-181,T-081,Noriega,Noriega,General Mathematics,STEM-11A - OUR LADY MARY HELP OF CHRISTIAN,Full-time
-182,T-082,Bartolome,Bartolome,Physics,STEM-12A - OUR LADY OF MANAOAG,Full-time
-183,T-083,Evarola,Evarola,Creative Writing,HUMSS-11A - OUR LADY OF CANDELARIA,Full-time
-184,T-084,Fernandez,Fernandez,Disciplines and Ideas in Social Sciences,HUMSS-12A - OUR LADY OF THE PILLAR,Full-time
-185,T-085,Tagoy,Tagoy,Accountancy,ABM-11B - OUR LADY OF LIGHT,Full-time
-186,T-086,Bacani,Bacani,Business Ethics,ABM-12B - OUR LADY OF PIAT,Full-time
-187,T-087,Encarnacion,Encarnacion,Chemistry,STEM-11C - OUR LADY OF ROSE,Full-time
-188,T-088,Laguidao,Laguidao,Biology,STEM-12C - OUR LADY OF PENAFRANCIA,Full-time
-189,T-089,Langcauon,Langcauon,Oral Communication,HUMSS-11B - OUR LADY OF GRACE,Full-time
-190,T-090,Bognalos,Bognalos,Philosophy,HUMSS-12B - OUR LADY OF CHARITY,Full-time
-191,T-091,Owit,Owit,Entrepreneurship,"ABM-11C - OUR LADY, QUEEN OF ANGELS",Full-time
-192,T-092,Tulang,Tulang,Management Science,"ABM-12C - OUR LADY, MOTHER OF GOD",Full-time
-193,T-093,Tanguin,Tanguin,Pre-Calculus,"STEM-11D - OUR LADY, QUEEN OF HEAVEN",Full-time
-194,T-094,Bognalos,Bognalos,Earth Science,STEM-12D - OUR LADY OF CHARITY,Full-time
+1,T-028,Ballesteros,Ballesteros,"Robotics 7, Robotics 8, Robotics 9, Robotics 10",ST. ANTHONY OF PADUA,Advisory
+2,T-063,De Lara,De Lara,"Mathematics 9, Science & Health 9, Araling Panlipunan 9",ST. PAUL,Advisory
+3,T-074,Cabrera,Cabrera,"Reading and Literacy 7, Filipino 7, English 7",ST. CATHERINE OF SIENA,Advisory
+4,T-075,Valdez,Valdez,"Reading and Literacy 8, Filipino 8, English 8",ST. JEROME,Advisory
+5,T-029,Layag,Layag,"ICT 7, ICT 8, ICT 9, ICT 10",ST. JUSTIN,Advisory
+6,T-036,Lati,Lati,"Christian Living Education 5, MAPEH 5",ST. PADRE PIO,Advisory
+7,T-035,Alejo,Alejo,"Christian Living Education 4, MAPEH 4",ST. TERESA OF CALCUTTA,Advisory
+8,T-034,Alde,Alde,"Christian Living Education 3, MAPEH 3",ST. MARTIN DE PORRES,Advisory
+9,T-033,Napili,Napili,"Christian Living Education 2, MAPEH 2",ST. CAMILLUS DE LELLIS,Advisory
+10,T-032,Binaluyo,Binaluyo,Computer 1,ST. ANNE,Advisory
+11,T-027,Esquilona,Esquilona,"Computer 6, HELE 6, Robotics 6",ST. PATRICK,Advisory
+12,T-026,Ramirez,Ramirez,"Computer 5, HELE 5, Robotics 5",ST. CHRISTOPHER,Advisory
+13,T-025,Bitancor,Bitancor,"Computer 4, HELE 4, Robotics 4",OUR LADY OF LA SALETTE,Advisory
+14,T-024,Botalon,Botalon,"Computer 3, Paulinian Writing 3",OUR LADY OF LOURDES,Advisory
+15,T-023,Alvarez,Alvarez,Computer 2,OUR LADY OF FATIMA,Advisory
+16,T-022,Capranca,Capranca,Substitute / Support Teacher,OUR LADY OF CHARTRES,Advisory
+17,T-077,Abanto,Abanto,"Reading and Literacy 10, Filipino 10, English 10",ST. ALPHONSUS DE LIGUORI,Advisory
+18,T-076,Morales,Morales,"Reading and Literacy 9, Filipino 9, English 9",ST. JOHN PAUL II,Advisory
+19,T-048,Cabasbas,Cabasbas,"Christian Living Education 7, MAPEH 7, TLE 7",CHERUBIM,Advisory
+20,T-049,Cabasbas,Cabasbas,"Christian Living Education 8, MAPEH 8, TLE 8",SERAPHIM,Advisory
+21,T-064,De Asis,De Asis,"Mathematics 10, Science & Health 10, Araling Panlipunan 10",ST. PETER,Advisory
+22,T-062,Manago,Manago,"Mathematics 8, Science & Health 8, Araling Panlipunan 8",ST. JOHN,Advisory
+23,T-061,Canadilla,Canadilla,"Mathematics 7, Science & Health 7, Araling Panlipunan 7",ST. JAMES,Advisory
+24,T-051,Baraquel,Baraquel,"Christian Living Education 10, MAPEH 10, TLE 10",ANGEL OF PEACE,Advisory
+25,T-050,Gante,Gante,"Christian Living Education 9, MAPEH 9, TLE 9",ANGEL REMIEL,Advisory
+26,T-030,Gumabon,Gumabon,"Christian Living Education 9, MAPEH 9, TLE 9",ST. FRANCIS XAVIER,Advisory
+27,T-031,Alonzo,Alonzo,"Christian Living Education 10, MAPEH 10, TLE 10",ST. LUKE,Advisory
+28,T-038,Tabones,Tabones,"Christian Living Education 7, MAPEH 7, TLE 7",ST. LAWRENCE,Advisory
+29,T-039,Dela Cruz,Dela Cruz,"Christian Living Education 8, MAPEH 8, TLE 8",ST. ROCH,Advisory
+30,T-040,Dinapo,Dinapo,"Christian Living Education 9, MAPEH 9, TLE 9",ST. FRANCIS OF ASSISI,Advisory
+31,T-041,Barretto,Barretto,"Christian Living Education 10, MAPEH 10, TLE 10",ST. CLARE,Advisory
+32,T-037,Orolaza,Orolaza,"Christian Living Education 6, MAPEH 6",ST. BLASÉ,Advisory
+33,T-042,Gutierrez,Gutierrez,"Makabansa 1, Paulinian Writing 1",ST. AGNES,Advisory
+34,T-043,Laque,Laque,"Araling Panlipunan 2, Paulinian Writing 2",ST. MARIA GORETTI,Advisory
+35,T-044,Odtohan,Odtohan,"Science & Health 3, Araling Panlipunan 3",ST. RITA OF CASCIA,Advisory
+36,T-045,Rimarim,Rimarim,"Science & Health 4, Araling Panlipunan 4",ST. ROSE OF LIMA,Advisory
+37,T-046,Delos Santos,Delos Santos,"Science & Health 5, Araling Panlipunan 5",ST. BLANDINE,Advisory
+38,T-047,Baraquel,Baraquel,"Science & Health 6, Araling Panlipunan 6",ST. JHUDIEL,Advisory
+39,T-055,Achapero,Achapero,"Mathematics 1, Christian Living Education 1",ST. DOMINIC SAVIO,Advisory
+40,T-057,Orbita,Orbita,"English 3, Mathematics 3",ST. VINCENT FERRER,Advisory
+41,T-056,Carrasco,Carrasco,"English 2, Mathematics 2",ST. JOHN BOSCO,Advisory
+42,T-058,Dela Cruz,Dela Cruz,"English 4, Mathematics 4",ST. JOSEPH OF CUPERTINO,Advisory
+43,T-060,Gabiola,Gabiola,"English 6, Mathematics 6",ST. ANDREW,Advisory
+44,T-059,Cadiente,Cadiente,"English 5, Mathematics 5",ST. MATTHEW,Advisory
+45,T-068,Obedoza,Obedoza,"Reading and Literacy 1, Language 1",ST. PEDRO CALUNGSOD,Advisory
+46,T-069,Fernando,Fernando,"Reading and Literacy 2, Filipino 2",ST. SEBASTIAN,Advisory
+47,T-070,Acebes,Acebes,"Reading and Literacy 3, Filipino 3",ST. AUGUSTINE,Advisory
+48,T-071,Berza,Berza,"Reading and Literacy 4, Filipino 4",ST. AMBROSE,Advisory
+49,T-015,Royeca,Royeca,Reading Readiness,ST. JOHN THE BAPTIST,Kinder
+50,T-073,Bacongallo,Bacongallo,"Reading and Literacy 6, Filipino 6",ST. BONAVENTURE,Advisory
+51,T-014,Gante,Gante,Language and Spelling,ST. RAPHAEL,Kinder
+52,T-013,Fructuoso,Fructuoso,Christian Living Education,ST. GABRIEL,Kinder
+53,T-012,Tanguin,Tanguin,Reading Readiness,"OUR LADY, QUEEN OF HEAVEN",Kinder
+54,T-011,Tulang,Tulang,Language and Spelling,"OUR LADY, MOTHER OF GOD",Kinder
+55,T-010,Owit,Owit,Christian Living Education,"OUR LADY, QUEEN OF ANGELS",Kinder
+56,T-009,Vallesteros,Vallesteros,Christian Living Education,ST. LORENZO RUIZ,Nursery
+57,T-008,Fructuoso,Fructuoso,Reading Readiness,ST. MICHAEL,Nursery
+58,T-007,Jugarap,Jugarap,Number Readiness,OUR LADY OF GUADALUPE,Nursery
+59,T-006,Antenor,Antenor,Language and Spelling,"OUR LADY, STAR OF THE SEA",Nursery
+60,T-005,Capilos,Capilos,Christian Living Education,"OUR LADY, QUEEN OF PEACE",Nursery
+61,T-004,Dela Peña,Dela Peña,Reading Readiness,ST. MAXIMILIAN KOLBE,Toddler
+62,T-003,Cabique,Cabique,Number Readiness,ST. CECILIA,Toddler
+63,T-002,Ignacio,Ignacio,Language and Spelling,ST. ALOYSIUS GONZAGA,Toddler
+64,T-001,Esquilona,Esquilona,Christian Living Education,ST. AGATHA,Toddler
+65,T-072,Maniba,Maniba,"Reading and Literacy 5, Filipino 5",ST. ANSELM,Advisory
+66,SEC004,Paulo,Paulo,"Applied Economics, Business Finance, Business Ethics and Social Responsibility, Inquiries, Investigations and Immersion, Inquiries, Investigations and Immersion (2nd Semester), Fundamentals of Accountancy, Business and Mgnt 2",ABM-12A-OUR LADY OF PEACE & GOOD VOYAGE,Full-Time
+67,SEC005,Fernandez,Fernandez,"Creative Writing, Trends Networks and Critical Thinking, Creative Non-Fiction, Inquiries, Investigations and Immersion, Inquiries, Investigations and Immersion (2nd Semester)",HUMSS-12A-OUR LADY OF THE PILLAR,Full-Time
+68,SEC006,Bartolome,Bartolome,"General Physics 1, General Chemistry 1, Inquiries Investigations and Immersion, Inquiries Investigations and Immersion (2nd Semester)",STEM-12A-OUR LADY OF MANAOAG,Full-Time
+69,SEC007,Bacani,Bacani,"General Physics 2, General Chemistry 2, Work Immersion/Capstone Project",STEM-12B-OUR LADY OF PIAT,Full-Time
+70,SEC007,Bacani,Bacani,"General Physics 2, General Chemistry 2, Work Immersion/Capstone Project",STEM-12B-OUR LADY OF PIAT,Full-Time
+71,SEC008,Laguidao,Laguidao,"Contemporary Philippine Arts, Understanding Culture Society and Politics, Robotics 12",STEM-12C-OUR LADY OF PENAFRANCIA,Full-Time
+72,SEC009,Bognalos,Bognalos,"Media and Information Literacy, Catholic Social Teaching, Physical Education and Health 4",STEM-12D-OUR LADY OF CHARITY,Full-Time
+73,SEC010,Millano,Millano,"Business Math, Organization and Management, Principles of Marketing, Oral Communication, Fundamentals of Accountancy, Business and Mgnt 1",ABM-11A-OUR LADY OF LA NAVAL,Full-Time
+74,SEC011,Evarola,Evarola,"Philippine Politics and Governance, Discipline and Ideas in Social Sciences, Intro to World Religions, Faith in the Light of the Epistles of Paul 1, Oral Communication",HUMSS-11A-OUR LADY OF CANDELARIA,Full-Time
+75,SEC012,Noriega,Noriega,"Pre-Calculus, General Biology 1, Practical Research 1, Oral Communication",STEM-11A-OUR LADY MARY HELP OF CHRISTIANS,Full-Time
+76,SEC013,Tagoy,Tagoy,"Basic Calculus, General Biology 2, DRRR, Oral Communication",STEM-11B-OUR LADY OF LIGHT,Full-Time
+77,SEC014,Encarnacion,Encarnacion,"Statistics and Probability, Physical Science, Robotics 11",STEM-11C-OUR LADY OF ROSE,Full-Time
+78,SEC015,Langcauon,Langcauon,"Earth and Life Science, Empowerment Technologies, Personal Development",STEM-11D-OUR LADY OF GRACE,Full-Time
+79,Recess,Recess,Recess,Recess,,Full-time
+80,Lunch,Lunch,Lunch,Lunch,,Full-time
