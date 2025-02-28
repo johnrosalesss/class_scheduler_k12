@@ -328,3 +328,4 @@ for section_name in unscheduled_sections:
 cursor.close()
 conn.close()
 print("✅ Schedule generation process completed!")
+
