@@ -303,3 +303,4 @@ print("6. Minimize Teacher Gaps – Reduce the number of free periods between a 
 cursor.close()
 conn.close()
 print("✅ Schedule generation process completed!")
+
