@@ -1,10 +1,13 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 212,Monday,9:30:00,10:00:00,14,SEC062,Dela Cruz Dela Cruz
-Room 212,Monday,14:00:00,15:00:00,31,SEC077,Baraquel Baraquel
-Room 212,Saturday,8:30:00,9:30:00,178,SEC035,Dela Cruz Dela Cruz
-Room 212,Thursday,8:30:00,9:30:00,1,SEC074,Cabrera Cabrera
-Room 212,Thursday,10:00:00,11:00:00,216,SEC073,Baraquel Baraquel
-Room 212,Thursday,11:00:00,12:00:00,8,SEC074,Tabones Tabones
-Room 212,Tuesday,10:30:00,11:00:00,158,SEC022,Binaluyo Binaluyo
-Room 212,Wednesday,7:30:00,8:30:00,31,SEC051,Alonzo Alonzo
-Room 212,Wednesday,10:30:00,11:00:00,146,SEC024,Acebes Acebes
+Room 212,Friday,9:30:00,10:00:00,29,SEC051,De Asis De Asis
+Room 212,Monday,10:00:00,11:00:00,11,SEC039,Manago Manago
+Room 212,Monday,12:00:00,13:00:00,11,SEC062,Manago Manago
+Room 212,Monday,15:00:00,16:00:00,190,SEC059,Delos Santos Delos Santos
+Room 212,Saturday,9:30:00,10:30:00,31,SEC077,Baraquel Baraquel
+Room 212,Thursday,15:00:00,16:00:00,22,SEC063,Gante Gante
+Room 212,Tuesday,9:30:00,10:30:00,23,SEC030,Gumabon Gumabon
+Room 212,Tuesday,11:00:00,12:00:00,14,SEC049,Cabasbas Cabasbas
+Room 212,Tuesday,15:00:00,16:00:00,179,SEC035,Dela Cruz Dela Cruz
+Room 212,Wednesday,12:00:00,13:00:00,173,SEC024,Alde Alde
+Room 212,Wednesday,14:00:00,15:00:00,29,SEC041,De Asis De Asis
+Room 212,Wednesday,16:00:00,17:00:00,196,SEC073,Gabiola Gabiola

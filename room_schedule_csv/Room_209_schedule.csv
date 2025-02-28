@@ -1,13 +1,12 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 209,Friday,13:00:00,14:00:00,14,SEC049,Cabasbas Cabasbas
-Room 209,Monday,10:00:00,11:00:00,160,SEC033,Fernando Fernando
-Room 209,Monday,12:00:00,13:00:00,8,SEC074,Tabones Tabones
-Room 209,Saturday,8:30:00,9:30:00,191,SEC036,Lati Lati
-Room 209,Saturday,12:00:00,13:00:00,2,SEC038,Cabrera Cabrera
-Room 209,Saturday,15:00:00,16:00:00,191,SEC036,Lati Lati
-Room 209,Thursday,7:30:00,8:30:00,197,SEC047,Gabiola Gabiola
-Room 209,Thursday,13:00:00,14:00:00,187,SEC026,Cadiente Cadiente
-Room 209,Thursday,16:00:00,17:00:00,19,SEC063,De Lara De Lara
-Room 209,Tuesday,8:30:00,9:30:00,173,SEC024,Alde Alde
-Room 209,Wednesday,8:30:00,9:30:00,173,SEC024,Alde Alde
-Room 209,Wednesday,13:00:00,14:00:00,157,SEC022,Gutierrez Gutierrez
+Room 209,Friday,13:00:00,14:00:00,160,SEC023,Fernando Fernando
+Room 209,Monday,9:30:00,10:00:00,182,SEC045,Alejo Alejo
+Room 209,Saturday,8:30:00,9:30:00,1,SEC061,Cabrera Cabrera
+Room 209,Saturday,15:00:00,16:00:00,26,SEC031,Abanto Abanto
+Room 209,Thursday,7:30:00,8:30:00,181,SEC035,Alejo Alejo
+Room 209,Thursday,8:30:00,9:30:00,216,SEC060,Baraquel Baraquel
+Room 209,Tuesday,9:30:00,10:00:00,223,SEC064,Layag Layag
+Room 209,Tuesday,10:30:00,11:00:00,154,SEC032,Obedoza Obedoza
+Room 209,Tuesday,12:00:00,13:00:00,191,SEC046,Lati Lati
+Room 209,Wednesday,9:30:00,10:00:00,200,SEC037,Orolaza Orolaza
+Room 209,Wednesday,14:00:00,15:00:00,145,SEC033,Fernando Fernando

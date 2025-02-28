@@ -1,9 +1,8 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 161,Friday,8:30:00,9:30:00,232,SEC026,Ramirez Ramirez
-Room 161,Monday,11:00:00,12:00:00,200,SEC047,Orolaza Orolaza
-Room 161,Monday,13:00:00,14:00:00,192,SEC059,Lati Lati
-Room 161,Monday,14:00:00,15:00:00,21,SEC030,De Lara De Lara
-Room 161,Thursday,12:00:00,13:00:00,181,SEC025,Alejo Alejo
-Room 161,Tuesday,11:00:00,12:00:00,30,SEC051,Baraquel Baraquel
-Room 161,Tuesday,14:00:00,15:00:00,196,SEC073,Gabiola Gabiola
-Room 161,Wednesday,7:30:00,8:30:00,189,SEC059,Delos Santos Delos Santos
+Room 161,Friday,7:30:00,8:30:00,Homeroom,SEC061,Canadilla Canadilla
+Room 161,Monday,8:30:00,9:30:00,155,SEC055,Achapero Achapero
+Room 161,Monday,9:30:00,10:00:00,177,SEC058,Berza Berza
+Room 161,Monday,14:00:00,15:00:00,182,SEC058,Alejo Alejo
+Room 161,Saturday,7:30:00,8:30:00,185,SEC071,Rimarim Rimarim
+Room 161,Saturday,13:00:00,14:00:00,18,SEC076,Morales Morales
+Room 161,Thursday,12:00:00,13:00:00,163,SEC069,Laque Laque

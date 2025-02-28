@@ -1,11 +1,10 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 163,Saturday,10:30:00,11:00:00,160,SEC033,Fernando Fernando
-Room 163,Saturday,14:00:00,15:00:00,17,SEC030,Morales Morales
-Room 163,Thursday,14:00:00,15:00:00,231,SEC058,Bitancor Bitancor
-Room 163,Tuesday,9:30:00,10:30:00,21,SEC040,De Lara De Lara
-Room 163,Tuesday,16:00:00,17:00:00,175,SEC024,Botalon Botalon
-Room 163,Wednesday,7:30:00,8:30:00,3,SEC028,Canadilla Canadilla
-Room 163,Wednesday,9:30:00,10:00:00,148,SEC059,Maniba Maniba
-Room 163,Wednesday,10:30:00,11:00:00,202,SEC047,Esquilona Esquilona
-Room 163,Wednesday,14:00:00,15:00:00,21,SEC050,De Lara De Lara
-Room 163,Wednesday,16:00:00,17:00:00,154,SEC068,Obedoza Obedoza
+Room 163,Friday,7:30:00,8:30:00,Homeroom,SEC063,De Lara De Lara
+Room 163,Monday,11:00:00,12:00:00,25,SEC041,Abanto Abanto
+Room 163,Monday,14:00:00,15:00:00,11,SEC049,Manago Manago
+Room 163,Monday,15:00:00,16:00:00,191,SEC036,Lati Lati
+Room 163,Saturday,12:00:00,13:00:00,186,SEC026,Maniba Maniba
+Room 163,Tuesday,9:30:00,10:30:00,189,SEC026,Delos Santos Delos Santos
+Room 163,Tuesday,11:00:00,12:00:00,168,SEC057,Acebes Acebes
+Room 163,Wednesday,7:30:00,8:30:00,179,SEC058,Dela Cruz Dela Cruz
+Room 163,Wednesday,10:30:00,11:00:00,5,SEC038,Canadilla Canadilla

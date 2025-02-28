@@ -1,9 +1,14 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 135,Friday,8:30:00,9:30:00,184,SEC058,Bitancor Bitancor
-Room 135,Monday,14:00:00,15:00:00,11,SEC039,Manago Manago
-Room 135,Thursday,13:00:00,14:00:00,171,SEC057,Odtohan Odtohan
-Room 135,Thursday,15:00:00,16:00:00,25,SEC064,Abanto Abanto
-Room 135,Tuesday,14:00:00,15:00:00,160,SEC069,Fernando Fernando
-Room 135,Wednesday,8:30:00,9:30:00,30,SEC041,Baraquel Baraquel
-Room 135,Wednesday,14:00:00,15:00:00,25,SEC031,Abanto Abanto
-Room 135,Wednesday,15:00:00,16:00:00,172,SEC070,Odtohan Odtohan
+Room 135,Friday,7:30:00,8:30:00,Homeroom,SEC035,Alejo Alejo
+Room 135,Friday,10:30:00,11:00:00,10,SEC075,Valdez Valdez
+Room 135,Friday,11:00:00,12:00:00,163,SEC033,Laque Laque
+Room 135,Friday,12:00:00,13:00:00,187,SEC059,Cadiente Cadiente
+Room 135,Friday,13:00:00,14:00:00,151,SEC049,Valdez Valdez
+Room 135,Monday,8:30:00,9:30:00,162,SEC023,Carrasco Carrasco
+Room 135,Monday,15:00:00,16:00:00,160,SEC033,Fernando Fernando
+Room 135,Saturday,7:30:00,8:30:00,193,SEC046,Ramirez Ramirez
+Room 135,Tuesday,10:00:00,11:00:00,3,SEC074,Canadilla Canadilla
+Room 135,Tuesday,11:00:00,12:00:00,188,SEC026,Cadiente Cadiente
+Room 135,Tuesday,14:00:00,15:00:00,192,SEC036,Lati Lati
+Room 135,Wednesday,10:00:00,11:00:00,171,SEC057,Odtohan Odtohan
+Room 135,Wednesday,14:00:00,15:00:00,1,SEC038,Cabrera Cabrera

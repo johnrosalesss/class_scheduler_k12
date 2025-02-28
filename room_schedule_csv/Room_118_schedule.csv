@@ -1,9 +1,8 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 118,Friday,8:30:00,9:30:00,17,SEC076,Morales Morales
-Room 118,Monday,10:30:00,11:00:00,29,SEC077,De Asis De Asis
-Room 118,Saturday,8:30:00,9:30:00,149,SEC060,Bacongallo Bacongallo
-Room 118,Saturday,10:00:00,11:00:00,175,SEC057,Botalon Botalon
-Room 118,Saturday,13:00:00,14:00:00,194,SEC059,Ramirez Ramirez
-Room 118,Tuesday,10:30:00,11:00:00,27,SEC031,De Asis De Asis
-Room 118,Wednesday,8:30:00,9:30:00,170,SEC070,Orbita Orbita
-Room 118,Wednesday,10:30:00,11:00:00,219,SEC039,Ballesteros Ballesteros
+Room 118,Friday,7:30:00,8:30:00,Homeroom,SEC018,Tanguin Tanguin
+Room 118,Friday,14:00:00,15:00:00,4,SEC074,Canadilla Canadilla
+Room 118,Saturday,12:00:00,13:00:00,151,SEC062,Valdez Valdez
+Room 118,Saturday,15:00:00,16:00:00,23,SEC030,Gumabon Gumabon
+Room 118,Tuesday,13:00:00,14:00:00,190,SEC036,Delos Santos Delos Santos
+Room 118,Tuesday,14:00:00,15:00:00,201,SEC037,Esquilona Esquilona
+Room 118,Wednesday,13:00:00,14:00:00,162,SEC056,Carrasco Carrasco

@@ -1,8 +1,10 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 129,Friday,14:00:00,15:00:00,167,SEC043,Laque Laque
-Room 129,Friday,15:00:00,16:00:00,156,SEC068,Achapero Achapero
-Room 129,Monday,7:30:00,8:30:00,162,SEC033,Carrasco Carrasco
-Room 129,Thursday,11:00:00,12:00:00,17,SEC030,Morales Morales
-Room 129,Tuesday,7:30:00,8:30:00,171,SEC070,Odtohan Odtohan
-Room 129,Tuesday,8:30:00,9:30:00,20,SEC063,De Lara De Lara
-Room 129,Wednesday,12:00:00,13:00:00,197,SEC073,Gabiola Gabiola
+Room 129,Friday,7:30:00,8:30:00,Homeroom,SEC029,Layag Layag
+Room 129,Friday,14:00:00,15:00:00,179,SEC045,Dela Cruz Dela Cruz
+Room 129,Saturday,9:30:00,10:30:00,2,SEC028,Cabrera Cabrera
+Room 129,Saturday,13:00:00,14:00:00,32,SEC064,Alonzo Alonzo
+Room 129,Thursday,7:30:00,8:30:00,13,SEC039,Manago Manago
+Room 129,Thursday,8:30:00,9:30:00,173,SEC024,Alde Alde
+Room 129,Thursday,15:00:00,16:00:00,232,SEC046,Ramirez Ramirez
+Room 129,Tuesday,12:00:00,13:00:00,170,SEC024,Orbita Orbita
+Room 129,Wednesday,9:30:00,10:30:00,15,SEC049,Cabasbas Cabasbas

@@ -1,12 +1,10 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 240,Friday,9:30:00,10:30:00,19,SEC030,De Lara De Lara
-Room 240,Friday,13:00:00,14:00:00,201,SEC047,Esquilona Esquilona
-Room 240,Monday,12:00:00,13:00:00,158,SEC055,Binaluyo Binaluyo
-Room 240,Monday,14:00:00,15:00:00,164,SEC056,Napili Napili
-Room 240,Saturday,8:30:00,9:30:00,180,SEC058,Rimarim Rimarim
-Room 240,Saturday,15:00:00,16:00:00,6,SEC048,Tabones Tabones
-Room 240,Tuesday,12:00:00,13:00:00,169,SEC070,Orbita Orbita
-Room 240,Tuesday,13:00:00,14:00:00,152,SEC040,Morales Morales
-Room 240,Tuesday,15:00:00,16:00:00,169,SEC057,Orbita Orbita
-Room 240,Wednesday,11:00:00,12:00:00,156,SEC042,Achapero Achapero
-Room 240,Wednesday,12:00:00,13:00:00,178,SEC058,Dela Cruz Dela Cruz
+Room 240,Friday,9:30:00,10:00:00,162,SEC069,Carrasco Carrasco
+Room 240,Friday,11:00:00,12:00:00,148,SEC059,Maniba Maniba
+Room 240,Monday,10:30:00,11:00:00,189,SEC036,Delos Santos Delos Santos
+Room 240,Monday,13:00:00,14:00:00,4,SEC028,Canadilla Canadilla
+Room 240,Monday,15:00:00,16:00:00,179,SEC058,Dela Cruz Dela Cruz
+Room 240,Saturday,12:00:00,13:00:00,176,SEC034,Botalon Botalon
+Room 240,Saturday,16:00:00,17:00:00,6,SEC074,Tabones Tabones
+Room 240,Thursday,10:00:00,11:00:00,19,SEC030,De Lara De Lara
+Room 240,Thursday,15:00:00,16:00:00,181,SEC071,Alejo Alejo

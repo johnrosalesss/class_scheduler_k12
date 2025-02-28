@@ -1,11 +1,8 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 127,Friday,9:30:00,10:00:00,188,SEC026,Cadiente Cadiente
-Room 127,Friday,12:00:00,13:00:00,13,SEC075,Manago Manago
-Room 127,Monday,7:30:00,8:30:00,174,SEC044,Alde Alde
-Room 127,Saturday,10:30:00,11:00:00,199,SEC047,Orolaza Orolaza
-Room 127,Saturday,16:00:00,17:00:00,19,SEC063,De Lara De Lara
-Room 127,Thursday,12:00:00,13:00:00,9,SEC049,Valdez Valdez
-Room 127,Tuesday,8:30:00,9:30:00,198,SEC047,Baraquel Baraquel
-Room 127,Tuesday,9:30:00,10:00:00,2,SEC061,Cabrera Cabrera
-Room 127,Wednesday,10:30:00,11:00:00,181,SEC025,Alejo Alejo
-Room 127,Wednesday,11:00:00,12:00:00,162,SEC023,Carrasco Carrasco
+Room 127,Friday,7:30:00,8:30:00,Homeroom,SEC027,Esquilona Esquilona
+Room 127,Monday,8:30:00,9:30:00,177,SEC035,Berza Berza
+Room 127,Monday,15:00:00,16:00:00,13,SEC039,Manago Manago
+Room 127,Thursday,15:00:00,16:00:00,168,SEC024,Acebes Acebes
+Room 127,Tuesday,7:30:00,8:30:00,24,SEC063,Gumabon Gumabon
+Room 127,Tuesday,14:00:00,15:00:00,183,SEC035,Bitancor Bitancor
+Room 127,Wednesday,11:00:00,12:00:00,28,SEC064,De Asis De Asis

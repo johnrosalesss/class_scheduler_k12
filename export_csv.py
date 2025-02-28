@@ -241,10 +241,19 @@ def main():
     )
     cursor = conn.cursor()
 
-    # Create the view
-    create_view(cursor)
+def main():
+    # Connect to MySQL
+    conn = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="class_scheduler",
+        charset="utf8mb4",
+        collation="utf8mb4_general_ci"
+    )
+    cursor = conn.cursor()
 
-    # Export the view to CSV
+    # Export the weekly schedule view to CSV
     export_view_to_csv(cursor, 'weekly_schedule', 'weekly_schedule.csv')
 
     # Export room schedules to CSV

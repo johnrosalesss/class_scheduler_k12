@@ -1,12 +1,10 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 157,Monday,12:00:00,13:00:00,22,SEC076,Dinapo Dinapo
-Room 157,Monday,13:00:00,14:00:00,23,SEC040,Dinapo Dinapo
-Room 157,Monday,14:00:00,15:00:00,24,SEC063,Dinapo Dinapo
-Room 157,Saturday,13:00:00,14:00:00,10,SEC039,Valdez Valdez
-Room 157,Saturday,16:00:00,17:00:00,28,SEC041,De Asis De Asis
-Room 157,Thursday,9:30:00,10:00:00,217,SEC038,Ballesteros Ballesteros
-Room 157,Thursday,14:00:00,15:00:00,172,SEC057,Odtohan Odtohan
-Room 157,Thursday,16:00:00,17:00:00,173,SEC070,Alde Alde
-Room 157,Tuesday,12:00:00,13:00:00,197,SEC047,Gabiola Gabiola
-Room 157,Wednesday,11:00:00,12:00:00,12,SEC039,Manago Manago
-Room 157,Wednesday,14:00:00,15:00:00,181,SEC045,Alejo Alejo
+Room 157,Friday,7:30:00,8:30:00,Homeroom,SEC057,Orbita Orbita
+Room 157,Friday,8:30:00,9:30:00,26,SEC051,Abanto Abanto
+Room 157,Friday,10:00:00,11:00:00,32,SEC031,Baraquel Baraquel
+Room 157,Monday,14:00:00,15:00:00,154,SEC042,Obedoza Obedoza
+Room 157,Monday,16:00:00,17:00:00,4,SEC048,Canadilla Canadilla
+Room 157,Saturday,15:00:00,16:00:00,21,SEC063,De Lara De Lara
+Room 157,Thursday,10:30:00,11:00:00,192,SEC026,Lati Lati
+Room 157,Thursday,16:00:00,17:00:00,182,SEC035,Alejo Alejo
+Room 157,Tuesday,15:00:00,16:00:00,157,SEC068,Gutierrez Gutierrez

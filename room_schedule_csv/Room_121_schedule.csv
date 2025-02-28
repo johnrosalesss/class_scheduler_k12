@@ -1,10 +1,12 @@
 Room Name,Day,Start Time,End Time,Subject Code,Section ID,Teacher Name
-Room 121,Friday,8:30:00,9:30:00,28,SEC064,De Asis De Asis
-Room 121,Friday,12:00:00,13:00:00,166,SEC043,Alvarez Alvarez
-Room 121,Monday,10:00:00,11:00:00,155,SEC032,Achapero Achapero
-Room 121,Monday,12:00:00,13:00:00,196,SEC073,Gabiola Gabiola
-Room 121,Saturday,7:30:00,8:30:00,18,SEC040,Morales Morales
-Room 121,Saturday,12:00:00,13:00:00,197,SEC037,Gabiola Gabiola
-Room 121,Thursday,12:00:00,13:00:00,5,SEC074,Canadilla Canadilla
-Room 121,Thursday,15:00:00,16:00:00,196,SEC047,Gabiola Gabiola
-Room 121,Wednesday,11:00:00,12:00:00,4,SEC048,Canadilla Canadilla
+Room 121,Friday,7:30:00,8:30:00,Homeroom,SEC021,Jugarap Jugarap
+Room 121,Friday,8:30:00,9:30:00,6,SEC028,Cabasbas Cabasbas
+Room 121,Friday,11:00:00,12:00:00,197,SEC047,Gabiola Gabiola
+Room 121,Monday,13:00:00,14:00:00,165,SEC056,Napili Napili
+Room 121,Saturday,8:30:00,9:30:00,16,SEC049,Dela Cruz Dela Cruz
+Room 121,Saturday,10:30:00,11:00:00,154,SEC032,Obedoza Obedoza
+Room 121,Saturday,13:00:00,14:00:00,29,SEC031,De Asis De Asis
+Room 121,Thursday,11:00:00,12:00:00,191,SEC072,Lati Lati
+Room 121,Tuesday,8:30:00,9:30:00,223,SEC031,Layag Layag
+Room 121,Tuesday,16:00:00,17:00:00,191,SEC059,Lati Lati
+Room 121,Wednesday,15:00:00,16:00:00,185,SEC045,Rimarim Rimarim

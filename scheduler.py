@@ -83,13 +83,18 @@ for section in sections:
         start_time, end_time = time_slot
         day = "Friday"  # Homeroom is scheduled on Friday
 
-        print(f"Inserting Homeroom for {section_name} on {day} from {start_time} to {end_time} (Adviser: {adviser_name})")
+        # Extract the numeric part of the section_id and calculate the room number
+        section_number = int(section_id[3:])  # Extract the numeric part after 'SEC'
+        room_number = 100 + section_number  # Calculate the room number (e.g., SEC077 -> 177)
+        room_name = f"Room {room_number}"  # Format the room name
+
+        print(f"Inserting Homeroom for {section_name} on {day} from {start_time} to {end_time} (Adviser: {adviser_name}, Room: {room_name})")
         cursor.execute("""
             INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id)
             VALUES (%s, %s, %s, %s, %s, %s, %s)
-        """, ("Homeroom", adviser_name, "Homeroom Room", day, start_time, end_time, section_id))
+        """, ("Homeroom", adviser_name, room_name, day, start_time, end_time, section_id))
 
-        homeroom_schedules.append((section_name, day, start_time, end_time))
+        homeroom_schedules.append((section_name, day, start_time, end_time, room_name))
     else:
         print(f"⚠ Time slot not found for {section_name}, skipping...")
 
@@ -97,8 +102,8 @@ conn.commit()
 
 # Step 3: Print the enforced homeroom schedule
 print("\nEnforced Homeroom Schedule:")
-for section_name, day, start_time, end_time in homeroom_schedules:
-    print(f"Section: {section_name}, Day: {day}, Time: {start_time}-{end_time}")
+for section_name, day, start_time, end_time, room_name in homeroom_schedules:
+    print(f"Section: {section_name}, Day: {day}, Time: {start_time}-{end_time}, Room: {room_name}")
 
 # Trackers
 unassigned_subjects = []  # Subjects that couldn't be assigned at all
