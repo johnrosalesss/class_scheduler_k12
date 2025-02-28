@@ -24,7 +24,7 @@ print(f"Fetched {len(subjects)} subjects.")
 
 print("Loading teachers with their subjects...")
 cursor.execute("""
-    SELECT t.teacher_id, CONCAT(t.teacher_first_name, ' ', t.teacher_last_name) AS teacher_name, t.subject_name
+    SELECT t.teacher_id, CONCAT(t.teacher_first_name, ' ', t.teacher_last_name) AS teacher_name, t.subject_name, t.teacher_type
     FROM teachers t
 """)
 teacher_subjects = cursor.fetchall()
@@ -40,7 +40,6 @@ cursor.execute("SELECT * FROM time_slots")
 time_slots = cursor.fetchall()
 print(f"Fetched {len(time_slots)} time slots.")
 
-# Load sections
 print("Loading sections...")
 cursor.execute("SELECT * FROM sections")
 sections = cursor.fetchall()
@@ -50,12 +49,67 @@ print(f"Fetched {len(sections)} sections.")
 print("Clearing old schedule...")
 cursor.execute("DELETE FROM schedule")
 
-unassigned_subjects = []  # To track subjects that couldn't be assigned at all
-partially_assigned_subjects = []  # To track subjects with some hours unassigned
-assigned_subjects = []    # To track successfully assigned subjects
+# Step 1: Remove any subjects assigned on Friday 7:30 - 8:30 AM
+print("Clearing schedules for Friday 7:30 - 8:30 AM to enforce homeroom...")
+cursor.execute("""
+    DELETE FROM schedule
+    WHERE day = 'Friday' AND start_time = '07:30' AND end_time = '08:30'
+""")
+conn.commit()
 
-# Dictionary to store the count of successfully scheduled subjects per section
-section_schedule_counts = {}
+# Step 2: Insert homeroom schedule for all sections based on grade level
+homeroom_schedules = []
+for section in sections:
+    section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
+
+    # Ensure the adviser exists
+    adviser_name = f"{adviser_first_name} {adviser_last_name}" if adviser_first_name and adviser_last_name else "TBA"
+
+    # Determine the appropriate time slot based on the grade level
+    if year_level in range(1, 7):  # Grades 1 to 6
+        time_slot_id = 'GS_TS041'  # Time slot ID for Grades 1-6
+    elif year_level in range(7, 11):  # Grades 7 to 10
+        time_slot_id = 'HS_TS041'  # Time slot ID for Grades 7-10
+    else:
+        print(f"⚠ No valid time slot for {section_name}, skipping...")
+        continue
+
+    # Fetch the time slot details
+    cursor.execute("SELECT start_time, end_time FROM time_slots WHERE time_slot_id = %s", (time_slot_id,))
+    time_slot = cursor.fetchone()
+    
+    if time_slot:
+        start_time, end_time = time_slot
+        day = "Friday"  # Homeroom is scheduled on Friday
+
+        # Extract the numeric part of the section_id and calculate the room number
+        section_number = int(section_id[3:])  # Extract the numeric part after 'SEC'
+        room_number = 100 + section_number  # Calculate the room number (e.g., SEC077 -> 177)
+        room_name = f"Room {room_number}"  # Format the room name
+
+        print(f"Inserting Homeroom for {section_name} on {day} from {start_time} to {end_time} (Adviser: {adviser_name}, Room: {room_name})")
+        cursor.execute("""
+            INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id)
+            VALUES (%s, %s, %s, %s, %s, %s, %s)
+        """, ("Homeroom", adviser_name, room_name, day, start_time, end_time, section_id))
+
+        homeroom_schedules.append((section_name, day, start_time, end_time, room_name))
+    else:
+        print(f"⚠ Time slot not found for {section_name}, skipping...")
+
+conn.commit()
+
+# Step 3: Print the enforced homeroom schedule
+print("\nEnforced Homeroom Schedule:")
+for section_name, day, start_time, end_time, room_name in homeroom_schedules:
+    print(f"Section: {section_name}, Day: {day}, Time: {start_time}-{end_time}, Room: {room_name}")
+
+# Trackers
+unassigned_subjects = []  # Subjects that couldn't be assigned at all
+partially_assigned_subjects = []  # Subjects with some hours unassigned
+assigned_subjects = []    # Successfully assigned subjects
+section_schedule_counts = defaultdict(lambda: {"year_level": 0, "count": 0, "subjects": []})  # Successfully scheduled subjects per section
+teacher_subject_counts = defaultdict(int)  # Track subjects assigned to part-time teachers
 
 # Debug: Print all subjects in the database
 print("All subjects in the database:")
@@ -83,7 +137,7 @@ for section in sections:
     print(f"Found subjects: {section_subjects}")
 
     # Initialize the count of successfully scheduled subjects for this section
-    section_schedule_counts[section_name] = {"year_level": year_level, "count": 0}
+    section_schedule_counts[section_name]["year_level"] = year_level
 
     # Schedule subjects for this section
     for subject in section_subjects:
@@ -93,11 +147,15 @@ for section in sections:
         # Find available teachers for the current subject
         available_teacher_subjects = []
         for teacher in teacher_subjects:
-            teacher_id, teacher_name, teacher_subjects_list = teacher
+            teacher_id, teacher_name, teacher_subjects_list, teacher_type = teacher
             teacher_subjects_list = teacher_subjects_list.split(', ')
             
             if subject_name in teacher_subjects_list:
-                available_teacher_subjects.append((teacher_id, teacher_name))
+                # Check part-time teacher restriction
+                if teacher_type == "Part-Time" and teacher_subject_counts[teacher_id] >= 5:
+                    print(f"⚠ Teacher {teacher_name} (Part-Time) has reached the maximum of 5 subjects.")
+                    continue
+                available_teacher_subjects.append((teacher_id, teacher_name, teacher_type))
         print(f"Available teachers for {subject_name}: {available_teacher_subjects}")
 
         if not available_teacher_subjects:
@@ -111,31 +169,20 @@ for section in sections:
         attempts = 0
 
         while hours_scheduled < hours_per_week and attempts < max_attempts:
-            teacher_id, teacher_name = random.choice(available_teacher_subjects)
+            teacher_id, teacher_name, teacher_type = random.choice(available_teacher_subjects)
             room = random.choice(rooms)
             time_slot = random.choice(time_slots)
 
             slot_id, day, start_time, end_time = time_slot
             print(f"Attempt {attempts + 1}: Trying slot {slot_id} ({day} {start_time}-{end_time}) with teacher {teacher_name} in room {room[1]}")
 
-            # Check for recess and lunch breaks
-            if (program == "Grade School" and (
-                (start_time >= "10:00" and end_time <= "10:30") or  # Recess after 2nd period
-                (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
-            )) or (program == "High School" and (
-                (start_time >= "11:00" and end_time <= "11:30") or  # Recess after 3rd period
-                (start_time >= "12:00" and end_time <= "13:00")  # Lunch after 4th period
-            )):
-                print(f"⚠ Slot {slot_id} is during recess/lunch for {program}, trying another slot...")
-                attempts += 1
-                continue
-
             # Check for conflicts
             cursor.execute("""
                 SELECT COUNT(*) FROM schedule 
                 WHERE (teacher_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
-                      (room_name = %s AND day = %s AND start_time < %s AND end_time > %s)
-            """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time))
+                      (room_name = %s AND day = %s AND start_time < %s AND end_time > %s) OR
+                      (section_id = %s AND day = %s AND start_time < %s AND end_time > %s)
+            """, (teacher_name, day, end_time, start_time, room[1], day, end_time, start_time, section_id, day, end_time, start_time))
             conflicts = cursor.fetchone()[0]
             print(f"Conflicts detected: {conflicts}")
 
@@ -161,6 +208,9 @@ for section in sections:
                 )
                 assigned_subjects.append((subject_code, section_name, teacher_name, room[1], day, start_time, end_time))
                 section_schedule_counts[section_name]["count"] += 1  # Increment the count for this section
+                section_schedule_counts[section_name]["subjects"].append(subject_name)  # Add subject to the section's list
+                if teacher_type == "Part-Time":
+                    teacher_subject_counts[teacher_id] += 1  # Increment part-time teacher's subject count
             else:
                 print(f"⚠ Slot {slot_id} already assigned for {subject_code} in {section_name}, trying another slot...")
 
@@ -177,7 +227,7 @@ for section in sections:
 # After running the schedule process, print unassigned subjects with reasons
 if unassigned_subjects:
     print("\nUnassigned Subjects with Reasons:")
-    for subject_code, section_name, reason in unassigned_subjects:  # Unpack all three values
+    for subject_code, section_name, reason in unassigned_subjects:
         print(f"Subject: {subject_code}, Section: {section_name}, Reason: {reason}")
 else:
     print("All subjects assigned successfully.")
@@ -194,10 +244,13 @@ else:
 print("\nSuccessfully Scheduled Subjects per Section:")
 for section_name, data in section_schedule_counts.items():
     print(f"Section: {section_name}, Year Level: {data['year_level']}, Successfully Scheduled Subjects: {data['count']}")
+    print(f"Subjects Assigned: {', '.join(data['subjects'])}")
 
-# Schedule homeroom periods
-for section in sections:
-    section_id, program, year_level, num_students, section_name, adviser_last_name, adviser_first_name = section
+# Identify sections with zero subjects scheduled
+unscheduled_sections = []
+for section_name, data in section_schedule_counts.items():
+    if data["count"] == 0:
+        unscheduled_sections.append(section_name)
 
     # Determine the day for homeroom based on the program
     homeroom_scheduled = False
