@@ -1,5 +1,6 @@
 import mysql.connector
 import random
+from collections import defaultdict
 
 # Debug message
 print("Connecting to MySQL...")
@@ -252,53 +253,6 @@ for section_name, data in section_schedule_counts.items():
     if data["count"] == 0:
         unscheduled_sections.append(section_name)
 
-    # Determine the day for homeroom based on the program
-    homeroom_scheduled = False
-    if program == "Grade School":
-        # Homeroom can be scheduled any day for 1 hour
-        for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]:
-            time_slot = ("09:00", "10:00")  # Example time for homeroom
-            cursor.execute("""
-                SELECT COUNT(*) FROM schedule 
-                WHERE day = %s AND start_time = %s AND end_time = %s
-            """, (day, time_slot[0], time_slot[1]))
-            count = cursor.fetchone()[0]
-
-            if count < 1:  # If no existing schedule for this time
-                print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
-                cursor.execute(
-                    "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-                    ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
-                )
-                homeroom_scheduled = True
-                break  # Exit after scheduling homeroom for this section
-
-    elif program == "High School":
-        # Homeroom is scheduled on Friday during the 1st period
-        day = "Friday"
-        time_slot = ("08:00", "09:00")  # Example time for homeroom
-        cursor.execute("""
-            SELECT COUNT(*) FROM schedule 
-            WHERE day = %s AND start_time = %s AND end_time = %s
-        """, (day, time_slot[0], time_slot[1]))
-        count = cursor.fetchone()[0]
-
-        if count < 1:  # If no existing schedule for this time
-            print(f"Inserting Homeroom for {section_name} on {day} from {time_slot[0]} to {time_slot[1]}")
-            cursor.execute(
-                "INSERT INTO schedule (subject_code, teacher_name, room_name, day, start_time, end_time, section_id) VALUES (%s, %s, %s, %s, %s, %s, %s)",
-                ("Homeroom", f"{adviser_first_name} {adviser_last_name}", "Homeroom Room", day, time_slot[0], time_slot[1], section_id)
-            )
-
-# Commit the schedule to the database
-conn.commit()
-
-# Identify sections with zero subjects scheduled
-unscheduled_sections = []
-for section_name, data in section_schedule_counts.items():
-    if data["count"] == 0:
-        unscheduled_sections.append(section_name)
-
 # Analyze the reasons for unscheduled sections
 print("\nSummary of Unscheduled Sections and Possible Reasons:")
 for section_name in unscheduled_sections:
@@ -323,9 +277,31 @@ for section_name in unscheduled_sections:
 
     print(f"- Section: {section_name} -> Reason(s): {', '.join(reason)}")
 
+# Print Hard Constraints Summary
+print("\nHard Constraints Summary:")
+print("1. No Teacher Conflicts – A teacher cannot be scheduled to teach multiple subjects at the same time.")
+print("2. No Room Conflicts – Each room can accommodate only one class at a time.")
+print("3. No Section Conflicts – A section can only attend one subject at a time.")
+print("4. Part-Time Teacher Restriction – Part-time teachers can teach a maximum of five subjects.")
+print("5. School Hours Restriction – Classes must be scheduled between 7:30 AM and 5:00 PM.")
+print("6. Lunch Break Restriction – No classes are scheduled during lunch breaks.")
+print("7. Teacher Subject Specialization – Teachers can only teach the subjects assigned to them.")
+print("8. Required Weekly Lecture Hours – Each subject must meet its required lecture hours per week.")
+print("9. All Subjects Must Be Scheduled – If a subject cannot be scheduled due to conflicts, it is flagged as 'unassigned' and reported.")
+print("10. Section Time Efficiency – Sections should have sequential lessons with minimal gaps between classes.")
+
+# Print Soft Constraints Summary
+print("\nSoft Constraints Summary:")
+print("1. Balanced Schedule Distribution – Spread subject hours across multiple days instead of concentrating them on a single day.")
+print("2. Evenly Distribute Classes Across Days – Prioritize underutilized days (e.g., Tuesday and Wednesday) over heavily scheduled ones (e.g., Monday and Friday).")
+print("3. Teacher Room Stability – Assign teachers to the same room whenever possible.")
+print("4. Teacher Time Efficiency – Minimize gaps between a teacher’s lessons to create a more efficient schedule.")
+print("5. Section Subject Variety – Avoid scheduling the same subject consecutively to provide variety in student learning on sections.")
+print("6. Minimize Teacher Gaps – Reduce the number of free periods between a teacher's lessons to optimize their schedule.")
 
 # Close connection
 cursor.close()
 conn.close()
 print("✅ Schedule generation process completed!")
+
 
